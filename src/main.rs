@@ -2,6 +2,7 @@ extern crate ini;
 use ini::Ini;
 use reqwest::header::HeaderMap;
 use serde_json::Value;
+use std::collections::HashMap;
 use std::io::Write;
 use std::process::exit;
 use std::fs::File;
@@ -42,20 +43,24 @@ fn get_user_info() -> Result<(String, String, String), Box<dyn std::error::Error
 }
 
 fn get_machines(account: &Account) -> Result<Value, Box<dyn std::error::Error>> {
-    let url = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
+    let url        = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
     let user_agent = "appwash-cli v0.1.0";
-    let client = reqwest::blocking::Client::new();
-    let token = account.token.as_str();
+    let token      = account.token.to_owned();
 
     let mut headers = HeaderMap::new();
-    headers.insert("user-agent", user_agent.parse().unwrap());
-    headers.insert("referer",    "https://appwash.com/".parse().unwrap());
     headers.insert("token",      token.parse().unwrap());
-    headers.insert("language",   "NO".parse().unwrap());
-    headers.insert("platform",   "appWash".parse().unwrap());
+    headers.insert("User-Agent", user_agent.parse().unwrap());
+    headers.insert("Referer", "https://appwash.com/".parse().unwrap());
+    headers.insert("language", "NO".parse().unwrap());
+    headers.insert("platform", "appWash".parse().unwrap());
 
+    let mut json: HashMap<String, String> = HashMap::new();
+    json.insert("serviceType".to_string(), "WASHING_MACHINE".to_string() );
+
+    let client = reqwest::blocking::Client::new();
     let resp = client
                 .post(url)
+                .json(&json)
                 .headers(headers)
                 .send()?;
 
@@ -63,6 +68,27 @@ fn get_machines(account: &Account) -> Result<Value, Box<dyn std::error::Error>> 
     let resp_json: Value = serde_json::from_str(&resp)?;
 
     Ok(resp_json)
+}
+
+fn pretty_machines(account: &Account) {
+
+    // Code in python:
+    //----------------
+    // machine_data: list = get_machines()
+    //
+    // for machine in machine_data:
+    //     machine_id: int = machine["externalId"]
+    //     machine_state: str = machine["state"]
+    //     if machine_state in ["OCCUPIED", "STOPPABLE"]:
+    //         last_session_start: int = machine["lastSessionStart"]
+    //         last_session_start: str = datetime.fromtimestamp(last_session_start).strftime("%Y-%m-%d %H:%M:%S")
+    //
+    //         if machine_state == "STOPPABLE":
+    //             console.print(f"-> {machine_id} - [bold green]{machine_state}[/bold green] - STARTED: {last_session_start}")
+    //         else:
+    //             console.print(f"{machine_id} - {machine_state} - STARTED: {last_session_start}")
+    //     else:
+    //         console.print(f"{machine_id} - {machine_state}")
 }
 
 fn get_token(email: &String, password: &String) -> String {
@@ -87,7 +113,7 @@ fn get_token(email: &String, password: &String) -> String {
 
     let resp = resp.text().unwrap();
     let resp_json: Value = serde_json::from_str(&resp).unwrap();
-    let token: String = resp_json["login"]["token"].to_string();
+    let token: String = resp_json["login"]["token"].to_string().replace("\"", "");
 
     token
 }
