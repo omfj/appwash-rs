@@ -28,8 +28,32 @@ pub fn create_app() -> Command<'static> {
                         .help("Your AppWash password"),
                 ),
         )
-        .subcommand(Command::new("list").about("Lists available machines"))
-        .subcommand(Command::new("reserve").about("Reserves a machine"))
+        .subcommand(
+            Command::new("reserve")
+                .about("Reserves a machine")
+                .arg_required_else_help(true)
+                .arg(
+                    Arg::new("machine")
+                        .short('m')
+                        .long("machine")
+                        .takes_value(true)
+                        .required(true)
+                        .help("The machine you want to reserve"),
+                ),
+        )
+        .subcommand(
+            Command::new("stop")
+                .about("Stops a machine")
+                .arg_required_else_help(true)
+                .arg(
+                    Arg::new("machine")
+                        .short('m')
+                        .long("machine")
+                        .takes_value(true)
+                        .required(true)
+                        .help("The machine you want to stop"),
+                ),
+        )
         .subcommand(
             Command::new("whoami")
                 .about("Prints information about the user")
@@ -40,7 +64,8 @@ pub fn create_app() -> Command<'static> {
                         .takes_value(false)
                         .help("Prints you password and token"),
                 ),
-        );
+        )
+        .subcommand(Command::new("list").about("Lists available machines"));
 
     app
 }

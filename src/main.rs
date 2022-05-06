@@ -1,5 +1,7 @@
 use std::error::Error;
 
+use serde_json::Value;
+
 mod app;
 mod config;
 mod lib;
@@ -54,9 +56,13 @@ fn run() -> Result<(), Box<dyn Error>> {
 
     if let Some(_) = matches.subcommand_matches("list") {
         match lib::get_machines(&user.token) {
-            Ok(m) => println!("{:?}", m),
+            Ok(m) => pretty_machines(m),
             Err(_) => println!("An error occured while trying to print the machines."),
         }
+    }
+
+    if let Some(_) = matches.subcommand_matches("stop") {
+        println!("Stopping machine: ",)
     }
 
     if let Some(_) = matches.subcommand_matches("reserve") {
@@ -72,4 +78,9 @@ fn run() -> Result<(), Box<dyn Error>> {
     }
 
     Ok(())
+}
+
+fn pretty_machines(json: Value) {
+    let machine_data = &json["data"];
+    println!("{:?}", machine_data)
 }

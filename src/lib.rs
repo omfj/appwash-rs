@@ -9,6 +9,8 @@ use std::io::Write;
 use std::path::PathBuf;
 use std::result::Result;
 
+const USER_AGENT: &str = "appwash-cli v0.1.0";
+
 pub fn config_file_create(email: &str, password: &str) -> Result<(), Box<dyn Error>> {
     let xdg_dirs = xdg::BaseDirectories::with_prefix("appwash")?;
     let config_path = xdg_dirs.place_config_file("config")?;
@@ -53,15 +55,12 @@ pub fn load_config() -> Result<(String, String, String), Box<dyn Error>> {
 
 pub fn get_machines(token: &String) -> Result<Value, Box<dyn Error>> {
     let url = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
-    let user_agent = "appwash-cli v0.1.0";
-    let token = token;
 
     let mut headers = HeaderMap::new();
-    headers.insert("token", token.parse().unwrap());
-    headers.insert("User-Agent", user_agent.parse().unwrap());
-    headers.insert("Referer", "https://appwash.com/".parse().unwrap());
-    headers.insert("language", "NO".parse().unwrap());
-    headers.insert("platform", "appWash".parse().unwrap());
+    headers.insert("token", token.parse()?);
+    headers.insert("User-Agent", USER_AGENT.parse()?);
+    headers.insert("language", "NO".parse()?);
+    headers.insert("platform", "appWash".parse()?);
 
     let mut json: HashMap<String, String> = HashMap::new();
     json.insert("serviceType".to_string(), "WASHING_MACHINE".to_string());
@@ -69,24 +68,21 @@ pub fn get_machines(token: &String) -> Result<Value, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
     let resp = client.post(url).json(&json).headers(headers).send()?;
 
-    let resp = resp.text().unwrap();
+    let resp = resp.text()?;
     let resp_json: Value = serde_json::from_str(&resp)?;
 
     Ok(resp_json)
 }
 
 pub fn get_token(email: &str, password: &str) -> Result<String, Box<dyn Error>> {
-    // Basic request info
     let client = reqwest::blocking::Client::new();
     let url = "https://www.involtum-services.com/api-rest/login";
-    let user_agent = "appwash-cli v0.1.0";
 
-    // Headers
     let mut headers = HeaderMap::new();
-    headers.insert("Content-Type", "application/json".parse().unwrap());
-    headers.insert("User-Agent", user_agent.parse().unwrap());
-    headers.insert("language", "en".parse().unwrap());
-    headers.insert("platform", "appWash".parse().unwrap());
+    headers.insert("Content-Type", "application/json".parse()?);
+    headers.insert("User-Agent", USER_AGENT.parse()?);
+    headers.insert("language", "en".parse()?);
+    headers.insert("platform", "appWash".parse()?);
 
     let resp = client
         .post(url)
@@ -95,8 +91,8 @@ pub fn get_token(email: &str, password: &str) -> Result<String, Box<dyn Error>> 
         .send()
         .unwrap();
 
-    let resp = resp.text().unwrap();
-    let resp_json: Value = serde_json::from_str(&resp).unwrap();
+    let resp = resp.text()?;
+    let resp_json: Value = serde_json::from_str(&resp)?;
     let token: String = resp_json["login"]["token"].to_string().replace("\"", "");
 
     Ok(token)
