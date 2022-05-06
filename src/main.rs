@@ -19,10 +19,12 @@ fn main() {
 fn run() -> Result<(), Box<dyn Error>> {
     let matches = app::create_app().get_matches();
 
+    let mut user = config::User::new();
+
     if lib::config_file_exists() {
         match lib::load_config() {
             Ok((e, p, t)) => {
-                let user = config::User {
+                user = config::User {
                     email: e,
                     password: p,
                     token: t,
@@ -32,7 +34,7 @@ fn run() -> Result<(), Box<dyn Error>> {
         }
     } else {
         match lib::config_file_create("<EMAIL>", "<PASSWORD>") {
-            Ok(()) => (),
+            Ok(()) => println!("Log in was a success."),
             Err(_) => eprintln!("Failed to create config file."),
         }
     }
@@ -51,17 +53,21 @@ fn run() -> Result<(), Box<dyn Error>> {
     }
 
     if let Some(_) = matches.subcommand_matches("list") {
-        println!("Printing list!!");
+        match lib::get_machines(&user.token) {
+            Ok(m) => println!("{:?}", m),
+            Err(_) => println!("An error occured while trying to print the machines."),
+        }
     }
 
     if let Some(_) = matches.subcommand_matches("reserve") {
         println!("Reserving machine");
     }
 
-    if let Some(_) = matches.subcommand_matches("whoami") {
-        match lib::get_email() {
-            Ok(s) => println!("You are logged in as: {}", s),
-            Err(_) => println!("An error has occured"),
+    if let Some(ref matches) = matches.subcommand_matches("whoami") {
+        println!("You are logged in as: {}", user.email);
+        if matches.is_present("secrets") {
+            println!("Password: {}", user.password);
+            println!("Token: {}", user.token);
         }
     }
 

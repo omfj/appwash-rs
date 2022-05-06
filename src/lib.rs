@@ -1,6 +1,7 @@
 use ini::Ini;
 use reqwest::header::HeaderMap;
 use serde_json::Value;
+use std::collections::HashMap;
 use std::error::Error;
 use std::fs::File;
 use std::io::LineWriter;
@@ -50,42 +51,29 @@ pub fn load_config() -> Result<(String, String, String), Box<dyn Error>> {
     Ok((email, password, token))
 }
 
-pub fn get_email() -> Result<String, Box<dyn Error>> {
-    let config_path = xdg::BaseDirectories::with_prefix("appwash")
-        .unwrap()
-        .place_config_file("config")?;
+pub fn get_machines(token: &String) -> Result<Value, Box<dyn Error>> {
+    let url = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
+    let user_agent = "appwash-cli v0.1.0";
+    let token = token;
 
-    let config_path = PathBuf::from(config_path);
+    let mut headers = HeaderMap::new();
+    headers.insert("token", token.parse().unwrap());
+    headers.insert("User-Agent", user_agent.parse().unwrap());
+    headers.insert("Referer", "https://appwash.com/".parse().unwrap());
+    headers.insert("language", "NO".parse().unwrap());
+    headers.insert("platform", "appWash".parse().unwrap());
 
-    let config = Ini::load_from_file(config_path)?;
-    let section = config.section(Some("DEFAULT")).unwrap();
+    let mut json: HashMap<String, String> = HashMap::new();
+    json.insert("serviceType".to_string(), "WASHING_MACHINE".to_string());
 
-    Ok(section.get("EMAIL").unwrap().to_string())
+    let client = reqwest::blocking::Client::new();
+    let resp = client.post(url).json(&json).headers(headers).send()?;
+
+    let resp = resp.text().unwrap();
+    let resp_json: Value = serde_json::from_str(&resp)?;
+
+    Ok(resp_json)
 }
-
-// fn get_machines() -> Result<Value, Box<dyn Error>> {
-//     let url = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
-//     let user_agent = "appwash-cli v0.1.0";
-//     let token = account.token.to_owned();
-
-//     let mut headers = HeaderMap::new();
-//     headers.insert("token", token.parse().unwrap());
-//     headers.insert("User-Agent", user_agent.parse().unwrap());
-//     headers.insert("Referer", "https://appwash.com/".parse().unwrap());
-//     headers.insert("language", "NO".parse().unwrap());
-//     headers.insert("platform", "appWash".parse().unwrap());
-
-//     let mut json: HashMap<String, String> = HashMap::new();
-//     json.insert("serviceType".to_string(), "WASHING_MACHINE".to_string());
-
-//     let client = reqwest::blocking::Client::new();
-//     let resp = client.post(url).json(&json).headers(headers).send()?;
-
-//     let resp = resp.text().unwrap();
-//     let resp_json: Value = serde_json::from_str(&resp)?;
-
-//     Ok(resp_json)
-// }
 
 pub fn get_token(email: &str, password: &str) -> Result<String, Box<dyn Error>> {
     // Basic request info

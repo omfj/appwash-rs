@@ -30,7 +30,17 @@ pub fn create_app() -> Command<'static> {
         )
         .subcommand(Command::new("list").about("Lists available machines"))
         .subcommand(Command::new("reserve").about("Reserves a machine"))
-        .subcommand(Command::new("whoami").about("Prints information about the user"));
+        .subcommand(
+            Command::new("whoami")
+                .about("Prints information about the user")
+                .arg(
+                    Arg::new("secrets")
+                        .short('s')
+                        .long("secrets")
+                        .takes_value(false)
+                        .help("Prints you password and token"),
+                ),
+        );
 
     app
 }
