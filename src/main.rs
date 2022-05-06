@@ -1,180 +1,69 @@
-extern crate ini;
-use ini::Ini;
-use reqwest::header::HeaderMap;
-use serde_json::Value;
-use std::collections::HashMap;
-use std::io::Write;
-use std::process::exit;
-use std::fs::File;
-use std::io::LineWriter;
+use std::error::Error;
 
-struct Account {
-    email: String,
-    password: String,
-    token: String,
-}
-
-fn create_config() -> Result<(), Box<dyn std::error::Error>> {
-    let xdg_dirs = xdg::BaseDirectories::with_prefix("appwash").unwrap();
-    let config_path = xdg_dirs.place_config_file("config")
-                                        .expect("Cannot create config file.");
-
-    let config_file = File::create(config_path)?;
-    let mut config_file = LineWriter::new(config_file);
-    config_file.write_all(b"[DEFAULT]\nEMAIL=<appwash email>\nPASSWORD=<appwash password>")?;
-
-    Ok(())
-}
-
-fn get_user_info() -> Result<(String, String, String), Box<dyn std::error::Error>> {
-    let (email, password, token): (String, String, String);
-
-    let xdg_dirs = xdg::BaseDirectories::with_prefix("appwash").unwrap();
-    let config_path = xdg_dirs.find_config_file("config").expect("Could not find config file.");
-
-    let config = Ini::load_from_file(config_path).unwrap();
-    let section = config.section(Some("Account")).unwrap();
-
-    email = section.get("EMAIL").unwrap().trim().to_string();
-    password = section.get("PASSWORD").unwrap().trim().to_string();
-    token = get_token(&email, &password);
-
-    Ok((email, password, token))
-}
-
-fn get_machines(account: &Account) -> Result<Value, Box<dyn std::error::Error>> {
-    let url        = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
-    let user_agent = "appwash-cli v0.1.0";
-    let token      = account.token.to_owned();
-
-    let mut headers = HeaderMap::new();
-    headers.insert("token",      token.parse().unwrap());
-    headers.insert("User-Agent", user_agent.parse().unwrap());
-    headers.insert("Referer", "https://appwash.com/".parse().unwrap());
-    headers.insert("language", "NO".parse().unwrap());
-    headers.insert("platform", "appWash".parse().unwrap());
-
-    let mut json: HashMap<String, String> = HashMap::new();
-    json.insert("serviceType".to_string(), "WASHING_MACHINE".to_string() );
-
-    let client = reqwest::blocking::Client::new();
-    let resp = client
-                .post(url)
-                .json(&json)
-                .headers(headers)
-                .send()?;
-
-    let resp = resp.text().unwrap();
-    let resp_json: Value = serde_json::from_str(&resp)?;
-
-    Ok(resp_json)
-}
-
-fn pretty_machines(account: &Account) {
-
-    // Code in python:
-    //----------------
-    // machine_data: list = get_machines()
-    //
-    // for machine in machine_data:
-    //     machine_id: int = machine["externalId"]
-    //     machine_state: str = machine["state"]
-    //     if machine_state in ["OCCUPIED", "STOPPABLE"]:
-    //         last_session_start: int = machine["lastSessionStart"]
-    //         last_session_start: str = datetime.fromtimestamp(last_session_start).strftime("%Y-%m-%d %H:%M:%S")
-    //
-    //         if machine_state == "STOPPABLE":
-    //             console.print(f"-> {machine_id} - [bold green]{machine_state}[/bold green] - STARTED: {last_session_start}")
-    //         else:
-    //             console.print(f"{machine_id} - {machine_state} - STARTED: {last_session_start}")
-    //     else:
-    //         console.print(f"{machine_id} - {machine_state}")
-}
-
-fn get_token(email: &String, password: &String) -> String {
-    // Basic request info
-    let client = reqwest::blocking::Client::new();
-    let url = "https://www.involtum-services.com/api-rest/login";
-    let user_agent = "appwash-cli v0.1.0";
-
-    // Headers
-    let mut headers = HeaderMap::new();
-    headers.insert("Content-Type", "application/json".parse().unwrap());
-    headers.insert("User-Agent", user_agent.parse().unwrap());
-    headers.insert("language", "en".parse().unwrap());
-    headers.insert("platform", "appWash".parse().unwrap());
-
-    let resp = client
-        .post(url)
-        .headers(headers)
-        .body("{\"email\":\"".to_string() + email + "\",\"password\":\"" + password + "\"}")
-        .send()
-        .unwrap();
-
-    let resp = resp.text().unwrap();
-    let resp_json: Value = serde_json::from_str(&resp).unwrap();
-    let token: String = resp_json["login"]["token"].to_string().replace("\"", "");
-
-    token
-}
-
-fn prompt(prompt: &str) -> String {
-    let mut line = String::new();
-    let now = chrono::Utc::now();
-    let hour_minute = now.format("%H:%M").to_string();
-
-    println!("AppWash-CLI [{}]", hour_minute);
-    print!("{} ", prompt);
-    std::io::stdout().flush().unwrap();
-    std::io::stdin().read_line(&mut line).expect("Error: Could not read a line");
-
-    line.trim().to_string()
-}
-
-fn commands(input: &str, account: &Account) {
-    let command = input.split_whitespace().next().unwrap();
-    // let args = input.split_whitespace().skip(1).collect::<Vec<&str>>();
-
-    match command {
-        "exit" | "e" => exit(1),
-        "whoami" => {
-            println!("You are...");
-            println!("Email: {}", account.email);
-            println!("Password: {}", account.password);
-            println!("Token: {}", account.token);
-        }
-        "list" => println!("{:#?}", get_machines(account).unwrap()),
-        "create-config" => {
-            match create_config() {
-                Ok(()) => { println!("Successfully created config file.") }
-                Err(_) => { println!("An error has occured creating the config file.") },
-            }
-        }
-        _ => println!("Unknown command '{}'.", command),
-    }
-}
+mod app;
+mod config;
+mod lib;
 
 fn main() {
-    println!("Welcome to AppWash CLI\n");
+    let result = run();
+    match result {
+        Ok(()) => {
+            std::process::exit(0);
+        }
+        Err(err) => {
+            eprintln!("Exited with error: {:#}", err);
+        }
+    }
+}
 
-    let (mut email, mut password, mut token): (String, String, String) = (String::new(), String::new(), String::new());
+fn run() -> Result<(), Box<dyn Error>> {
+    let matches = app::create_app().get_matches();
 
-    //(email, password, token) = get_user_info().unwrap();
-
-    match get_user_info() {
-        Ok(acc) => (email, password, token) = acc,
-        Err(_) => println!("Could not load account"),
+    if lib::config_file_exists() {
+        match lib::load_config() {
+            Ok((e, p, t)) => {
+                let user = config::User {
+                    email: e,
+                    password: p,
+                    token: t,
+                };
+            }
+            Err(_) => println!("Failed to load config."),
+        }
+    } else {
+        match lib::config_file_create("<EMAIL>", "<PASSWORD>") {
+            Ok(()) => (),
+            Err(_) => eprintln!("Failed to create config file."),
+        }
     }
 
-    let account: Account = Account {
-        email: email,
-        password: password,
-        token: token,
-    };
-
-    loop {
-        let input = prompt(">>>");
-        commands(&input, &account);
-        println!();
+    // What do for the different commands
+    if let Some(ref matches) = matches.subcommand_matches("login") {
+        if matches.is_present("email") && matches.is_present("password") {
+            lib::config_file_create(
+                matches.value_of("email").to_owned().unwrap(),
+                matches.value_of("password").to_owned().unwrap(),
+            )
+            .unwrap();
+        } else {
+            println!("Failed to update config file. Make sure you provided username and password");
+        }
     }
+
+    if let Some(_) = matches.subcommand_matches("list") {
+        println!("Printing list!!");
+    }
+
+    if let Some(_) = matches.subcommand_matches("reserve") {
+        println!("Reserving machine");
+    }
+
+    if let Some(_) = matches.subcommand_matches("whoami") {
+        match lib::get_email() {
+            Ok(s) => println!("You are logged in as: {}", s),
+            Err(_) => println!("An error has occured"),
+        }
+    }
+
+    Ok(())
 }
