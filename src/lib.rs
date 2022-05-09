@@ -1,6 +1,10 @@
+#![allow(non_snake_case)]
+
+use colored::Colorize;
 use ini::Ini;
 use reqwest::header::HeaderMap;
-use serde_json::Value;
+use serde::{Deserialize, Serialize};
+use serde_json::{json, Value};
 use std::collections::HashMap;
 use std::error::Error;
 use std::fs::File;
@@ -10,6 +14,115 @@ use std::path::PathBuf;
 use std::result::Result;
 
 const USER_AGENT: &str = "appwash-cli v0.1.0";
+
+#[derive(Serialize, Deserialize, Debug)]
+struct LoginResponse {
+    errorCode: u32,
+    errorDescription: String,
+    token_expire_ts: u32,
+    serverTime: u32,
+    activeSessions: Vec<Value>,
+    login: LoginInfo,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct LoginInfo {
+    email: String,
+    username: String,
+    externalId: String,
+    language: String,
+    token: String,
+    offlineAllowed: bool,
+    manageOthers: bool,
+    administrator: bool,
+    viewInvoice: bool,
+    viewTransactionHistory: bool,
+    viewProducts: bool,
+    apiMessagePermission: bool,
+    correctionAllowed: bool,
+    installer: bool,
+    startMultiple: bool,
+    startForOthers: bool,
+    timeForReview: bool,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct BalanceResponse {
+    errorCode: u32,
+    errorDescription: String,
+    token_expire_ts: u32,
+    serverTime: u32,
+    accountId: String,
+    currency: String,
+    balanceCents: u32,
+    balanceDateTime: u32,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct PurchaseHistory {
+    mutationTimestamp: u32,
+    currency: String,
+    mutationCents: u32,
+    balanceCentsBefore: u32,
+    balanceCentsAfter: u32,
+    mutationDescription: String,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct ComponentPriceObject {
+    pub fullPriceString: String,
+    pub priceString: String,
+    pub costCents: u32,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct PricingInfo {
+    pub serviceType: String,
+    pub componentPriceObjects: Vec<ComponentPriceObject>,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct Machines {
+    pub errorCode: u32,
+    pub errorDescription: String,
+    pub token_expire_ts: u32,
+    pub serverTime: u32,
+    pub data: Vec<MachineData>,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct MachineData {
+    pub externalId: String,
+    pub locationId: String,
+    pub location: String,
+    pub locationTopLevelName: String,
+    pub serviceType: String,
+    pub serviceName: String,
+    pub unit: String,
+    pub state: String,
+    pub stateDescription: String,
+    pub requiredFields: Vec<Value>,
+    pub freeFormQuestionInt: Vec<Value>,
+    pub pricing: Vec<PricingInfo>,
+    pub tariffSetName: String,
+    pub gps: Value,
+    pub reservable: String,
+    pub reservations: Vec<Value>,
+    pub blockTimeSeconds: u32,
+    pub timeOfArrivalSeconds: u32,
+    pub checkoutTimeSeconds: u32,
+    pub startWithPredeterminedUsage: bool,
+    // pub optionalName: String,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct HistoryResponse {
+    error_code: u32,
+    error_description: String,
+    token_expire_ts: u32,
+    server_time: u32,
+    data: Vec<PurchaseHistory>,
+}
 
 pub fn config_file_create(email: &str, password: &str) -> Result<(), Box<dyn Error>> {
     let xdg_dirs = xdg::BaseDirectories::with_prefix("appwash")?;
@@ -53,47 +166,123 @@ pub fn load_config() -> Result<(String, String, String), Box<dyn Error>> {
     Ok((email, password, token))
 }
 
-pub fn get_machines(token: &String) -> Result<Value, Box<dyn Error>> {
+pub fn get_machines(token: &String) -> Result<Machines, Box<dyn Error>> {
+    let client = reqwest::blocking::Client::new();
     let url = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
 
-    let mut headers = HeaderMap::new();
-    headers.insert("token", token.parse()?);
-    headers.insert("User-Agent", USER_AGENT.parse()?);
-    headers.insert("language", "NO".parse()?);
-    headers.insert("platform", "appWash".parse()?);
+    let mut headers = get_headers()?;
+    headers.insert("token", token.parse().unwrap());
+    headers.insert("DNT", "1".parse().unwrap());
 
-    let mut json: HashMap<String, String> = HashMap::new();
-    json.insert("serviceType".to_string(), "WASHING_MACHINE".to_string());
+    let mut json = HashMap::new();
+    json.insert("serviceType", "WASHING_MACHINE");
 
+    let machines = client
+        .post(url)
+        .json(&json)
+        .headers(headers)
+        .send()?
+        .json::<Machines>()?;
+
+    Ok(machines)
+}
+
+pub fn get_balance(token: &String) -> Result<(u32, String), Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
-    let resp = client.post(url).json(&json).headers(headers).send()?;
+    let url = "https://www.involtum-services.com/api-rest/account/getprepaid";
 
-    let resp = resp.text()?;
-    let resp_json: Value = serde_json::from_str(&resp)?;
+    let mut headers = get_headers()?;
+    headers.insert("token", token.parse().unwrap());
 
-    Ok(resp_json)
+    let resp = client
+        .get(url)
+        .headers(headers)
+        .send()?
+        .json::<BalanceResponse>()?;
+
+    let balance = resp.balanceCents / 100;
+    let currency = resp.currency;
+
+    Ok((balance, currency))
+}
+
+pub fn stop_machine(machine_id: u32) -> Result<(), Box<dyn Error>> {
+    let client = reqwest::blocking::Client::new();
+    let url = format!(
+        "https://www.involtum-services.com/api-rest/connector/{}/stop",
+        machine_id
+    );
+
+    let headers = get_headers()?;
+
+    let resp = client.post(&url).headers(headers).send()?;
+    let resp_text = resp.text()?;
+    let resp_json: Value = serde_json::from_str(&resp_text)?;
+    let error_code = resp_json["errorCode"].as_i64().unwrap();
+
+    if error_code == 0 {
+        println!("{}", format!("Machine stopped successfully").green());
+    } else {
+        println!(
+            "{}",
+            format!("Something went wrong. Could not stop machine.").red()
+        );
+    }
+
+    Ok(())
+}
+
+pub fn reserve_machine(machine_id: u32) -> Result<(), Box<dyn Error>> {
+    let client = reqwest::blocking::Client::new();
+    let url = format!(
+        "https://www.involtum-services.com/api-rest/connector/{}/start",
+        machine_id
+    );
+
+    let headers = get_headers()?;
+
+    let resp = client.post(&url).headers(headers).send()?;
+    let resp_text = resp.text()?;
+    let resp_json: Value = serde_json::from_str(&resp_text)?;
+    let error_code = resp_json["errorCode"].as_i64().unwrap();
+
+    if error_code == 0 {
+        println!("{}", format!("Machine reserved successfully").green());
+    } else {
+        println!(
+            "{}",
+            format!("Something went wrong. Could not reserve machine.").red()
+        );
+    }
+
+    Ok(())
+}
+
+fn get_headers() -> Result<HeaderMap, Box<dyn Error>> {
+    let mut headers = HeaderMap::new();
+    headers.insert("Content-Type", "application/json".parse().unwrap());
+    headers.insert("User-Agent", USER_AGENT.parse().unwrap());
+    headers.insert("language", "NO".parse().unwrap());
+    headers.insert("platform", "appWash".parse().unwrap());
+    headers.insert("Referer", "https://appwash.com/".parse().unwrap());
+
+    Ok(headers)
 }
 
 pub fn get_token(email: &str, password: &str) -> Result<String, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
     let url = "https://www.involtum-services.com/api-rest/login";
 
-    let mut headers = HeaderMap::new();
-    headers.insert("Content-Type", "application/json".parse()?);
-    headers.insert("User-Agent", USER_AGENT.parse()?);
-    headers.insert("language", "en".parse()?);
-    headers.insert("platform", "appWash".parse()?);
+    let headers = get_headers()?;
 
-    let resp = client
+    let token = client
         .post(url)
         .headers(headers)
-        .body("{\"email\":\"".to_string() + email + "\",\"password\":\"" + password + "\"}")
-        .send()
-        .unwrap();
-
-    let resp = resp.text()?;
-    let resp_json: Value = serde_json::from_str(&resp)?;
-    let token: String = resp_json["login"]["token"].to_string().replace("\"", "");
+        .body(json!({ "email": email, "password": password }).to_string())
+        .send()?
+        .json::<LoginResponse>()?
+        .login
+        .token;
 
     Ok(token)
 }

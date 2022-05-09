@@ -1,6 +1,8 @@
-use std::error::Error;
+#![allow(unused_imports)]
 
+use colored::Colorize;
 use serde_json::Value;
+use std::{collections::HashMap, error::Error};
 
 mod app;
 mod config;
@@ -20,9 +22,9 @@ fn main() {
 
 fn run() -> Result<(), Box<dyn Error>> {
     let matches = app::create_app().get_matches();
-
     let mut user = config::User::new();
 
+    // Load config or create a new one
     if lib::config_file_exists() {
         match lib::load_config() {
             Ok((e, p, t)) => {
@@ -36,12 +38,14 @@ fn run() -> Result<(), Box<dyn Error>> {
         }
     } else {
         match lib::config_file_create("<EMAIL>", "<PASSWORD>") {
-            Ok(()) => println!("Log in was a success."),
+            Ok(()) => println!("Created config file in .config."),
             Err(_) => eprintln!("Failed to create config file."),
         }
     }
 
     // What do for the different commands
+
+    // Command: login
     if let Some(ref matches) = matches.subcommand_matches("login") {
         if matches.is_present("email") && matches.is_present("password") {
             lib::config_file_create(
@@ -54,33 +58,59 @@ fn run() -> Result<(), Box<dyn Error>> {
         }
     }
 
+    // Command: list
     if let Some(_) = matches.subcommand_matches("list") {
         match lib::get_machines(&user.token) {
-            Ok(m) => pretty_machines(m),
-            Err(_) => println!("An error occured while trying to print the machines."),
+            Ok(m) => match pretty_machines(m) {
+                Ok(()) => (),
+                Err(_) => println!("Failed to list machines."),
+            },
+            Err(_) => println!("An error occured trying to get the machines."),
         }
     }
 
-    if let Some(_) = matches.subcommand_matches("stop") {
-        println!("Stopping machine: ",)
+    // Command: balance
+    if let Some(_) = matches.subcommand_matches("balance") {
+        match lib::get_balance(&user.token) {
+            Ok((b, c)) => println!("You balance is: {} {}", format!("{}", b).green(), c),
+            Err(_) => println!("An error occured trying to get your balance."),
+        }
     }
 
+    // Command: stop
+    if let Some(ref matches) = matches.subcommand_matches("stop") {
+        if matches.is_present("machine") {
+            let machine_id = matches.value_of("machine").unwrap().parse().unwrap();
+            lib::stop_machine(machine_id).unwrap()
+        }
+    }
+
+    // Command: reserve
     if let Some(_) = matches.subcommand_matches("reserve") {
         println!("Reserving machine");
     }
 
+    // Command: whoami
     if let Some(ref matches) = matches.subcommand_matches("whoami") {
-        println!("You are logged in as: {}", user.email);
+        println!(
+            "You are logged in as: {}",
+            format!("{}", &user.email).green()
+        );
         if matches.is_present("secrets") {
-            println!("Password: {}", user.password);
-            println!("Token: {}", user.token);
+            println!("Password: {}", format!("{}", &user.password).green());
+            println!("Token: {}", format!("{}", &user.token).green());
         }
     }
 
     Ok(())
 }
 
-fn pretty_machines(json: Value) {
-    let machine_data = &json["data"];
-    println!("{:?}", machine_data)
+fn pretty_machines(machines: lib::Machines) -> Result<(), Box<dyn Error>> {
+    for machine in machines.data {
+        let id = machine.externalId;
+        let state = machine.state;
+        println!("{} - {}", id, state);
+    }
+
+    Ok(())
 }

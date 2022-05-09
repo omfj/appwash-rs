@@ -54,6 +54,7 @@ pub fn create_app() -> Command<'static> {
                         .help("The machine you want to stop"),
                 ),
         )
+        .subcommand(Command::new("balance").about("Prints users balance"))
         .subcommand(
             Command::new("whoami")
                 .about("Prints information about the user")
