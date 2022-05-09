@@ -13,7 +13,7 @@ use std::io::Write;
 use std::path::PathBuf;
 use std::result::Result;
 
-const USER_AGENT: &str = "appwash-cli v0.1.0";
+const USER_AGENT: &str = "appwash-rs v0.1.0";
 
 #[derive(Serialize, Deserialize, Debug)]
 struct LoginResponse {
