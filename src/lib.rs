@@ -137,7 +137,7 @@ pub fn config_file_create(email: &str, password: &str) -> Result<(), Box<dyn Err
 
     let mut config_file = LineWriter::new(config_file);
 
-    writeln!(config_file, "[DEFAULT]")?;
+    writeln!(config_file, "[ACCOUNT]")?;
     writeln!(config_file, "EMAIL={}", email)?;
     writeln!(config_file, "PASSWORD={}", password)?;
 
@@ -162,7 +162,7 @@ pub fn load_config() -> Result<(String, String, String), Box<dyn Error>> {
     let config_path = PathBuf::from(config_path);
 
     let config = Ini::load_from_file(config_path)?;
-    let section = config.section(Some("DEFAULT")).unwrap();
+    let section = config.section(Some("ACCOUNT")).unwrap();
 
     let email = section.get("EMAIL").unwrap().to_string();
     let password = section.get("PASSWORD").unwrap().to_string();
