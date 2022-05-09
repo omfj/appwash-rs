@@ -1,6 +1,5 @@
-#![allow(non_snake_case)]
+#![allow(non_snake_case)] // For JSON deserialization
 
-use colored::Colorize;
 use ini::Ini;
 use reqwest::header::HeaderMap;
 use serde::{Deserialize, Serialize};
@@ -13,7 +12,7 @@ use std::io::Write;
 use std::path::PathBuf;
 use std::result::Result;
 
-const USER_AGENT: &str = "appwash-rs v0.1.0";
+const USER_AGENT: &str = "appwash-rs v1.0";
 
 #[derive(Serialize, Deserialize, Debug)]
 struct LoginResponse {
@@ -44,6 +43,12 @@ struct LoginInfo {
     startMultiple: bool,
     startForOthers: bool,
     timeForReview: bool,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct StopStartResponse {
+    errorCode: u32,
+    errorDescription: String,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -206,56 +211,42 @@ pub fn get_balance(token: &String) -> Result<(u32, String), Box<dyn Error>> {
     Ok((balance, currency))
 }
 
-pub fn stop_machine(machine_id: u32) -> Result<(), Box<dyn Error>> {
+pub fn stop_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
     let url = format!(
         "https://www.involtum-services.com/api-rest/connector/{}/stop",
         machine_id
     );
 
-    let headers = get_headers()?;
+    let mut headers = get_headers()?;
+    headers.insert("token", token.parse().unwrap());
 
-    let resp = client.post(&url).headers(headers).send()?;
-    let resp_text = resp.text()?;
-    let resp_json: Value = serde_json::from_str(&resp_text)?;
-    let error_code = resp_json["errorCode"].as_i64().unwrap();
+    let resp = client
+        .post(&url)
+        .headers(headers)
+        .send()?
+        .json::<StopStartResponse>()?;
 
-    if error_code == 0 {
-        println!("{}", format!("Machine stopped successfully").green());
-    } else {
-        println!(
-            "{}",
-            format!("Something went wrong. Could not stop machine.").red()
-        );
-    }
-
-    Ok(())
+    Ok(resp.errorCode)
 }
 
-pub fn reserve_machine(machine_id: u32) -> Result<(), Box<dyn Error>> {
+pub fn reserve_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
     let url = format!(
         "https://www.involtum-services.com/api-rest/connector/{}/start",
         machine_id
     );
 
-    let headers = get_headers()?;
+    let mut headers = get_headers()?;
+    headers.insert("token", token.parse().unwrap());
 
-    let resp = client.post(&url).headers(headers).send()?;
-    let resp_text = resp.text()?;
-    let resp_json: Value = serde_json::from_str(&resp_text)?;
-    let error_code = resp_json["errorCode"].as_i64().unwrap();
+    let resp = client
+        .post(&url)
+        .headers(headers)
+        .send()?
+        .json::<StopStartResponse>()?;
 
-    if error_code == 0 {
-        println!("{}", format!("Machine reserved successfully").green());
-    } else {
-        println!(
-            "{}",
-            format!("Something went wrong. Could not reserve machine.").red()
-        );
-    }
-
-    Ok(())
+    Ok(resp.errorCode)
 }
 
 fn get_headers() -> Result<HeaderMap, Box<dyn Error>> {

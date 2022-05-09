@@ -1,8 +1,5 @@
-#![allow(unused_imports)]
-
 use colored::Colorize;
-use serde_json::Value;
-use std::{collections::HashMap, error::Error};
+use std::error::Error;
 
 mod app;
 mod config;
@@ -81,13 +78,36 @@ fn run() -> Result<(), Box<dyn Error>> {
     if let Some(ref matches) = matches.subcommand_matches("stop") {
         if matches.is_present("machine") {
             let machine_id = matches.value_of("machine").unwrap().parse().unwrap();
-            lib::stop_machine(machine_id).unwrap()
+
+            match lib::stop_machine(&user.token, machine_id) {
+                Ok(c) => {
+                    if c == 0 {
+                        println!("Machine {} stopped.", machine_id);
+                    } else {
+                        println!("Failed to stop machine {}.", machine_id);
+                    }
+                }
+                Err(_) => println!("Failed to stop machine {}.", machine_id),
+            }
         }
     }
 
     // Command: reserve
     if let Some(_) = matches.subcommand_matches("reserve") {
-        println!("Reserving machine");
+        if matches.is_present("machine") {
+            let machine_id = matches.value_of("machine").unwrap().parse().unwrap();
+
+            match lib::reserve_machine(&user.token, machine_id) {
+                Ok(c) => {
+                    if c == 0 {
+                        println!("Machine {} reserved.", machine_id);
+                    } else {
+                        println!("Failed to reserve machine {}.", machine_id);
+                    }
+                }
+                Err(_) => println!("Failed to reserve machine {}.", machine_id),
+            }
+        }
     }
 
     // Command: whoami
@@ -109,7 +129,13 @@ fn pretty_machines(machines: lib::Machines) -> Result<(), Box<dyn Error>> {
     for machine in machines.data {
         let id = machine.externalId;
         let state = machine.state;
-        println!("{} - {}", id, state);
+
+        match state.as_str() {
+            "AVAILABLE" => println!("{}", format!("{} - {}", id, state).green()),
+            "STOPPABLE" => println!("{}", format!("{} - {}", id, state).yellow().bold()),
+            "FAULTED" => println!("{}", format!("{} - {}", id, state).red().blink()),
+            _ => println!("{}", format!("{} - {}", id, state).yellow()),
+        }
     }
 
     Ok(())

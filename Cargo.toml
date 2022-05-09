@@ -2,7 +2,7 @@
 authors = ["Ole Magnus Johnsen <ole.magnus@me.com>"]
 name = "appwash-cli-rust"
 description = "A command-line utility for AppWash"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 
 [dependencies]
