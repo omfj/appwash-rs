@@ -1,3 +1,4 @@
+use chrono::{prelude::*, Duration};
 use colored::Colorize;
 use std::error::Error;
 
@@ -62,7 +63,7 @@ fn run() -> Result<(), Box<dyn Error>> {
                 Ok(()) => (),
                 Err(_) => println!("Failed to list machines."),
             },
-            Err(_) => println!("An error occured trying to get the machines."),
+            Err(e) => println!("An error occured trying to get the machines. Error: {}", e),
         }
     }
 
@@ -132,7 +133,21 @@ fn pretty_machines(machines: lib::Machines) -> Result<(), Box<dyn Error>> {
 
         match state.as_str() {
             "AVAILABLE" => println!("{}", format!("{} - {}", id, state).green()),
-            "STOPPABLE" => println!("{}", format!("{} - {}", id, state).yellow().bold()),
+            "STOPPABLE" | "OCCUPIED" => {
+                let s = machine.lastSessionStart.unwrap().into();
+                let naive = NaiveDateTime::from_timestamp(s, 0);
+                // from naive to local
+                let local =
+                    Local::now()
+                        .date()
+                        .and_hms(naive.hour(), naive.minute(), naive.second())
+                        + Duration::hours(2); // FROM UTC TO UTC+2 in a bad way must fix
+                let start_time = local.format("%H:%M");
+                println!(
+                    "{}",
+                    format!("{id} - {state} | Started: {start_time}").yellow()
+                );
+            }
             "FAULTED" => println!("{}", format!("{} - {}", id, state).red().blink()),
             _ => println!("{}", format!("{} - {}", id, state).yellow()),
         }

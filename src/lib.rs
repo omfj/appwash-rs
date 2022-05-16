@@ -106,6 +106,7 @@ pub struct MachineData {
     pub unit: String,
     pub state: String,
     pub stateDescription: String,
+    pub lastSessionStart: Option<i64>,
     pub requiredFields: Vec<Value>,
     pub freeFormQuestionInt: Vec<Value>,
     pub pricing: Vec<PricingInfo>,
@@ -117,7 +118,7 @@ pub struct MachineData {
     pub timeOfArrivalSeconds: u32,
     pub checkoutTimeSeconds: u32,
     pub startWithPredeterminedUsage: bool,
-    // pub optionalName: String,
+    pub optionalName: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
