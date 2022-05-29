@@ -17,5 +17,7 @@ This projects is going to be the same as [appwash-cli](https://github.com/omfj/a
 - [ ] Command: history
 - [x] Add start time OCCUPIED and STOPPABLE machines
 - [ ] Better error handling
+- [ ] Manage timezones better
+- [ ] Store token between command usage
 
 Rust is hard, please give me feedback.

@@ -117,6 +117,12 @@ fn run() -> Result<(), Box<dyn Error>> {
             "You are logged in as: {}",
             format!("{}", &user.email).green()
         );
+        if !matches.is_present("secrets") {
+            println!(
+                "Run with {} to see your password and token.",
+                format!("{}", "--secrets").yellow()
+            );
+        }
         if matches.is_present("secrets") {
             println!("Password: {}", format!("{}", &user.password).green());
             println!("Token: {}", format!("{}", &user.token).green());
