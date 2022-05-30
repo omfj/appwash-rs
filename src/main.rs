@@ -2,7 +2,7 @@ use crate::lib::models::{HistoryResponse, Machines};
 use chrono::{prelude::*, Duration};
 use colored::Colorize;
 use std::error::Error;
-use tabled::{Header, Style, Table, Tabled};
+use tabled::{Style, Table, Tabled};
 
 mod app;
 mod config;
