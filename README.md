@@ -14,7 +14,7 @@ This projects is going to be the same as [appwash-cli](https://github.com/omfj/a
 - [x] Command: list
 - [x] Command: start
 - [x] Command: stop
-- [ ] Command: history
+- [x] Command: history
 - [x] Add start time OCCUPIED and STOPPABLE machines
 - [ ] Better error handling
 - [ ] Manage timezones better
