@@ -13,6 +13,7 @@ chrono = "0.4.19"
 xdg = "*"
 colored = "*"
 rust-ini = "0.18"
+tabled = "0.7.0"
 
 [dependencies.clap]
 version = "3.1"

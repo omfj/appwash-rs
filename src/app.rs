@@ -66,7 +66,8 @@ pub fn create_app() -> Command<'static> {
                         .help("Prints you password and token"),
                 ),
         )
-        .subcommand(Command::new("list").about("Lists available machines"));
+        .subcommand(Command::new("list").about("Lists available machines"))
+        .subcommand(Command::new("history").about("Lists your activity and history"));
 
     app
 }

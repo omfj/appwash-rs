@@ -1,6 +1,8 @@
+use crate::lib::models::{HistoryResponse, Machines};
 use chrono::{prelude::*, Duration};
 use colored::Colorize;
 use std::error::Error;
+use tabled::{Header, Style, Table, Tabled};
 
 mod app;
 mod config;
@@ -93,6 +95,17 @@ fn run() -> Result<(), Box<dyn Error>> {
         }
     }
 
+    // Command: history
+    if let Some(_) = matches.subcommand_matches("history") {
+        match lib::get_history(&user.token) {
+            Ok(m) => match pretty_history(m) {
+                Ok(()) => (),
+                Err(_) => println!("{}", format!("Failed to list history.").red()),
+            },
+            Err(_) => println!("{}", format!("Failed to get history.").red()),
+        }
+    }
+
     // Command: reserve
     if let Some(_) = matches.subcommand_matches("reserve") {
         if matches.is_present("machine") {
@@ -132,7 +145,7 @@ fn run() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-fn pretty_machines(machines: lib::Machines) -> Result<(), Box<dyn Error>> {
+fn pretty_machines(machines: Machines) -> Result<(), Box<dyn Error>> {
     for machine in machines.data {
         let id = machine.externalId;
         let state = machine.state;
@@ -158,6 +171,49 @@ fn pretty_machines(machines: lib::Machines) -> Result<(), Box<dyn Error>> {
             _ => println!("{}", format!("{} - {}", id, state).yellow()),
         }
     }
+
+    Ok(())
+}
+
+#[derive(Tabled)]
+struct Purchases {
+    description: String,
+    date: String,
+    amount: String,
+    balance: String,
+}
+
+fn pretty_history(machines: HistoryResponse) -> Result<(), Box<dyn Error>> {
+    let mut purchases: Vec<Purchases> = Vec::new();
+
+    for purchase in machines.data {
+        let _type = purchase.serviceType;
+        let description = purchase.mutationDescription;
+        let currency = purchase.currency;
+        let amount = purchase.mutationCents / 100;
+        let balance = purchase.balanceCentsAfter / 100;
+        let time = {
+            let naive = NaiveDateTime::from_timestamp(purchase.mutationTimestamp as i64, 0);
+            // from naive to local
+            let local = Local::now()
+                .date()
+                .and_hms(naive.hour(), naive.minute(), naive.second())
+                + Duration::hours(2); // FROM UTC TO UTC+2 in a bad way must fix
+            let start_time = local.format("%H:%M");
+            start_time.to_string()
+        };
+
+        purchases.push(Purchases {
+            description: description,
+            date: time,
+            amount: format!("{} {}", amount, currency),
+            balance: format!("{} {}", balance, currency),
+        });
+    }
+
+    let table = Table::new(purchases).with(Style::modern()).to_string();
+
+    println!("{}", table);
 
     Ok(())
 }

@@ -1,9 +1,9 @@
 #![allow(non_snake_case)] // For JSON deserialization
+pub mod models;
 
 use ini::Ini;
 use reqwest::header::HeaderMap;
-use serde::{Deserialize, Serialize};
-use serde_json::{json, Value};
+use serde_json::json;
 use std::collections::HashMap;
 use std::error::Error;
 use std::fs::File;
@@ -12,123 +12,10 @@ use std::io::Write;
 use std::path::PathBuf;
 use std::result::Result;
 
+use self::models::HistoryResponse;
+use self::models::{BalanceResponse, LoginResponse, Machines, StopStartResponse};
+
 const USER_AGENT: &str = "appwash-rs v1.0";
-
-#[derive(Serialize, Deserialize, Debug)]
-struct LoginResponse {
-    errorCode: u32,
-    errorDescription: String,
-    token_expire_ts: u32,
-    serverTime: u32,
-    activeSessions: Vec<Value>,
-    login: LoginInfo,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct LoginInfo {
-    email: String,
-    username: String,
-    externalId: String,
-    language: String,
-    token: String,
-    offlineAllowed: bool,
-    manageOthers: bool,
-    administrator: bool,
-    viewInvoice: bool,
-    viewTransactionHistory: bool,
-    viewProducts: bool,
-    apiMessagePermission: bool,
-    correctionAllowed: bool,
-    installer: bool,
-    startMultiple: bool,
-    startForOthers: bool,
-    timeForReview: bool,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct StopStartResponse {
-    errorCode: u32,
-    errorDescription: String,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct BalanceResponse {
-    errorCode: u32,
-    errorDescription: String,
-    token_expire_ts: u32,
-    serverTime: u32,
-    accountId: String,
-    currency: String,
-    balanceCents: u32,
-    balanceDateTime: u32,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct PurchaseHistory {
-    mutationTimestamp: u32,
-    currency: String,
-    mutationCents: u32,
-    balanceCentsBefore: u32,
-    balanceCentsAfter: u32,
-    mutationDescription: String,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-pub struct ComponentPriceObject {
-    pub fullPriceString: String,
-    pub priceString: String,
-    pub costCents: u32,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-pub struct PricingInfo {
-    pub serviceType: String,
-    pub componentPriceObjects: Vec<ComponentPriceObject>,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-pub struct Machines {
-    pub errorCode: u32,
-    pub errorDescription: String,
-    pub token_expire_ts: u32,
-    pub serverTime: u32,
-    pub data: Vec<MachineData>,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-pub struct MachineData {
-    pub externalId: String,
-    pub locationId: String,
-    pub location: String,
-    pub locationTopLevelName: String,
-    pub serviceType: String,
-    pub serviceName: String,
-    pub unit: String,
-    pub state: String,
-    pub stateDescription: String,
-    pub lastSessionStart: Option<i64>,
-    pub requiredFields: Vec<Value>,
-    pub freeFormQuestionInt: Vec<Value>,
-    pub pricing: Vec<PricingInfo>,
-    pub tariffSetName: String,
-    pub gps: Value,
-    pub reservable: String,
-    pub reservations: Vec<Value>,
-    pub blockTimeSeconds: u32,
-    pub timeOfArrivalSeconds: u32,
-    pub checkoutTimeSeconds: u32,
-    pub startWithPredeterminedUsage: bool,
-    pub optionalName: Option<String>,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct HistoryResponse {
-    error_code: u32,
-    error_description: String,
-    token_expire_ts: u32,
-    server_time: u32,
-    data: Vec<PurchaseHistory>,
-}
 
 pub fn config_file_create(email: &str, password: &str) -> Result<(), Box<dyn Error>> {
     let xdg_dirs = xdg::BaseDirectories::with_prefix("appwash")?;
@@ -229,6 +116,22 @@ pub fn stop_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn Erro
         .json::<StopStartResponse>()?;
 
     Ok(resp.errorCode)
+}
+
+pub fn get_history(token: &String) -> Result<HistoryResponse, Box<dyn Error>> {
+    let client = reqwest::blocking::Client::new();
+    let url = "https://www.involtum-services.com/api-rest/account/getprepaidmutations";
+
+    let mut headers = get_headers()?;
+    headers.insert("token", token.parse().unwrap());
+
+    let resp = client
+        .get(url)
+        .headers(headers)
+        .send()?
+        .json::<HistoryResponse>()?;
+
+    Ok(resp)
 }
 
 pub fn reserve_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn Error>> {
