@@ -6,18 +6,12 @@ This projects is going to be the same as [appwash-cli](https://github.com/omfj/a
 
 ## TODO
 
-- [x] Set up clap
-- [x] Command: login
-- [x] Command: whoami
-- [x] Load config on start
-- [x] Command: balance
-- [x] Command: list
-- [x] Command: start
-- [x] Command: stop
-- [x] Command: history
-- [x] Add start time OCCUPIED and STOPPABLE machines
-- [ ] Better error handling
-- [ ] Manage timezones better
-- [ ] Store token between command usage
+- Fix command: reserve
+- Fix command: stop
+- Pretty output: list
+- Pretty output: history
+- Better error handling
+- Manage timezones better
+- Store token between command usage
 
 Rust is hard, please give me feedback.

@@ -33,12 +33,9 @@ pub fn create_app() -> Command<'static> {
                 .about("Reserves a machine")
                 .arg_required_else_help(true)
                 .arg(
-                    Arg::new("machine")
-                        .short('m')
-                        .long("machine")
-                        .takes_value(true)
+                    Arg::new("id")
                         .required(true)
-                        .help("The machine you want to reserve"),
+                        .help("ID of the machine you want to reserve"),
                 ),
         )
         .subcommand(
@@ -46,12 +43,9 @@ pub fn create_app() -> Command<'static> {
                 .about("Stops a machine")
                 .arg_required_else_help(true)
                 .arg(
-                    Arg::new("machine")
-                        .short('m')
-                        .long("machine")
-                        .takes_value(true)
+                    Arg::new("id")
                         .required(true)
-                        .help("The machine you want to stop"),
+                        .help("ID of the machine you want to stop"),
                 ),
         )
         .subcommand(Command::new("balance").about("Prints users balance"))
@@ -64,6 +58,15 @@ pub fn create_app() -> Command<'static> {
                         .long("secrets")
                         .takes_value(false)
                         .help("Prints you password and token"),
+                ),
+        )
+        .subcommand(
+            Command::new("location")
+                .about("Get information about your location")
+                .subcommand(
+                    Command::new("change")
+                        .arg(Arg::new("location").required(true).help("Location ID"))
+                        .about("Change to another location"),
                 ),
         )
         .subcommand(Command::new("list").about("Lists available machines"))

@@ -1,7 +1,7 @@
 [package]
-authors = ["Ole Magnus Johnsen <ole.magnus@me.com>"]
-name = "appwash-cli-rust"
-description = "A command-line utility for AppWash"
+authors = ["Ole Magnus Johnsen <hei@omfj.no>"]
+name = "appwash-cli"
+description = "A command-line interface for Miele appWash"
 version = "1.0.0"
 edition = "2021"
 

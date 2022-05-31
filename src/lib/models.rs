@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
@@ -33,9 +35,22 @@ pub struct LoginInfo {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct StopStartResponse {
+pub struct ReserveStopResponse {
     pub errorCode: u32,
     pub errorDescription: String,
+    pub token_expire_ts: u32,
+    pub serverTime: u32,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct ReserveStopRequestData {
+    pub objectId: Option<u32>,
+    pub objectLength: Option<u32>,
+    pub objectName: Option<String>,
+    pub nrOfPersons: Option<u32>,
+    pub freeFormQuestionValue: Option<String>,
+    pub comment: Option<String>,
+    pub sourceChannel: String,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -64,12 +79,12 @@ pub struct PricingInfo {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Machines {
+pub struct Response<T> {
     pub errorCode: u32,
     pub errorDescription: String,
     pub token_expire_ts: u32,
     pub serverTime: u32,
-    pub data: Vec<MachineData>,
+    pub data: T,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -99,7 +114,7 @@ pub struct MachineData {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct PurchaseHistory {
+pub struct History {
     pub mutationTimestamp: u32,
     pub currency: String,
     pub mutationCents: i32,
@@ -110,10 +125,27 @@ pub struct PurchaseHistory {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct HistoryResponse {
-    pub errorCode: u32,
-    pub errorDescription: String,
-    pub token_expire_ts: u32,
-    pub serverTime: u32,
-    pub data: Vec<PurchaseHistory>,
+pub struct LocationTypeObject {
+    #[serde(rename(deserialize = "type", serialize = "_type"))]
+    pub _type: String,
+    pub name: String,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct LocationInfo {
+    pub name: String,
+    pub externalId: String,
+    pub gps: HashMap<String, f64>,
+    pub locationTypeV2: String,
+    pub locationTypeObject: LocationTypeObject,
+    pub locationStatus: String,
+    pub durationRequired: bool,
+    pub knownCommunicationIssues: bool,
+    pub services: Vec<Value>,
+    pub pricing: Vec<Value>,
+    pub products: Vec<Value>,
+    pub childLocations: Vec<Value>,
+    pub maxDaysInAdvance: u32,
+    pub reservedType: String,
+    pub serviceTypes: Vec<Value>,
 }

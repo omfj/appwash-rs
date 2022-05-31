@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "appwash-cli-rust"
+name = "appwash-cli"
 version = "1.0.0"
 dependencies = [
  "chrono",

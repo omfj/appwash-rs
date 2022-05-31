@@ -4,6 +4,7 @@ pub struct User {
     pub email: String,
     pub password: String,
     pub token: String,
+    pub location: u32,
     // pub config: String,
 }
 
@@ -13,6 +14,7 @@ impl User {
             email: String::new(),
             password: String::new(),
             token: String::new(),
+            location: 0,
             // pub config: String,
         }
     }

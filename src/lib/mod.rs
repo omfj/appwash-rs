@@ -1,5 +1,6 @@
 #![allow(non_snake_case)] // For JSON deserialization
 pub mod models;
+pub mod pretty;
 
 use ini::Ini;
 use reqwest::header::HeaderMap;
@@ -12,8 +13,10 @@ use std::io::Write;
 use std::path::PathBuf;
 use std::result::Result;
 
-use self::models::HistoryResponse;
-use self::models::{BalanceResponse, LoginResponse, Machines, StopStartResponse};
+use self::models::LocationInfo;
+use self::models::{
+    BalanceResponse, History, LoginResponse, MachineData, ReserveStopResponse, Response,
+};
 
 const USER_AGENT: &str = "appwash-rs v1.0";
 
@@ -28,6 +31,22 @@ pub fn config_file_create(email: &str, password: &str) -> Result<(), Box<dyn Err
     writeln!(config_file, "[ACCOUNT]")?;
     writeln!(config_file, "EMAIL={}", email)?;
     writeln!(config_file, "PASSWORD={}", password)?;
+    writeln!(config_file, "LOCATION={}", 0)?;
+
+    Ok(())
+}
+
+pub fn change_location(location: u32) -> Result<(), Box<dyn Error>> {
+    let xdg_dirs = xdg::BaseDirectories::with_prefix("appwash")?;
+    let config_path = xdg_dirs.place_config_file("config")?;
+
+    let mut config = Ini::load_from_file(config_path.clone())?;
+
+    config
+        .with_section(Some("ACCOUNT"))
+        .set("LOCATION", &location.to_string());
+
+    config.write_to_file(config_path)?;
 
     Ok(())
 }
@@ -42,7 +61,7 @@ pub fn config_file_exists() -> bool {
     config_path
 }
 
-pub fn load_config() -> Result<(String, String, String), Box<dyn Error>> {
+pub fn load_config() -> Result<(String, String, u32, String), Box<dyn Error>> {
     let config_path = xdg::BaseDirectories::with_prefix("appwash")
         .unwrap()
         .place_config_file("config")?;
@@ -52,16 +71,37 @@ pub fn load_config() -> Result<(String, String, String), Box<dyn Error>> {
     let config = Ini::load_from_file(config_path)?;
     let section = config.section(Some("ACCOUNT")).unwrap();
 
-    let email = section.get("EMAIL").unwrap().to_string();
-    let password = section.get("PASSWORD").unwrap().to_string();
+    let email = section
+        .get("EMAIL")
+        .expect(
+            "Failed to load config file. Make sure you provided username, password and location.",
+        )
+        .to_string();
+    let password = section
+        .get("PASSWORD")
+        .expect(
+            "Failed to load config file. Make sure you provided username, password and location.",
+        )
+        .to_string();
+    let location = section
+        .get("LOCATION")
+        .expect(
+            "Failed to load config file. Make sure you provided username, password and location.",
+        )
+        .parse::<u32>()
+        .expect("Failed to parse location.");
     let token = get_token(&email, &password)?;
 
-    Ok((email, password, token))
+    Ok((email, password, location, token))
 }
 
-pub fn get_machines(token: &String) -> Result<Machines, Box<dyn Error>> {
+pub fn get_machines(
+    token: &String,
+    location: &u32,
+) -> Result<Response<Vec<MachineData>>, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
-    let url = "https://www.involtum-services.com/api-rest/location/9944/connectorsv2";
+    let url =
+        format!("https://www.involtum-services.com/api-rest/location/{location}/connectorsv2");
 
     let mut headers = get_headers()?;
     headers.insert("token", token.parse().unwrap());
@@ -71,13 +111,35 @@ pub fn get_machines(token: &String) -> Result<Machines, Box<dyn Error>> {
     json.insert("serviceType", "WASHING_MACHINE");
 
     let machines = client
-        .post(url)
+        .post(&url)
         .json(&json)
         .headers(headers)
         .send()?
-        .json::<Machines>()?;
+        .json::<Response<Vec<MachineData>>>()?;
 
     Ok(machines)
+}
+
+pub fn get_location_info(
+    token: &String,
+    location: &u32,
+) -> Result<Response<LocationInfo>, Box<dyn Error>> {
+    let client = reqwest::blocking::Client::new();
+    let url = format!(
+        "https://www.involtum-services.com/api-rest/locations/split/{}",
+        location
+    );
+
+    let mut headers = get_headers()?;
+    headers.insert("token", token.parse().unwrap());
+
+    let location_info = client
+        .get(&url)
+        .headers(headers)
+        .send()?
+        .json::<Response<LocationInfo>>()?;
+
+    Ok(location_info)
 }
 
 pub fn get_balance(token: &String) -> Result<(u32, String), Box<dyn Error>> {
@@ -99,12 +161,12 @@ pub fn get_balance(token: &String) -> Result<(u32, String), Box<dyn Error>> {
     Ok((balance, currency))
 }
 
-pub fn stop_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn Error>> {
+pub fn stop_machine(
+    token: &String,
+    machine_id: &u32,
+) -> Result<ReserveStopResponse, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
-    let url = format!(
-        "https://www.involtum-services.com/api-rest/connector/{}/stop",
-        machine_id
-    );
+    let url = format!("https://www.involtum-services.com/api-rest/connector/{machine_id}/stop");
 
     let mut headers = get_headers()?;
     headers.insert("token", token.parse().unwrap());
@@ -113,12 +175,12 @@ pub fn stop_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn Erro
         .post(&url)
         .headers(headers)
         .send()?
-        .json::<StopStartResponse>()?;
+        .json::<ReserveStopResponse>()?;
 
-    Ok(resp.errorCode)
+    Ok(resp)
 }
 
-pub fn get_history(token: &String) -> Result<HistoryResponse, Box<dyn Error>> {
+pub fn get_history(token: &String) -> Result<Response<Vec<History>>, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
     let url = "https://www.involtum-services.com/api-rest/account/getprepaidmutations";
 
@@ -129,12 +191,15 @@ pub fn get_history(token: &String) -> Result<HistoryResponse, Box<dyn Error>> {
         .get(url)
         .headers(headers)
         .send()?
-        .json::<HistoryResponse>()?;
+        .json::<Response<Vec<History>>>()?;
 
     Ok(resp)
 }
 
-pub fn reserve_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn Error>> {
+pub fn reserve_machine(
+    token: &String,
+    machine_id: &u32,
+) -> Result<ReserveStopResponse, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
     let url = format!(
         "https://www.involtum-services.com/api-rest/connector/{}/start",
@@ -148,9 +213,9 @@ pub fn reserve_machine(token: &String, machine_id: u32) -> Result<u32, Box<dyn E
         .post(&url)
         .headers(headers)
         .send()?
-        .json::<StopStartResponse>()?;
+        .json::<ReserveStopResponse>()?;
 
-    Ok(resp.errorCode)
+    Ok(resp)
 }
 
 fn get_headers() -> Result<HeaderMap, Box<dyn Error>> {
