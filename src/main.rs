@@ -169,21 +169,43 @@ fn run() -> Result<(), Box<dyn Error>> {
         }
     }
 
-    // Command: place
-    if let Some(ref matches) = matches.subcommand_matches("location") {
-        if let Some(ref matches) = matches.subcommand_matches("change") {
-            let new_location = matches.value_of("location").unwrap().parse().unwrap();
-            match config::change_location(new_location) {
+    // Command: location
+    if let Some(_) = matches.subcommand_matches("location") {
+        match api::get_location_info(&user.token, &user.location) {
+            Ok(info) => match format::location_info(info.data) {
+                Ok(()) => (),
+                Err(_) => println!("{}", format!("Failed to list location info.").red()),
+            },
+            Err(_) => println!("{}", format!("Failed to get location info.").red()),
+        }
+    }
+
+    // Command: change
+    if let Some(ref matches) = matches.subcommand_matches("change") {
+        // Subcommand: email
+        if let Some(ref matches) = matches.subcommand_matches("email") {
+            let new_email = matches.value_of("email").unwrap();
+            match config::change_config("EMAIL", new_email) {
+                Ok(()) => println!("{}", format!("Email changed").green()),
+                Err(_) => println!("{}", format!("Failed to change email.").red()),
+            }
+        }
+
+        // Subcommand: password
+        if let Some(ref matches) = matches.subcommand_matches("password") {
+            let new_password = matches.value_of("password").unwrap();
+            match config::change_config("PASSWORD", new_password) {
+                Ok(()) => println!("{}", format!("Password changed").green()),
+                Err(_) => println!("{}", format!("Failed to change password.").red()),
+            }
+        }
+
+        // Subcommand: location
+        if let Some(ref matches) = matches.subcommand_matches("location") {
+            let new_location = matches.value_of("location").unwrap();
+            match config::change_config("LOCATION", new_location) {
                 Ok(()) => println!("{}", format!("Location changed.").green()),
                 Err(_) => println!("{}", format!("Failed to change location.").red()),
-            }
-        } else {
-            match api::get_location_info(&user.token, &user.location) {
-                Ok(info) => match format::location_info(info.data) {
-                    Ok(()) => (),
-                    Err(_) => println!("{}", format!("Failed to list location info.").red()),
-                },
-                Err(_) => println!("{}", format!("Failed to get location info.").red()),
             }
         }
     }

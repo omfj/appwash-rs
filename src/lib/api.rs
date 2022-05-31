@@ -3,7 +3,7 @@ use super::models::{
     BalanceResponse, History, LoginResponse, MachineData, ReserveStopResponse, Response,
 };
 use reqwest::header::HeaderMap;
-use serde_json::json;
+use serde_json::{json, Value};
 use std::collections::HashMap;
 use std::error::Error;
 
@@ -82,9 +82,20 @@ pub fn stop_machine(
     let mut headers = get_headers()?;
     headers.insert("token", token.parse().unwrap());
 
+    let map = json!({
+        "objectId": null,
+        "objectLength": null,
+        "objectName": null,
+        "nrOfPersons": null,
+        "freeFormQuestionValue": null,
+        "comment": null,
+        "sourceChannel": "WEBSITE"
+    });
+
     let resp = client
         .post(&url)
         .headers(headers)
+        .json(&map)
         .send()?
         .json::<ReserveStopResponse>()?;
 
@@ -120,9 +131,20 @@ pub fn reserve_machine(
     let mut headers = get_headers()?;
     headers.insert("token", token.parse().unwrap());
 
+    let map = json!({
+        "objectId": null,
+        "objectLength": null,
+        "objectName": null,
+        "nrOfPersons": null,
+        "freeFormQuestionValue": null,
+        "comment": null,
+        "sourceChannel": "WEBSITE"
+    });
+
     let resp = client
         .post(&url)
         .headers(headers)
+        .json(&map)
         .send()?
         .json::<ReserveStopResponse>()?;
 

@@ -44,17 +44,6 @@ pub struct ReserveStopResponse {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct ReserveStopRequestData {
-    pub objectId: Option<u32>,
-    pub objectLength: Option<u32>,
-    pub objectName: Option<String>,
-    pub nrOfPersons: Option<u32>,
-    pub freeFormQuestionValue: Option<String>,
-    pub comment: Option<String>,
-    pub sourceChannel: String,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
 pub struct BalanceResponse {
     pub errorCode: u32,
     pub errorDescription: String,

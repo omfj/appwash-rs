@@ -53,8 +53,6 @@ To remove the binary from your system run `make clean` when inside of the folder
 
 - Fix command: reserve
 - Fix command: stop
-- Pretty output: list
-- Pretty output: history
 - Better error handling
 - Manage timezones better
 - Store token between command usage

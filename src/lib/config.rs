@@ -25,15 +25,21 @@ pub fn config_file_create(email: &str, password: &str) -> Result<(), Box<dyn Err
     Ok(())
 }
 
-pub fn change_location(location: u32) -> Result<(), Box<dyn Error>> {
+pub fn change_config(field: &str, value: &str) -> Result<(), Box<dyn Error>> {
     let xdg_dirs = xdg::BaseDirectories::with_prefix("appwash")?;
     let config_path = xdg_dirs.place_config_file("config")?;
 
     let mut config = Ini::load_from_file(config_path.clone())?;
 
-    config
-        .with_section(Some("ACCOUNT"))
-        .set("LOCATION", &location.to_string());
+    match field {
+        "EMAIL" => config.with_section(Some("ACCOUNT")).set("EMAIL", value),
+        "PASSWORD" => config.with_section(Some("ACCOUNT")).set("PASSWORD", value),
+        "LOCATION" => config.with_section(Some("ACCOUNT")).set("LOCATION", value),
+        _ => {
+            println!("Failed to change config. Make sure you provided a valid field.");
+            return Ok(());
+        }
+    };
 
     config.write_to_file(config_path)?;
 

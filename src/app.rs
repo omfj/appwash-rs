@@ -61,14 +61,29 @@ pub fn create_app() -> Command<'static> {
                 ),
         )
         .subcommand(
-            Command::new("location")
-                .about("Get information about your location")
+            Command::new("change")
                 .subcommand(
-                    Command::new("change")
-                        .arg(Arg::new("location").required(true).help("Location ID"))
-                        .about("Change to another location"),
-                ),
+                    Command::new("email")
+                        .about("Changes your email")
+                        .arg(Arg::new("email").required(true).help("Your new email")),
+                )
+                .subcommand(
+                    Command::new("password").about("Changes your password").arg(
+                        Arg::new("password")
+                            .required(true)
+                            .help("Your new password"),
+                    ),
+                )
+                .subcommand(
+                    Command::new("location").about("Changes your location").arg(
+                        Arg::new("location")
+                            .required(true)
+                            .help("Your new location"),
+                    ),
+                )
+                .about("Change specified field in your config"),
         )
+        .subcommand(Command::new("location").about("Get information about your location"))
         .subcommand(Command::new("list").about("Lists available machines"))
         .subcommand(Command::new("history").about("Lists your activity and history"));
 
