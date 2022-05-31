@@ -1,10 +1,10 @@
-use crate::lib::pretty;
+use crate::lib::{api, config, format};
 use colored::Colorize;
 use std::error::Error;
 
 mod app;
-mod config;
 mod lib;
+mod user;
 
 fn main() {
     let result = run();
@@ -20,13 +20,13 @@ fn main() {
 
 fn run() -> Result<(), Box<dyn Error>> {
     let matches = app::create_app().get_matches();
-    let mut user = config::User::new();
+    let mut user = user::User::new();
 
     // Load config or create a new one
-    if lib::config_file_exists() {
-        match lib::load_config() {
+    if config::config_file_exists() {
+        match config::load_config() {
             Ok((email, password, location, token)) => {
-                user = config::User {
+                user = user::User {
                     email,
                     password,
                     token,
@@ -38,7 +38,7 @@ fn run() -> Result<(), Box<dyn Error>> {
             }
         }
     } else {
-        match lib::config_file_create("<EMAIL>", "<PASSWORD>") {
+        match config::config_file_create("<EMAIL>", "<PASSWORD>") {
             Ok(()) => println!("Created config file in .config."),
             Err(_) => eprintln!("Failed to create config file."),
         }
@@ -49,7 +49,7 @@ fn run() -> Result<(), Box<dyn Error>> {
     // Command: login
     if let Some(ref matches) = matches.subcommand_matches("login") {
         if matches.is_present("email") && matches.is_present("password") {
-            lib::config_file_create(
+            config::config_file_create(
                 matches.value_of("email").to_owned().unwrap(),
                 matches.value_of("password").to_owned().unwrap(),
             )
@@ -61,8 +61,8 @@ fn run() -> Result<(), Box<dyn Error>> {
 
     // Command: list
     if let Some(_) = matches.subcommand_matches("list") {
-        match lib::get_machines(&user.token, &user.location) {
-            Ok(machines) => match pretty::machines(machines, &user.location, &user.token) {
+        match api::get_machines(&user.token, &user.location) {
+            Ok(machines) => match format::machines(machines, &user.location, &user.token) {
                 Ok(()) => (),
                 Err(_) => println!("Failed to list machines."),
             },
@@ -72,7 +72,7 @@ fn run() -> Result<(), Box<dyn Error>> {
 
     // Command: balance
     if let Some(_) = matches.subcommand_matches("balance") {
-        match lib::get_balance(&user.token) {
+        match api::get_balance(&user.token) {
             Ok((b, c)) => println!("You balance is: {} {}", format!("{}", b).green(), c),
             Err(_) => println!("An error occured trying to get your balance."),
         }
@@ -82,7 +82,7 @@ fn run() -> Result<(), Box<dyn Error>> {
     if let Some(ref matches) = matches.subcommand_matches("stop") {
         let machine_id = matches.value_of("id").unwrap().parse().unwrap();
 
-        match lib::stop_machine(&user.token, &machine_id) {
+        match api::stop_machine(&user.token, &machine_id) {
             Ok(resp) => {
                 let status_code = resp.errorCode;
                 if status_code == 0 {
@@ -111,7 +111,7 @@ fn run() -> Result<(), Box<dyn Error>> {
     if let Some(ref matches) = matches.subcommand_matches("reserve") {
         let machine_id = matches.value_of("id").unwrap().parse().unwrap();
 
-        match lib::reserve_machine(&user.token, &machine_id) {
+        match api::reserve_machine(&user.token, &machine_id) {
             Ok(resp) => {
                 let status_code = resp.errorCode;
                 if status_code == 0 {
@@ -138,8 +138,8 @@ fn run() -> Result<(), Box<dyn Error>> {
 
     // Command: history
     if let Some(_) = matches.subcommand_matches("history") {
-        match lib::get_history(&user.token) {
-            Ok(m) => match pretty::history(m) {
+        match api::get_history(&user.token) {
+            Ok(m) => match format::history(m) {
                 Ok(()) => (),
                 Err(_) => println!("{}", format!("Failed to list history.").red()),
             },
@@ -173,13 +173,13 @@ fn run() -> Result<(), Box<dyn Error>> {
     if let Some(ref matches) = matches.subcommand_matches("location") {
         if let Some(ref matches) = matches.subcommand_matches("change") {
             let new_location = matches.value_of("location").unwrap().parse().unwrap();
-            match lib::change_location(new_location) {
+            match config::change_location(new_location) {
                 Ok(()) => println!("{}", format!("Location changed.").green()),
                 Err(_) => println!("{}", format!("Failed to change location.").red()),
             }
         } else {
-            match lib::get_location_info(&user.token, &user.location) {
-                Ok(info) => match pretty::location_info(info.data) {
+            match api::get_location_info(&user.token, &user.location) {
+                Ok(info) => match format::location_info(info.data) {
                     Ok(()) => (),
                     Err(_) => println!("{}", format!("Failed to list location info.").red()),
                 },

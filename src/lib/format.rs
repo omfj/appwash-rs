@@ -4,7 +4,7 @@ use chrono::{Duration, NaiveDateTime};
 use colored::Colorize;
 use tabled::{Style, Table, Tabled};
 
-use crate::lib::get_location_info;
+use crate::lib::api;
 
 use super::models::{History, LocationInfo, MachineData, Response};
 
@@ -21,7 +21,7 @@ pub fn machines(
     location: &u32,
     token: &String,
 ) -> Result<(), Box<dyn Error>> {
-    let location_info = get_location_info(token, location)?;
+    let location_info = api::get_location_info(token, location)?;
     println!(
         "{}",
         format!("{}\n", location_info.data.name).green().underline()
