@@ -4,6 +4,8 @@ use chrono::{Duration, NaiveDateTime};
 use colored::Colorize;
 use tabled::{Style, Table, Tabled};
 
+use crate::lib::get_location_info;
+
 use super::models::{History, LocationInfo, MachineData, Response};
 
 #[derive(Tabled)]
@@ -14,7 +16,17 @@ struct Purchases {
     balance: String,
 }
 
-pub fn machines(machines: Response<Vec<MachineData>>) -> Result<(), Box<dyn Error>> {
+pub fn machines(
+    machines: Response<Vec<MachineData>>,
+    location: &u32,
+    token: &String,
+) -> Result<(), Box<dyn Error>> {
+    let location_info = get_location_info(token, location)?;
+    println!(
+        "{}",
+        format!("{}\n", location_info.data.name).green().underline()
+    );
+
     println!("{:7} {}", "ID".green().bold(), "Status".green().bold());
     for machine in machines.data {
         let id = machine.externalId;

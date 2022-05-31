@@ -62,7 +62,7 @@ fn run() -> Result<(), Box<dyn Error>> {
     // Command: list
     if let Some(_) = matches.subcommand_matches("list") {
         match lib::get_machines(&user.token, &user.location) {
-            Ok(m) => match pretty::machines(m) {
+            Ok(machines) => match pretty::machines(machines, &user.location, &user.token) {
                 Ok(()) => (),
                 Err(_) => println!("Failed to list machines."),
             },

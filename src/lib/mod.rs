@@ -125,10 +125,7 @@ pub fn get_location_info(
     location: &u32,
 ) -> Result<Response<LocationInfo>, Box<dyn Error>> {
     let client = reqwest::blocking::Client::new();
-    let url = format!(
-        "https://www.involtum-services.com/api-rest/locations/split/{}",
-        location
-    );
+    let url = format!("https://www.involtum-services.com/api-rest/locations/split/{location}");
 
     let mut headers = get_headers()?;
     headers.insert("token", token.parse().unwrap());
