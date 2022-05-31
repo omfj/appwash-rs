@@ -3,7 +3,7 @@ use super::models::{
     BalanceResponse, History, LoginResponse, MachineData, ReserveStopResponse, Response,
 };
 use reqwest::header::HeaderMap;
-use serde_json::{json, Value};
+use serde_json::json;
 use std::collections::HashMap;
 use std::error::Error;
 
