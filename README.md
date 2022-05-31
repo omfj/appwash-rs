@@ -51,10 +51,8 @@ To remove the binary from your system run `make clean` when inside of the folder
 
 ## TODO
 
-- Fix command: reserve
-- Fix command: stop
-- Better error handling
-- Manage timezones better
-- Store token between command usage
+-   Better error handling
+-   Manage timezones better
+-   Store token between command usage
 
 Rust is hard, please give me feedback.
