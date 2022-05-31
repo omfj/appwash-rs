@@ -73,7 +73,7 @@ fn run() -> Result<(), Box<dyn Error>> {
     // Command: balance
     if let Some(_) = matches.subcommand_matches("balance") {
         match api::get_balance(&user.token) {
-            Ok((b, c)) => println!("You balance is: {} {}", format!("{}", b).green(), c),
+            Ok((b, c)) => println!("💰Your balance is: {} {}", format!("{}", b).green(), c),
             Err(_) => println!("An error occured trying to get your balance."),
         }
     }
@@ -150,11 +150,11 @@ fn run() -> Result<(), Box<dyn Error>> {
     // Command: whoami
     if let Some(ref matches) = matches.subcommand_matches("whoami") {
         println!(
-            "You are logged in as: {}",
+            "😃You are logged in as: {}",
             format!("{}", &user.email).green()
         );
         println!(
-            "Your location is: {}",
+            "📍Your location is: {}",
             format!("{}", &user.location).green()
         );
         if !matches.is_present("secrets") {
@@ -164,8 +164,8 @@ fn run() -> Result<(), Box<dyn Error>> {
             );
         }
         if matches.is_present("secrets") {
-            println!("Password: {}", format!("{}", &user.password).green());
-            println!("Token: {}", format!("{}", &user.token).green());
+            println!("🔐Password: {}", format!("{}", &user.password).green());
+            println!("🔐Token: {}", format!("{}", &user.token).green());
         }
     }
 

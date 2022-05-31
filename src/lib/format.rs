@@ -2,18 +2,25 @@ use std::error::Error;
 
 use chrono::{Duration, NaiveDateTime};
 use colored::Colorize;
-use tabled::{Style, Table, Tabled};
+use tabled::{
+    object::{Columns, Segment},
+    Alignment, Modify, Style, Table, Tabled,
+};
 
 use crate::lib::api;
 
 use super::models::{History, LocationInfo, MachineData, Response};
 
 #[derive(Tabled)]
-struct Purchases {
+struct HistoryTableRow {
+    #[tabled(rename = "Type")]
+    _type: String,
+    #[tabled(rename = "📝Description")]
     description: String,
-    date: String,
+    #[tabled(rename = "💲Amount")]
     amount: String,
-    balance: String,
+    #[tabled(rename = "📅Date")]
+    date: String,
 }
 
 pub fn machines(
@@ -24,7 +31,9 @@ pub fn machines(
     let location_info = api::get_location_info(token, location)?;
     println!(
         "{}",
-        format!("{}\n", location_info.data.name).green().underline()
+        format!("📍{}\n", location_info.data.name)
+            .green()
+            .underline()
     );
 
     println!("{:7} {}", "ID".green().bold(), "Status".green().bold());
@@ -64,30 +73,61 @@ pub fn machines(
 }
 
 pub fn history(machines: Response<Vec<History>>) -> Result<(), Box<dyn Error>> {
-    let mut purchases: Vec<Purchases> = Vec::new();
+    let mut table: Vec<HistoryTableRow> = Vec::new();
 
     for purchase in machines.data {
         let _type = purchase.serviceType;
-        let description = purchase.mutationDescription;
-        let currency = purchase.currency;
-        let amount = purchase.mutationCents / 100;
-        let balance = purchase.balanceCentsAfter / 100;
-        let time = {
+        let description = {
+            // Credit: https://stackoverflow.com/a/38406885/8653870
+            let mut c = purchase.mutationDescription.chars();
+            match c.next() {
+                None => String::new(),
+                Some(f) => f.to_uppercase().collect::<String>() + c.as_str(),
+            }
+        };
+
+        let amount = {
+            let cost = purchase.mutationCents / 100;
+            let currency = purchase.currency;
+            // if cost > 0 {
+            //     format!("{} {}", cost, currency).green()
+            // } else {
+            //     format!("{} {}", cost, currency).red()
+            // }
+            format!("{:3} {}", cost, currency)
+        };
+
+        let datetime = {
             let date = NaiveDateTime::from_timestamp(purchase.mutationTimestamp as i64, 0)
                 + Duration::hours(2);
             let formatted_date = date.format("%d %b %Y %H:%M");
             formatted_date.to_string()
         };
 
-        purchases.push(Purchases {
+        let emoji;
+        match _type {
+            Some(_type) => {
+                emoji = match _type.as_str() {
+                    "WASHING_MACHINE" => "🧺".to_string(),
+                    _ => "💸".to_string(),
+                };
+            }
+            _ => emoji = "💰".to_string(),
+        }
+
+        table.push(HistoryTableRow {
+            _type: emoji,
             description,
-            date: time,
-            amount: format!("{} {}", amount, currency),
-            balance: format!("{} {}", balance, currency),
+            amount,
+            date: datetime,
         });
     }
 
-    let table = Table::new(purchases).with(Style::modern()).to_string();
+    let table = Table::new(table)
+        .with(Style::rounded())
+        .with(Modify::new(Segment::all()).with(Alignment::left()))
+        .with(Modify::new(Columns::single(0)).with(Alignment::center()))
+        .to_string();
 
     println!("{}", table);
 
@@ -99,9 +139,9 @@ pub fn location_info(info: LocationInfo) -> Result<(), Box<dyn Error>> {
     let id = info.externalId;
     let _type = info.locationTypeObject.name;
 
-    println!("Name: {}", format!("{name}").green());
-    println!("ID: {}", format!("{id}").green());
-    println!("Type: {}", format!("{_type}").green());
+    println!("📍Name: {}", format!("{name}").green());
+    println!("🔑ID: {}", format!("{id}").green());
+    println!("🏢Type: {}", format!("{_type}").green());
 
     Ok(())
 }
