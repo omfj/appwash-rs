@@ -45,6 +45,10 @@ SUBCOMMANDS:
 
 ```
 
+## Remove/Uninstall
+
+To remove the binary from your system run `make clean` when inside of the folder you installed from.
+
 ## TODO
 
 - Fix command: reserve
