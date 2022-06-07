@@ -2,6 +2,7 @@
 authors = ["Ole Magnus Johnsen <hei@omfj.no>"]
 name = "appwash-cli"
 description = "A command-line interface for Miele appWash"
+homepage = "https://omfj.no/projects/appwash-cli"
 version = "1.0.0"
 edition = "2021"
 
