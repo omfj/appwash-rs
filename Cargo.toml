@@ -19,3 +19,4 @@ tabled = "0.7.0"
 [dependencies.clap]
 version = "3.1"
 features = ["suggestions", "color", "wrap_help", "cargo", "unstable-grouped"]
+

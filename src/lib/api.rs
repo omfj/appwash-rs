@@ -155,7 +155,7 @@ fn get_headers() -> Result<HeaderMap, Box<dyn Error>> {
     let mut headers = HeaderMap::new();
     headers.insert("Content-Type", "application/json".parse().unwrap());
     headers.insert("User-Agent", USER_AGENT.parse().unwrap());
-    headers.insert("language", "NO".parse().unwrap());
+    headers.insert("language", "EN".parse().unwrap());
     headers.insert("platform", "appWash".parse().unwrap());
     headers.insert("Referer", "https://appwash.com/".parse().unwrap());
 
@@ -168,14 +168,14 @@ pub fn get_token(email: &str, password: &str) -> Result<String, Box<dyn Error>> 
 
     let headers = get_headers()?;
 
-    let token = client
+    let resp = client
         .post(url)
         .headers(headers)
         .body(json!({ "email": email, "password": password }).to_string())
         .send()?
-        .json::<LoginResponse>()?
-        .login
-        .token;
+        .json::<LoginResponse>()?;
+
+    let token = resp.login.token;
 
     Ok(token)
 }
