@@ -1,0 +1,6154 @@
+LOCATION,NAME
+7,Wormerveer
+9,Dokkum - Dongeradeel
+11,Amsterdam - Port Entrepot
+15,Leidschendam
+21,_Demo - Aanuit.net
+22,_Demo - CallBill
+27,Breda
+29,[stopped] Weert
+31,Maastricht
+33,Daarlerveen
+35,Maassluis
+37,Giethoorn
+39,Vlaardingen
+41,Drachten
+43,Arnhem
+45,Amstelveen
+47,Zutphen - Camperplaats
+49,Termunterzijl
+53,Voorburg - Sionsstraat 89
+55,Beverwijk
+57,Purmerend
+59,Maastricht - Tongerseweg 57
+61,Elburg
+63,Rottevalle
+67,Vaals - Sneeuwberglaan
+69,_Maastricht - Grote Gracht 85
+71,Leeuwarden - Tesselschadestraat 7-19B
+73,Noordpolderzijl
+77,Landgraaf
+79,Venlo - Spoorstraat 61
+81,Dieverbrug
+83,Schiedam (aanuit.net)
+85,s-Hertogenbosch - Schaarhuispad
+87,Amersfoort
+89,Bodegraven
+91,Den Haag - Gemeentehavens
+97,Maarssen - Stichtse Vecht
+99,Amsterdam - E-Harbour
+101,[stopped] Nijmegen - StuWorld
+103,Yerseke
+105,Oud-Zuilen - Stichtse Vecht
+107,Breukelen - Stichtse Vecht
+109,Nigtevecht - Stichtse Vecht
+111,Vreeland - Stichtse Vecht
+113,Landerd
+115,Eindhoven - Kronehoefstraat 5
+118,[stopped] Amsterdam - StuWorld
+1004,Camperplaats Rijnkade
+1005,Camperplaats
+1007,Haven
+1009,Port Entrepot
+1015,Passantensteiger Leidsekade
+1017,Recreatievakbeurs - Seijsener
+1019,Van Nelle Fabriek
+1021,Involtum AanUit.net 2
+1023,Seijsener
+1025,YoreOn
+1027,Prinsenkade Noord
+1031,Passantenhaven Weert
+1033,Camperplaats Maastricht Papillon
+1035,Passantenhaven 2
+1037,Haven Geerkade West
+1039,Kanaal Beukers-Steenwijk
+1041,Westhavenkade (noordsteiger)
+1043,Jachthaven
+1045,Park Angerenstein
+1047,Amstelzijde
+1049,Prinsenkade Haven
+1051,Passantensteiger Kerkstraat
+1053,Houtwal
+1055,Westhavenkade (zuidsteiger)
+1057,Camperplaats bij Café Restaurant 'Jachthaven'
+1061,Passantensteiger Delftsekade
+1063,Moleneind
+1065,Kop van de Haven
+1067,Dokkumer Nieuwe Zijlen
+1071,Wasserette - oud
+1073,Kanaalkade
+1075,Kanaalschans
+1077,Carré Studios - Wasserette
+1079,Jachthaven Elburg
+1081,Camperplaats
+1083,Katzensprung - Wasserette
+1085,Dormin - Wasserette
+1087,De Block (oud)
+1089,Café 't Zielhoes
+1093,Camperplaats Landgraaf
+1095,The Safe - Wasserette
+1097,Passantenhaven Dieverbrug
+1099,Florijnhaven
+1101,Zayaz - Wasserette Ordune
+1103,Workumstraat
+1105,Markenhaven
+1107,Durgerdamhaven
+1109,Rijnkade
+1111,Fokkerhaven
+1113,Involtum Wasserette
+1115,E-Harbour
+1119,Vechtenstein West
+1121,Vechtenstein Oost
+1123,Dorpsstraat
+1125,Vechtzijde
+1127,Bolenstein
+1129,Doornburgh met stroom
+1131,Doornburgh zonder stroom
+1133,Goudestein
+1135,Gunterstein
+1137,Loswal
+1139,Loswal met stroom
+1141,Vreeland
+1143,Pont
+1145,Xior - De Block
+1147,Genestetlaan
+1151,Camperplaats Yerseke
+1153,Camperplaats Zeeland
+1155,deelboot
+1157,Xior - The Spot
+1159,The Bank - Wasserette
+1161,The Wall - Wasserette
+1163,Poolsterhaven
+1164,Naritaweg 139-147
+1165,Barajasweg 60-66
+1166,Naritaweg 151-157
+2007,Zuil 2600 Stroom
+2009,"Zuil 2615 Stroom, Water, Verblijf"
+2011,Zuil 7300 Water
+2013,Zuil 2625 Stroom
+2015,Zuil 2626 Stroom
+2017,Zuil 2627 Stroom
+2019,Zuil 7308 Stroom en Water
+2021,Zuil 7309 Stroom en Water
+2023,Zuil 2640 Stroom en Water
+2025,Zuil 2641 Stroom en Water
+2027,Zuil 2642 Stroom
+2029,Zuil 2643 Stroom
+2031,Zuil 2618 Stroom
+2033,Zuil 2619 Stroom
+2035,Zuil 2620 Stroom
+2037,Zuil 2621 Stroom
+2039,Zuil 2622 Stroom
+2041,Zuil 2623 Stroom
+2047,Zuil 2659 Stroom
+2051,Zuil 2660 Stroom
+2053,Zuil 2661 Stroom
+2055,Zuil 2624 Stroom
+2057,Zuil 2628 Stroom
+2059,Zuil 2629 Stroom
+2061,Zuil 2630 Stroom
+2063,Zuil 2631 Stroom
+2065,Zuil 2632 Stroom Water
+2067,Zuil 2633 Stroom
+2069,Zuil 2634 Stroom
+2071,Zuil 2635 Stroom
+2073,Zuil 2638 Stroom Water
+2075,Zuil 2639 Stroom
+2077,Zuil 2671 Stroom
+2079,Zuil 2672 Stroom
+2081,Zuil 2675 Stroom
+2083,Zuil 2676 Stroom
+2085,Zuil 2677 Stroom
+2087,Zuil 2636 Stroom
+2089,Zuil 2678 Stroom
+2091,Zuil 2679 Stroom
+2095,Zuil 2674 Stroom Water
+2097,Zuil 2673 Stroom
+2099,Zuil 2665 Stroom
+2101,Zuil 2666 Stroom Water
+2103,Zuil 2667 Stroom
+2105,Zuil 2668 Stroom
+2107,Zuil 2669 Stroom
+2109,Zuil 2670 Stroom
+2111,Zuil 2680 Stroom Water
+2113,Zuil 4500 Stroom Water
+2115,Zuil 2662 Stroom Water
+2117,Zuil 2663 Stroom
+2119,Zuil 2610 Stroom Water
+2121,Zuil 2611 Stroom
+2125,Zuil 2682 Stroom (testpaal)
+2127,Zuil 2684 Stroom Water
+2129,Zuil 2664 Stroom
+2131,Zuil 2690 Water
+2133,Zuil 2685 Stroom
+2135,Zuil 2686 Stroom
+2137,Zuil 2691 Stroom
+2139,Zuil 2692 Stroom
+2141,Zuil 2693 Stroom
+2143,Zuil 2683 Stroom
+2145,Zuil 2694 Stroom en Water
+2147,Zuil 2695 Water
+2149,Zuil 2687 Stroom
+2151,Zuil 2688 Stroom
+2153,Zuil 2689 Stroom
+2155,"Zuil 2696 Stroom, Verblijf"
+2157,"Zuil 2697 Stroom, Verblijf"
+2159,"Zuil 2698 Stroom, Verblijf"
+2163,"Zuil 2699 Stroom, Verblijf"
+2165,Zuil 2705 Stroom
+2167,Zuil 2706 Stroom
+2169,Zuil 2707 Stroom
+2171,Zuil 2708 Stroom
+2173,Zuil 2709 Stroom
+2175,Zuil 2710 Stroom
+2177,Zuil 2711 Stroom
+2179,Zuil 2712 Stroom
+2181,Zuil 2713 Stroom
+2183,Zuil 2714 Stroom
+2185,Zuil 2715 Stroom
+2187,Zuil 2716 Stroom
+2189,Zuil 2717 Stroom
+2191,Zuil 2718 Water
+2193,Zuil 2722 Stroom
+2195,Zuil 2723 Stroom
+2197,Zuil 2724 Water
+2199,Zuil 2701 Stroom
+2201,Zuil 2702 Stroom
+2203,Zuil 2703 Stroom
+2205,Zuil 2704 Stroom
+2207,Zuil 2727 Stroom
+2209,Zuil 2728 Stroom
+2211,Zuil 2729 Stroom
+2213,Zuil 2730 Stroom
+2215,Zuil 2731 Stroom
+2217,Zuil 2732 Stroom
+2219,Zuil 2733 Stroom
+2225,Zuil 4501 Stroom
+2227,Zuil 2734 Stroom
+2229,Zuil 2735 Stroom
+2231,Zuil 2736 Stroom
+2233,Zuil 2737 Stroom
+2237,Zuil 2738 Stroom
+2239,Zuil 2719 Stroom
+2241,Zuil 2720 Stroom
+2243,Zuil 2721 Stroom
+2245,Zuil 2700 Stroom
+2247,Zuil 2739 Stroom
+2249,Zuil 2740 Stroom
+2251,Zuil 2741 Stroom
+2253,Zuil 2742 Stroom
+2255,Zuil 2745 Stroom
+2257,Zuil 2746 Stroom
+2259,Zuil 2743 Stroom Water
+2261,Zuil 2744 Stroom Water
+2263,zuil 2747 elektriciteit
+2265,zuil 2748 elektriciteit
+2267,zuil 2749 elektriciteit
+2269,zuil 2750 elektriciteit
+2271,Zuil 2751 Stroom
+2273,Zuil 2752 Stroom
+2275,Zuil 2753 Stroom
+2277,2773  Wasserette
+2279,Zuil 2759 Stroom
+2281,Zuil 2754 Water
+2283,Zuil 2755 Water
+2285,Zuil 2756 Water
+2287,Zuil 2757 Water
+2289,Zuil 2758 Water
+2291,Zuil 1234 Stroom
+2293,Zuil 2760 Stroom + Water
+2295,Zuil 2761 Stroom
+2297,Zuil 2762 Stroom
+2299,Zuil 2763 Stroom + Water
+2301,Zuil 2764 Stroom + Water
+2303,Zuil 2765 Pomp
+2305,Zuil 2766 Stroom Water
+2307,Verblijf
+2309,Verblijf
+2311,Verblijf
+2313,Zuil 2769 Stroom
+2315,Zuil 2770 Stroom
+2317,Zuil 2771 Stroom
+2319,Zuil 2772 Stroom
+2323,Kast 28050-55
+2325,Kast 28056-61
+2327,Kast 28062-67
+2329,Kast 28068-71
+2331,Kast 28072-77
+2333,Kast 28078-83
+2337,Kast 28084-89
+2339,Kast 28090-93
+2341,
+2345,2774 Wasserette
+2347,Demo Miele
+2349,2775 Wasserette
+2351,Verblijf
+2353,Box 2777
+2355,2778 Wasserette
+2359,Zuil 2781 Stroom
+2361,verblijf 12 meter
+2363,verblijf 10 meter
+2365,verblijf 8 meter
+2367,Verblijf
+2369,2782 Wasserette
+2371,Zuil 2792 Stroom
+2373,Zuil 2793 Stroom
+2375,Zuil 2794 Stroom
+2377,Verblijf boxen
+2379,Verblijf kade west
+2381,Verblijf kade oost
+2383,Verblijf
+2385,Zuil 2783 Stroom
+2387,Zuil 2784 Stroom
+2389,Zuil 2785 Stroom
+2391,Zuil 2786 Stroom
+2395,Zuil 2787 Stroom
+2397,Zuil 2788 Stroom
+2399,Zuil 2789 Stroom
+2401,Zuil 2790 Stroom en Water
+2403,Zuil 2791 Stroom
+2405,Verblijf
+2407,2601 Wasserette
+2409,Zuil 2795 Stroom
+2415,Zuil 2796 Stroom
+2419,Zuil 2797 Stroom
+2421,Zuil 2828 Stroom en Water
+2423,Zuil 2829 Stroom en Water
+2425,Zuil 2830 Stroom en Water
+2427,Zuil 2831 Stroom en Water
+2429,Zuil 2849 Stroom
+2431,Zuil 2850 Stroom
+2433,Zuil 2851 Stroom
+2435,2726 Wasserette
+2437,Zuil 2832 Stroom
+2439,Zuil 2833 Stroom
+2441,Zuil 2834 Stroom
+2443,Zuil 2835 Stroom
+2445,Zuil 2836 Stroom
+2447,Zuil 2837 Stroom
+2449,Zuil 2838 Stroom
+2451,Zuil 2839 Stroom
+2453,Zuil 2840 Stroom
+2455,Zuil 2841 Stroom
+2457,Zuil 2842 Stroom
+2459,Zuil 2843 Stroom
+2461,Zuil 2844 Stroom
+2463,Zuil 2845 Stroom
+2465,Zuil 2846 Stroom
+2467,Zuil 2847 Stroom
+2469,Zuil 2848 Stroom
+2475,Verblijf
+2477,Verblijf
+2479,Verblijf
+2481,Verblijf
+2483,Verblijf
+2485,Verblijf
+2487,Verblijf
+2489,Verblijf
+2491,Verblijf
+2493,Verblijf
+2495,Verblijf
+2497,Verblijf
+2499,Verblijf
+2501,2602 Wasserette
+2503,BOX 2603
+2507,BOX 2604
+2509,Involtum verblijfszone 6608
+2511,Kast 28065
+2513,Zuil 2857 Stroom
+2515,Zuil 2858 Stroom
+2517,Verblijfszone
+2519,URU 3000 Boot
+2521,2605 Wasserette
+2523,2606 Wasserette
+2525,Zuil 2859 Stroom
+2527,Zuil 2860 Stroom
+2529,Zuil 2861 Stroom
+2531,Zuil 2862 Stroom
+2533,Zuil 2863 Stroom
+2535,Zuil 2864 Stroom
+2537,Zuil 2865 Stroom
+2539,Zuil 2866 Stroom
+2541,Zuil 2867 Stroom
+2543,Zuil 2868 Stroom
+2547,Verblijfszone
+2549,Zuil 2869 Stroom
+2551,Zuil 2870 Stroom
+2553,Zuil 2871 Stroom
+2555,Zuil 2872 Stroom
+2556,Port Entrepot 10
+2557,Port Entrepot 16
+2558,Port Entrepot 18
+2559,Port Entrepot 20
+2560,Port Entrepot 24
+2561,Port Entrepot 40
+2562,Kast 1090 oud
+2563,Kast 1091 oud
+2564,Kast 1092 oud
+2566,Harderwijk
+2567,Waterfront K1
+2568,Waterfront K2
+2569,Waterfront K9
+2570,Waterfront Z03
+2571,Waterfront Z08
+2573,Waterfront Z11
+2574,Waterfront K3
+2575,Waterfront K4
+2576,Waterfront K5
+2577,Waterfront K6
+2578,Waterfront K7
+2579,Waterfront K8
+2580,Gemeentehaven Harderwijk
+2581,Zwolle - Havens
+2582,Haven Maagjesbolwerk
+2583,Zuil 2895 - Z1
+2584,Zuil 2896 - Z2
+2585,Zuil 2897 - Z3
+2586,Zuil 2898 - Z4
+2587,Zuil 2899 - Z5
+2588,Zuil 2900 - Z6
+2589,Zuil 2901 - Z7
+2590,Zuil 2902 - Z8
+2591,Zuil 2903 - Z9
+2592,Zuil 2904 - W1
+2593,Zuil 2905 - W2
+2594,Zuil 2906 - W3
+2595,Box 80801
+2596,Unit 75103
+2597,Haven Buitenkant
+2598,Unit 75144
+2599,Unit 75149
+2600,_Demo - YoreON
+2601,Unit 75108
+2602,Unit 75104
+2603,VERVALLEN Unit 80801
+2604,VERVALLEN Unit 80841
+2605,Unit 80811
+2606,Unit 80829
+2607,VERVALLEN Unit 80804
+2608,Bergambacht
+2609,Watertappunt
+2610,Rotterdam - Statenweg
+2611,Stadswonen - Wasserette
+2613,Slot Zuylen
+2614,Verblijf
+2615,Unit 80838
+2616,Unit 80803
+2617,Unit 80848
+2618,Unit 53127 (was 80822)
+2619,Unit 80817
+2620,Milsbeek
+2621,Camperplaats De Diepen
+2622,Verblijfszone
+2623,Gennep
+2624,Camperplaats Martinushof
+2625,Verblijfszone
+2626,Eiland van Maurik
+2627,Wasserette Eiland van Maurik
+2628,Breda - EasyStreet
+2629,Miele Laundry Boutique
+2630,Rotterdam - EUR Woudestein
+2631,SSH Hatta - Miele Laundry Boutique
+2632,Amsterdam - Vondelpark Area
+2633,Studio 1 (Noord) - Miele Laundry Boutique
+2634,Unit 80828
+2636,Unit 80823
+2637,Unit 80830
+2638,Unit 80847
+2639,Unit 80825
+2640,Verblijf - Waterfront
+2641,verblijf
+2642,verblijf
+2643,Hengelo
+2644,Haven Ketelmakerij
+2645,Haarlem Walstroom
+2646,Beroepsvaart
+2647,Maassluis - Walstroom
+2648,Haven
+2649,Nijmegen
+2650,Waalkade
+2651,Wageningen
+2652,Rijnhaven
+2653,[stopped] Doesburg
+2654,Koninklijke Rotra
+2655,De Leijen
+2656,Les Andelys
+2657,Port (hors service)
+2658,Caudebec
+2659,Port
+2660,Engers
+2661,Hafen
+2662,Volkach-Astheim
+2663,Hafen
+2664,Hoorn
+2665,Beroepshaven
+2666,Den Haag
+2667,Scheveningen
+2668,Veere
+2669,Cruiseterminal
+2670,Eindhoven (vervallen)
+2671,Beatrixkade
+2672,Den Oever
+2673,Haven Den Oever
+2674,Enkhuizen
+2675,Haven
+2676,S-Hertogenbosch
+2677,kade Engelen
+2678,Huizen - Haven
+2679,Haven Mastspoor
+2680,Moerdijk
+2681,Port of Moerdijk
+2682,Straubing
+2683,Hafen
+2684,Traben-Trarbach
+2685,Hafen
+2686,[stopped] Mobiele stroom
+2687,Nijmegen
+2688,_Demo - Walstroom
+2689,Walstroom Oss
+2690,Baas
+2691,Submeters
+2692,Arnhem Marktstroom
+2693,Park Immerloo
+2694,Angerestein
+2695,Dobbelaan Leidschendam
+2696,Dobbelaan / Burg. Sweenslaan
+2698,Dr. Ingenhouszplein
+2699,Chasseveld
+2700,_Demo - EasyPowerSupply
+2701,Demo
+2702,Den Haag Prins Hendrikplein
+2703,Lange Voorhout
+2704,Stevinstraat
+2705,S-Hertogenbosch
+2706,Markt - Parade
+3000,Kast 350
+3001,Kast 351
+3002,Kast 352
+4000,Kast 353
+4001,Kast 354
+5039,Kast 355
+5041,Kast 356
+5045,Kast 357
+5053,Kast 358
+5193,kast 401
+5195,kast 402
+5299,Kast 250
+5301,Kast 251
+5303,Kast 252
+5309,Kast 365
+5311,Kast 366
+5313,Kast 367
+5315,Kast 488
+5317,Kast 487
+5325,Kast 489
+5327,Kast 490
+5349,Kast 690
+5351,Kast 691
+5353,Kast 254
+6007,Kast 253
+6009,Kast 900
+6011,Kast 901
+6013,Kast 800 (Hors Service)
+6015,Kast 801 (Hors Service)
+6017,Kast 950
+6019,Kast 951
+6021,Kast 372
+6027,Kast 491
+6029,Kast 692
+6031,Kast 693
+6035,Kast 2700 (Arnhem)
+6041,Kast 902
+6045,Kast 255
+6047,Kast 256
+6051,Kast 257
+6055,Kast 070 Haven 3
+6057,Kast 0732 (Den Bosch)
+6059,Kast 071
+6061,Kast 072
+6063,Kast 073
+6065,Kast 074
+6067,Kast 075
+6069,Kast 076
+6071,Kast 0733 (Den Bosch)
+6073,Kast 0734 (Den Bosch)
+6075,Kast 0735 (Den Bosch)
+6077,Kast 0736 (Den Bosch)
+6079,Kast 0737 (Den Bosch)
+6081,Kast 0260 (Arnhem)
+6083,Kast 0261 (Arnhem)
+6085,Kast 698
+6087,Kast 699
+6089,Schränke 9051
+6091,Schränke 9061
+6093,Kast 904
+6095,Kast 903
+6119,Baas - Submeters
+6121,Kast 0752 (Breda)
+6125,Kast 802
+6127,Kast 803
+6129,Kast 697
+6135,Kast 258
+6137,Kast 259
+6139,Kast 079
+6141,Kast 077
+6143,Kast 200
+6145,Kast 201
+6149,Lange Voorhout 07001-07021
+6151,Lange Voorhout 07031-07047
+6153,Kast 470
+6155,Kast 471
+6157,Kast 472
+6159,URU 30001 (oud)
+6161,Kast 475
+6162,Stevinstr. 07051-07056
+6163,Stevinstr. 07061-07072
+6164,Stevinstr. 07101-07112
+6165,Stevinstr. 07081-07092
+6167,Kast 7113 (Leidschendam)
+6168,Kast 7114 (Breda)
+6169,Kast 7115 (Breda)
+6170,Kast 7116 (Breda)
+6171,Kast K12
+6172,Kast K13
+6173,Kast K11
+6174,Kast 637
+6175,Kast 694
+6176,Kast 695
+6177,Kast 6371
+6179,Kast 957
+6180,Kast 958
+6181,Kast 956
+6182,Kast 9590-9593 Cruisevaart
+6183,Kast 9594-9595 Cruisevaart
+6184,Kast 9596-9599 Cruisevaart
+6185,Ombouw DWTA
+6186,verblijf
+6187,PTB Braunschweig
+6188,Kast 0755
+6189,Zuil 28520 Stroom
+6190,Zuil 28526 Stroom
+6191,Kast WT4
+6194,Kast WT3
+6195,Kast WT5
+6196,Kast WT7
+6197,Kast WT6
+6198,Kast WT8
+6199,Kast WT9
+6200,Kast WT10
+6201,Kast 955
+6202,Ypenburg 71153-71160
+6203,Meer (Joost)
+6204,IDS Truckstop Joost
+6205,Kast Truckstop
+6206,Ieper
+6207,Lineage Logistics Ieper (private parking)
+6208,Kast
+6209,Sint-Katelijne-Waver
+6210,Interim Cargo (private parking)
+6211,Kast
+6212,Zolder
+6213,Truckstop 26bis Zolder
+6214,Kast
+6215,Bad Rappenau
+6216,24 Autohof Bad Rappenau
+6217,Kast
+6218,Homberg (Knullwald)
+6219,24 Autohof Homberg
+6220,Kast
+6221,Mühldorf (Erharting)
+6222,24 Autohof Mühldorf
+6223,Kast
+6224,Neuberg (Erlensee)
+6225,24 Autohof Neuberg
+6226,Kast
+6227,Rheinböllen
+6228,Aral Autohof Elbert
+6229,Kast
+6230,Neuhaus
+6231,Autohof Bergler
+6232,Kast
+6233,Geiselwind
+6234,Autohof Strohofer Geiselwind
+6235,Kast
+6236,Crailsheim-Satteldorf
+6237,Euro Rastpark Crailsheim-Satteldorf
+6238,Kast
+6239,Guxhagen
+6240,Euro Rastpark Guxhagen
+6241,Kast
+6242,Jettingen-Scheppach
+6243,Euro Rastpark Jettingen-Scheppach
+6244,Kast
+6245,Lippetal
+6246,Euro Rastpark Lippetal
+6247,Kast
+6248,Regensburg
+6249,Euro Rastpark Regensburg
+6250,Kast
+6251,Schweitenkirchen
+6252,Euro Rastpark Schweitenkirchen
+6253,Kast
+6254,Theeßen
+6255,Euro Rastpark Theeßen
+6256,Kast
+6257,Waldlaubersheim
+6258,Euro Rastpark Waldlaubersheim
+6259,Kast
+6260,Werneck
+6261,Euro Rastpark Werneck
+6262,Kast
+6263,Lauenau
+6264,MAXI Autohof Lauenau
+6265,Kast
+6266,Sadobre (Vipiteno)
+6267,Autostrada del Brennero - Autoparco Sadobre
+6268,Kast
+6269,Campogalliano
+6270,Autostrada del Brennero -  Campogalliano
+6271,Kast
+6273,Autostrada del Brennero - Interporto Trento
+6274,Kast
+6275,_Stock NP
+6276,Seijsener
+6277,Box 153143
+6278,Bologna
+6279,Interporto Bologna
+6280,Kast
+6281,[stopped] Colleferro
+6282,Truckvillage Colleferro
+6283,Kast
+6284,Ypenburg - Vuursteen
+6285,Roosendaal
+6286,Borchwerf
+6287,Kast
+6288,Rogat
+6289,De Raket
+6290,Kast
+6291,Rotterdam
+6292,Distripark Eemhaven
+6293,Kast
+6294,Korendijk (Piershil)
+6295,Gemeente Korendijk
+6296,Truckparking
+6297,Zevenbergschen Hoek
+6298,De Gouden Leeuw
+6299,Kast
+6300,Schwechat Wien Energie
+6301,Schwechat Wien Energie
+6302,Kast
+6304,Office
+6305,Iskra Box
+6306,URU_1
+6307,URU_2
+6308,Ecotap zuil URU+
+6309,LMS ombouw
+6310,Bergen Op Zoom
+6311,Lineage Logistics BoZ (private parking)
+6312,Kast
+6313,Emmen
+6314,Truck Centrum Emmen
+6315,Truck facility centrum
+6316,Waalwijk
+6317,TruckSafe Waalwijk
+6318,Kast
+6319,Burgo Ranero (Léon)
+6320,Castillo El Burgo Ranero
+6321,Kast
+6322,Padrosa (Llers)
+6323,Parking Padrosa Exit 3 AP7
+6324,Kast
+6325,La Jonquera (Barcelona)
+6326,Red Tortuga - La Jonquera
+6327,Kast
+6328,Cherwell (Ardley)
+6329,Moto Cherwell Valley
+6330,Kast
+6331,Doncaster
+6332,Moto Doncaster North
+6333,Kast
+6334,Donington (Derby)
+6335,Moto Donington Park
+6336,Kast
+6337,Lymm
+6338,Lymm Lorry Park
+6339,Kast
+6340,Thurrock (Grays)
+6341,Moto Thurrock
+6342,Kast
+6343,Toddington
+6344,Moto Toddington North Bound
+6345,Kast
+6346,Moto Toddington South Bound
+6347,Kast
+6348,Hoorn
+6349,Kast
+6350,Alphen aan den Rijn - Baronie 30
+6351,Laundr - Woonforte
+6352,Hoorn Charter verblijf
+6353,Hoorn Riviercruise verblijf
+6358,URU 1233 Bart
+6359,Zuil 1232 Stroom
+6360,Breda
+6361,Moerwijk
+6362,Kast 71200
+6363,Kast 71206
+6364,Kast 71212
+6365,Kast 71218
+6366,Noordwijkerhout
+6367,Brink
+6368,Kast 71224
+6369,[stopped] Marchjepôle
+6370,Hûske 1
+6371,URU 80813
+6372,Vrij om te testen
+6373,Waterfront K10 / K11
+6374,[stopped] Noarder Alde Wei
+6375,Hûske 2
+6376,URU 1088
+6377,Amsterdam - Het Kwartier (3)
+6378,Wasserette Zwembad
+6379,Antwerpen - Jan Van Lierstraat 4
+6380,Wasserette
+6381,Kast K6
+6382,Kast K7
+6383,[stopped] Sânmar - doorvaart De Sont
+6384,URU 80810
+6385,Hûske 3
+6386,Kast K3
+6387,Kast K5
+6388,Kast K9
+6389,Kast K10
+6390,Zuil 1235 Overig
+6391,Zuidbroek
+6392,NVO Transport (private parking)
+6393,Dummy
+6394,Kast K1
+6395,Kast K4
+6396,Kast K2
+6397,Kast K8
+6398,Amstelveen - De Bouwerij 14
+6399,Wasserette
+6400,Valkenburg
+6401,Walramplein (No parking)
+6402,Zuil 80889
+6403,Zuil 80890
+6404,Haven Rodetorenplein
+6406,verblijf
+6407,Amsterdam - ahoy
+6408,Haarlemmermeer
+6409,Mysteryland
+6410,Paviljoenlaan (hoofdkast)
+6411,Foodtruckterrein (subkast)
+6412,[stopped] Amsterdam - Voormalige Bijlmerbajes
+6413,Wasserette - Toren 300
+6414,Wasserette - Toren 200
+6415,Kast WT11
+6416,Kast WT12
+6417,Den Haag - Staedion de Struijck
+6418,Miele Laundry Boutique
+6419,Den Helder
+6421,Kast 08
+6422,Kast 09
+6423,Kast 10
+6424,Kast 11
+6425,Kast 12
+6426,Kast 13
+6427,Kast 14
+6428,Kast 15
+6429,Kast 16
+6430,Kast 17
+6431,Kast 18
+6432,Kast 19 (under construction)
+6433,Het Nieuwe Diep steiger 43-55
+6434,Kast 01
+6435,Kast 02
+6436,Kast 03
+6437,Kast 04
+6438,Kast 05
+6439,Kast 06
+6440,Kast 07
+6441,Delft - Asvest
+6442,Wasserette
+6443,Delft - Poppesteeg
+6444,BeHome - Wasserette
+6445,Stock Miele NL
+6446,Unit 80855
+6447,Unit 80877
+6448,Unit 80853
+6449,Unit 80860
+6450,Unit 80865
+6451,Venray - Bergweg
+6452,Miele Laundry Boutique
+6453,Eindhoven - Markten
+6454,Markt
+6455,Kast kelder
+6456,Haarlem
+6458,S019a Zuil (invalide steiger pleziervaart) Scheepsmakerskwartier
+6459,S019b Kelderwindkade (zuil) (pleziervaart) Scheepsmakerskwartier
+6460,S019c Kelderwindkade (zuil) (pleziervaart) Scheepsmakerskwartier
+6461,S019d Kelderwindkade (zuil) (pleziervaart) Scheepsmakerskwartier
+6462,S019e Kelderwindkade (zuil) (pleziervaart) Scheepsmakerskwartier
+6463,S019f Kelderwindkade (zuil) (pleziervaart) Scheepsmakerskwartier
+6464,S019g Kelderwindkade (zuil) (pleziervaart) Scheepsmakerskwartier
+6466,S019h Disselkade (zuil) (pleziervaart) Scheepsmakerskwartier
+6468,S008A (verdeelkast) Vissersbocht (pleziervaart)Vissersbocht
+6469,S008B (zuil) Vissersbocht (pleziervaart)Vissersbocht
+6471,S016a (verdeelkast en 2 zuilen) Zuider Buiten Spaarne Belgiëlaan (pleziervaart)Belgiëlaan
+6472,S016b (verdeelkast en 2 zuilen) Zuider Buiten Spaarne Belgiëlaan (pleziervaart)Belgiëlaan
+6474,S017A (verdeelkast) Molenplas (pleziervaart) Molenplas
+6475,S017B (verdeelkast) Molenplas (pleziervaart)Molenplas
+6481,Amerikavaart
+6482,Leidsevaart/Raaks
+6483,Kinderhuisvest
+6484,Raamvest
+6485,Kampervest
+6486,Stock RAD
+6487,Kast 1091
+6488,Box 1092
+6489,Box 1090
+6490,Lyon
+6491,Quai Rambaud
+6492,Cabinet
+6494,S004 Havenkantoor (passantensteiger) Havenkantoor
+6495,S004 Havenkantoor (passantensteiger2) Havenkantoor
+6497,S005 Drosteboulevard (pleziervaart) Drosteboulevard
+6498,S005 Drosteboulevard (pleziervaart2) Drosteboulevard
+6500,S009 Donker Spaarne (Chartervaart en grote pleziervaart)Donker Spaarne t/o 18
+6502,S010 Donkere Spaarne (Chartervaart en grote pleziervaart) Donker Spaarne t/o 36
+6504,S001 Spaarndamseweg (passantensteiger)
+6505,S001 Spaarndamseweg (passantensteiger 2)
+6507,S002 Spaarndamseweg (wachtplaats beroepsvaart) Waarderbrug Beroepsvaart
+6508,S002 Spaarndamseweg (wachtplaats beroepsvaart2) Waarderbrug Beroepsvaart
+6510,S007 Korte Dijk (pleziervaart groepen) Korte Dijk & Houtmarkt
+6512,S011 Donkere Spaarne (Chartervaart en grote pleziervaart) Donker Spaarne t/o 44
+6514,"S006A Koudehorn (pleziervaart, verdeelkast en putten)Koudenhorn"
+6515,"S006B Koudehorn (pleziervaart, verdeelkast en putten)Koudenhorn"
+6517,S012A Turfmarkt pleziervaart Turfmarkt
+6518,S012B Turfmarkt pleziervaart Turfmarkt
+6519,S003 Spaarndamseweg (passantensteiger) Spaarndamseweg
+6521,Jan Gijzenvaart
+6522,URU 81803
+6523,Hoorn Pleziervaart abonnementen
+6524,VERVALLEN
+6525,Spare URU
+6526,Den Haag - Vestia Het Strijkijzer
+6527,Miele Laundry Boutique
+6532,S015 Zuider Buiten Spaarne (pleziervaart) Zuider buiten Spaarne t.o. 128
+6533,S014 Zuider Buiten Spaarne Combikade (charter en pleziervaart) Koningstein
+6534,S013 Spaarne Combikade (charter en pleziervaart) Prieeltje Spaarne t.o. 111
+6535,Verblijf
+6537,Testunit
+6538,Temp kastniveau
+6539,Doorvaart
+6541,Temp Seijsener
+6542,Kast
+6543,Unit 83439
+6544,Unit 83407
+6545,Unit 84705
+6546,Unit 84734
+6547,Unit 83515
+6548,Unit 83514
+6549,Unit 83510
+6550,Unit 83533
+6551,Trento
+6552,Doorvaart en alle ligplaatsen
+6553,Exelby
+6554,Kast 44151
+6555,Kast 44153
+6556,Kast 44155
+6557,Verdeelkast
+6558,Schiedam (walstroom)
+6559,Schepencarrousel
+6560,Kast 6312
+6561,Kast 6313
+6562,Zwolle - SSH
+6565,Wasserette Fossa
+6566,Wasserette Suol
+6567,Wasserette Tracé
+6568,Riesenbeck Rechtes Ufer
+6569,Riesenbeck Rechtes Ufer
+6570,Kast 8501 Links
+6571,Kast 8502 Rechts
+6572,Kast 8503 Enkel
+6573,[stopped] Capelle aan den IJssel - Rivium 1e Straat 141 k
+6574,Rive Republic - Launderette
+6575,Test - Wien Energy
+6576,Test location office
+6578,Kast 6400
+6579,Kast 6404
+6580,Kast 6408
+6581,Kast 6412
+6582,Kast 6502
+6583,Kast 6418
+6584,Kast 6422
+6585,Kast 6426
+6586,Kast 6430
+6587,Kast 6434
+6588,Kast 6438
+6589,Loenen - Stichtse Vecht
+6590,Verblijf met stroom
+6591,Verblijf zonder stroom
+6592,Verblijf
+6593,Cronenburgh Noord met stroom (vervallen)
+6594,Cronenburgh Noord
+6595,Cronenburgh Zuid
+6596,Kast 6442
+6597,Kast 6444
+6598,Kast 6448
+6599,Kast 6450
+6600,Kast 6454
+6601,Kast 6456
+6602,München - Leopoldstraße 202
+6603,Pfeilstetter GWA
+6604,Kast 6482
+6605,Kast 6484
+6606,Kast 6488
+6607,Kast 6490
+6608,Kast 6494
+6609,Kast 6496
+6610,Kast 6460
+6611,Kast 6464
+6612,Kast 6468
+6613,Kast 6472
+6614,Kast 6476
+6615,Kast 6478
+6618,Unit 91208
+6619,Unit 84735
+6620,Unit 91243
+6621,Unit 91242
+6622,Unit 91221
+6623,Box 1000001
+6624,Unit 91244
+6625,Unit 91240
+6626,Unit 91239
+6627,Unit 84731
+6628,Unit 84719
+6629,Kast 8504 Links
+6630,Kast 8505 Rechts
+6631,Kast 8506 Enkel
+6632,Marsum
+6633,Passantenhaven Marsum
+6634,Kast 26366
+6635,Kast 26372
+6636,Kast 71320
+6637,Kast Hema
+6638,Kast Rituals
+6639,Kast 71326
+6640,Kast Piazza rechts
+6641,Kast Bakkertje Bol
+6642,Kast Piazza links
+6643,Kast Mac Donalds
+6644,Kast Bijenkorf links
+6645,[VERVALLEN]
+6646,Demo BeNEd
+6647,Harderwijk - Oude Vissershaven
+6648,Verblijf - Oude Vissershaven
+6649,K1 6521
+6650,Jachthaven De Leijen
+6651,Osmose watertappunt
+6652,Coneygarth
+6653,K2 91216
+6654,K3 6529
+6655,Tussenmeters April
+6656,Den Oever
+6657,Leeg
+6658,Verblijf
+6659,[stopped] Amersfoort - Gebouw IJselberch
+6660,Wasserette IJselberch
+6661,Extra meters
+6662,Andijk - Proefpolder 4
+6663,Wasserette Het Grootslag
+6665,Gent - Testlocatie
+6666,Kast 1 Test
+6667,K1: 91215
+6668,K2: 91213
+6669,Plezierhaven
+6670,Involtum AanUit.net test
+6671,Kast
+6672,Kast
+6673,NVO Transport (private parking)
+6674,Heksenwiel
+6675,Eindhoven - Residence32 Vestdijk
+6676,Wasserette Residence32
+6677,Niftrik
+6678,Jachthaven de Batavier
+6679,Verblijf
+6680,Kast 6544
+6681,Kast 6552
+6682,Zwolle
+6683,KVK1
+6684,KVK1
+6685,Rijnlaan
+6686,VK2
+6687,VK2-1
+6688,VK3
+6689,VK3
+6690,URU 91520
+6691,Kast 91523
+6693,Bohlweg - Waschkeller
+6694,Eindhoven - Boutenslaan 195
+6695,Rapelenburg - Miele Laundry Boutique
+6696,Loswal K1
+6699,S020a en b Kelderwindkade (zuil) (pleziervaart)Kelderwindkade
+6700,Ede
+6701,Raadhuisplein
+6702,Kast 1
+6704,Involtum - Rotterdam
+6705,Laadpaal 1
+6706,Zuil 4917
+6707,Kast 73513
+6708,Kast 73519
+6709,Kast 73525
+6710,Kast 6385
+6711,Unit 92018
+6712,Box 92013
+6713,Unit 92019
+6714,Unit 92001
+6715,Unit 92008
+6716,Unit 92002
+6717,Box 203229
+6718,Cruquiuskade
+6719,Verblijf
+6720,WallBox 32069
+6721,Zaandam
+6722,Oostkade Camperterrein
+6723,Camperterrein 2
+6724,Prins Hendrikplein
+6725,Oostkade Camperterrein
+6726,Waddenhaven Den Oever
+6727,Zuiderstrand Camperterrein
+6728,Ottobrunn
+6729,Papp Logistics (private parking)
+6730,Amsterdam - Citadines Sloterdijk Station
+6731,Launderette Citadines Sloterdijk
+6732,Doetinchem
+6733,Camperplaats Varkensweide
+6734,Zuil electra
+6735,Zuil tapwaterpunt
+6736,Zundert
+6737,Markt Zundert
+6738,18 Septemberplein
+6739,Kast Mini Blob
+6740,Kast Bijenkorf rechts
+6741,Bergvliet Huisjes
+6742,Vakantiepark
+6743,Huisje nr 06
+6744,Huisje nr 57
+6745,Huisje nr 01
+6746,Huisje nr 17
+6747,Huisje nr 22
+6748,Huisje nr 33
+6749,Huisje nr 16
+6750,Huisje nr 44
+6751,Huisje nr 04
+6752,Huisje nr 45
+6753,Huisje nr 20
+6754,Huisje nr 47
+6755,Kast 1: 92005
+6756,Kast 2: 92037
+6757,Kast 3: 92023
+6758,Kast 4: 92028
+6759,Kast 5: 92022
+6760,Kast 6: 92024
+6761,Großer Bruch - Waschkeller
+6762,Clausthal Zellerfeld - Großer Bruch 23
+6763,Den Haag - Fokkerhaven
+6764,Service
+6765,Nissewaard
+6766,Park Vogelenzang
+6767,Zeeland
+6768,Heische Tip
+6769,Verblijf
+6770,Camperplaats de Batavier
+6771,Verblijf
+6773,DeHolland - Wasserette
+6774,Eindhoven - Beukenlaan 143
+6775,Zuil 26455 (nieuw)
+6776,Box 94001
+6777,Box 92035
+6778,Box 92044
+6779,Box 92030
+6780,Box 94040
+6781,Box 92047
+6782,Box 92034
+6783,Box 92045
+6784,Box 92036 + RAD 2
+6785,Box 92046
+6786,Box 92050
+6787,Heerlen - Putgraaf
+6788,Groene Boord - Miele Laundry Boutique
+6789,Stock Miele DE production 2020
+6790,Venlo - Franciscanenstraat
+6791,Brixhousing - Miele Laundry Boutique
+6793,CSA - Strasskirchen
+6794,Zuil 53146
+6795,Nijmegen
+6796,Kanaalhaven
+6797,Kast 6561
+6798,Kast 6567
+6799,Zuil 26160 Pomp
+6800,München - Motorstraße 32d
+6801,Plug & Stay Munich - Waschkeller
+6802,Lommel
+6803,FrigoLogix
+6804,Kast 92039
+6805,Box 92831
+6806,Box 92822
+6807,Box 92845
+6808,Box 92839
+6809,Box 92833
+6810,Box 92843
+6811,Box 92816
+6812,Box 92838
+6813,Box 92846
+6814,Box 92827
+6815,Easy Power Supply
+6816,Sportterrein
+6817,Prinsenbeek 1-2
+6818,Defect URU 19380009 Prinsenbeek
+6819,Prinsenbeek 1-1
+6820,Kast 73537
+6821,Frits Philips
+6822,Box 92832
+6823,Box 92844
+6824,Box 92834
+6825,Box 92026
+6826,Box 92842
+6827,Box 92836
+6828,Box 92850
+6829,Box 92004
+6830,Box 92814
+6831,Box 92841
+6832,Oosterhout
+6833,Wilhelminakanaal
+6834,Kast 6291
+6835,Kast 6293
+6836,Kast 6295
+6837,Kast 6297
+6838,Dordrecht - Kilwijkstraat 30
+6839,Ashford (Kent)
+6840,Ashford International Truckstop
+6841,box 92048
+6842,box 84732
+6843,box 92027
+6844,Neue Schränke (TEST)
+6845,Schränke 6299
+6846,Schränke 6300
+6847,Schränke 6301
+6848,Schränke 6302
+6849,Schränke 6303
+6850,Schränke 6304
+6851,Sportterrein
+6852,Kast 73565
+6853,Kast 73572
+6854,Kast 73579
+6855,Kast 73586
+6856,Kast 73593
+6857,_Demo Locations_
+6858,Rotterdam - Demo Location
+6859,Box 83404 (URU 202229)
+6861,Involtum - Rotterdam
+6862,Verblijf
+6864,Box 220640
+6865,Box 92829
+6866,Box 92802
+6867,Box 92812
+6868,Box 92811
+6869,Box 92810
+6870,Box 92806
+6871,Box 92804
+6872,Box 92809
+6873,Box 92808
+6874,Box 92805
+6875,Box 92807
+6876,Box 92813
+6877,Stock
+6878,Laadpaal 2
+6879,Free - connector 66404
+6880,Verblijf 66405
+6881,Kesselhof (opening soonl)
+6882,Kesselhof (opening soon)
+6883,Kast
+6884,Saen 1299 (Demo)
+6886,Gorinchem
+6887,Lingehaven
+6888,Lingehaven 1
+6889,Lingehaven 2
+6890,Lingehaven 3
+6891,Lingehaven 4
+6892,Lingehaven 5
+6893,Lingehaven 6
+6894,Appeldijk 1
+6895,Appeldijk 2
+6896,Appeldijk 3
+6897,Appeldijk 4
+6898,Havendijk 1
+6899,Havendijk 2
+6900,Havendijk 3
+6901,Havendijk 4
+6902,Overige diensten
+6903,Markt Prinsenbeek
+6904,Demo unit 2.0
+6905,'t Gouwe Pleintje
+6906,Defect
+6907,Overig
+6908,Zaandam
+6909,Seijsener
+6910,Laadpaal 19380016
+6911,Laadpaal 19380017
+6912,Huisje nr 28
+6913,Huisje nr 19
+6914,Huisje nr 18
+6915,Huisje nr 40
+6916,Huisje nr 30
+6917,Huisje nr 32
+6918,Huisje nr 35
+6919,Huisje nr 36
+6920,Huisje nr 37
+6921,Huisje nr 38
+6922,Huisje nr 41
+6923,Huisje nr 43
+6925,Regensburg - Johann-Hösl-Straße 6
+6926,Salzburg - Demo Location
+6927,Amsterdam - Rijswijkstraat
+6928,2nd Home - Wasserette
+6929,Dresden - Elisenstraße 23
+6930,Lehrte - Demo Location
+6931,K10
+6932,K11
+6933,K14
+6934,K13
+6935,S020c Kelderwindkade (zuil) (pleziervaart) Kelderwindkade Oskam
+6936,Nijkerk
+6937,Camperplaats Watergoor
+6938,Kast
+6939,S021a zuil (verdeelkast S021) Spaarne (pleziervaart) Kelderwindkade van Gelder 1
+6940,S021b (zuil met verdeelkast S021) Spaarne (pleziervaart) Kelderwindkade van Gelder 2
+6941,K03
+6942,K07
+6943,K01
+6944,K04
+6945,K15
+6946,K16
+6947,K19
+6948,Abingdon - Demo Location
+6949,Düsseldorf - Hafen
+6950,Scholl
+6951,Box 6299
+6952,Box 6300
+6953,Box 6301
+6954,Box 6302
+6955,Box 6303
+6956,Box 6304
+6957,DWTA 1
+6958,DWTA 9
+6959,DWTA 8
+6960,DWTA 5
+6961,K08 DWTA
+6962,DWTA 2
+6963,DWTA 4
+6964,DWTA 7
+6965,DWTA 6
+6966,DWTA 3
+6967,DWTA 12
+6968,DWTA 55
+6969,DTWA 729
+6970,Zürich - Demo Location
+6971,Amsterdam - Sixhavenweg 15
+6972,Sixhaven Marina - Laundry Room WVDS
+6973,Gemeente Geertuidenberg
+6974,Donge
+6975,Kast
+6976,Den Haag
+6977,URU 93948
+6978,Steinfurt - Bahnhofstraße
+6979,Bahnhofstraße 46 - Waschraum
+6980,Wiesbaden - Wilhelmstraße 52 e-f
+6981,Vier Jahreszeiten - Waschkeller Haus 2
+6982,Bahnhofstraße 46a - Waschraum
+6983,Münster - Mondstraße 94
+6984,Waschraum
+6985,Meer Shell
+6986,Truck Shell Meer
+6987,Zuil 32067
+6988,Zuil 32068
+6989,Hamburg - Demo Location
+6990,Groningen - Hoogeweg 1
+6991,Xior - Launderette
+6992,Swissbau - Demo Location
+6993,Schepencarrousel
+6994,Halluin (under construction)
+6995,Truckstop Halluin
+6996,Wallbox 1
+6997,Wallbox 2
+6998,Wallbox 3
+6999,Access code
+7000,Den Haag - Medemblikstraat 275
+7001,Greystar - Miele Laundry Boutique
+7002,Wien - Demo Location
+7004,Involtum - test Amsterdam
+7005,opleidingsschip
+7006,K02
+7007,K05
+7008,K06
+7009,K09
+7010,K12
+7011,K17
+7012,K18
+7013,Gütersloh - Demo Location
+7014,Laadpaal 19400002
+7015,Laadpaal 19400004
+7016,Dummy 2
+7017,Schleuse Munster UW
+7018,Schleuse Munster UW
+7019,Kast K41 Links
+7020,Menen Camperplaats
+7021,Stroomkast
+7022,Sluizenkaai
+7023,Ronse
+7024,Ronse Camperplaats
+7025,Kast 1
+7026,Blankenberge Floreal
+7027,Camperpark Blankenberge
+7028,Kast 1
+7029,Kast K41 Rechts
+7030,Box 95044
+7031,Box 95035
+7032,Box 95026
+7033,Box 95036
+7034,Box 95033
+7035,Box 95049
+7036,Box 95042
+7037,Box 95023
+7038,Box 95046
+7039,Box 95043
+7040,Box 95050
+7041,Box 95022
+7042,Boodschappensteiger 1
+7043,Dorsten
+7044,Dorsten
+7045,Kast 8611 Links
+7046,Kast 8612 Rechts
+7047,Kast 8609 Links
+7048,Kast 8610 Rechts
+7049,Boodschappensteiger 2
+7050,Boodschappensteiger 3
+7051,Boodschappensteiger 4
+7052,Boodschappensteiger 5
+7053,Boodschappensteiger 6
+7054,Bielefeld - Werther Straße 144
+7055,Werther Straße 144 - Waschkeller
+7056,Kast 8615 Links
+7057,Kast 8616 Rechts
+7058,Oslo - Demo Location
+7059,Box 94016
+7060,Box 94030
+7061,Box 94027
+7062,Box 94007
+7063,Box 94004
+7064,Box 94002
+7065,Box 94006
+7066,Box 94034
+7067,Box 94026
+7068,Box 94005
+7069,Kast 8613 Links
+7070,Kast 8614 Rechts
+7071,Kast 8617 Links
+7072,Kast 8618 Rechts
+7073,Kast 8619 Links
+7074,Kast 8620 Rechts
+7075,Lesce - Šobčeva cesta 25
+7076,Camping Sobec
+7077,Krefeld - Leyentalstraße 103DE
+7078,Waschkeller Untergeschoss
+7079,Box 80804
+7080,Bad Nauheim - Ludwigstraße 25-31
+7081,Reha am Sprudelhof - Waschküche
+7082,Frankfurt - Prießnitzstraße 11
+7083,littlebighomes - Waschkeller
+7084,Kast WSK 1
+7085,Meter 6330
+7086,Meter 6331
+7087,Meter 6332
+7088,Meter 6333
+7089,Roermond - Kapellerpoort 1
+7090,Nero - Miele Laundry Boutique
+7092,Sint Bavostraat
+7093,Box 19380018
+7094,Kast 8621 Links
+7095,Kast 8622 Rechts
+7096,Datteln
+7097,Datteln
+7098,K73 Links
+7099,K73 Rechts
+7100,Almere Stad
+7101,Haven Olstgracht (vaste ligplaatsen)
+7102,DWTA 26179
+7103,DWTA 26180
+7104,Hengelohaven (vaste ligplaatsen)
+7105,DWTA 27984
+7106,Almere Passanten ligplaatsen
+7107,DWTA 27985
+7108,DWTA 27986
+7109,Bergen - Demo Location
+7110,Rum - Demo Location
+7111,Leiden
+7112,De Haven
+7113,Kast 29271 De Haven
+7114,Kast 29277 De Haven
+7115,Kast 29283 De Haven
+7116,Kast 29289 De Haven
+7117,DWTA 29358 De Haven
+7118,DWTA 29359 De Haven
+7119,DWTA 29360 De Haven
+7120,Oude Herengracht
+7121,Kast 29295 Oude Herengracht
+7122,Kast 29301 Oude Herengracht
+7123,Riesenbeck Linkes Ufer
+7124,Riesenbeck Linkes Ufer
+7125,K45
+7126,K46
+7127,Kast 8635 Enkel
+7128,K74 Links
+7129,K74 Rechts
+7130,K75 Links
+7131,K75 Rechts
+7132,Deventer
+7133,Pothoofd 1
+7134,Kast 1
+7135,K76 Links
+7136,K76 Rechts
+7137,K77 Links
+7138,K77 Rechts
+7139,K78 Links
+7140,K78 Rechts
+7141,Huisje nr 03C44
+7142,K1
+7143,Hamburg - Lüneburger Straße 7
+7144,Kast 29307 De Haven
+7145,Kast 29313 De Haven
+7146,Kast 29319 De Haven
+7147,Kast 29324 De Haven
+7148,Kast 29326 De Haven
+7149,Kast 29328 De Haven
+7150,Kast 29330 De Haven
+7151,Leiden charters
+7152,Zijlsingel
+7153,Kast 6321
+7154,Kast 6323
+7155,Kast 6325
+7156,Kast 6327
+7157,Puch - Urstein Süd 3-5
+7158,Urstein - Waschkeller
+7159,Düsseldorf - Mindener Straße 54
+7160,Konstanz - Jacob-Burckhardt-Str. 35
+7161,Sonnenbühl Ost Gruppenhaus Haus A - Waschraum
+7162,Hamburg - Am Felde 58
+7163,STUART Student Apartments - Waschraum
+7164,Hamburg - Lüneburger Straße 7
+7165,Rotunda Westfalica
+7166,Lüneburger Straße 7 - Wachkeller
+7167,Schöffenhöfe - Waschkeller
+7168,STUART Student Apartments - Waschraum
+7169,Studentinord - Kaialundveien vaskeri
+7170,Veenendaal - Vijftien Morgen 9
+7171,Miele Laundry Boutique
+7172,Lyon (service fee)
+7173,RMCS - Spalding
+7174,Unit 20100019
+7175,Terneuzen
+7176,Axel
+7177,Westdorpe
+7178,Kinderdijk Camperplaats
+7179,Camperplaats de Kreek
+7180,"Noordelijke Jachthaven, Rooseveltlaan"
+7181,Verblijf
+7182,Camperplaats Bernhardstraat
+7183,Verblijf
+7184,Woerden
+7185,La Fontaineplein
+7186,Snel & Polanen
+7187,Exercitieveld
+7188,URU 2020100017
+7189,URU 2020100018
+7190,Hamburg - Schloßstraße 107
+7191,Achtmaal
+7192,Rijsbergen
+7193,Prinsenbeek
+7194,Venlo - Kaldenkerkerweg/Heutzstraat
+7195,Brixhousing - Miele Laundry Boutique
+7196,Urkerbos
+7197,Camperplaats Urkerbos
+7198,K1
+7199,Verblijf
+7200,Verblijf
+7201,Box 200717
+7202,Box 200718
+7203,Box 200725
+7204,Box 200724
+7205,Box 200723
+7206,Box 200701
+7207,Box 94047
+7208,Box 200720
+7209,Box 200716
+7210,Box 200726
+7211,Box 200719
+7212,Box 200728
+7213,Vught
+7214,Orange Power Systems
+7215,vrij te gebruiken
+7216,Vianen passantenhaven
+7217,Kanaalweg Vianen
+7218,Kast 29401
+7219,Kast 29407
+7220,Kast 29413
+7221,Kast 29419
+7222,Kast 29425
+7223,Kast 29431
+7224,K2
+7225,K3
+7226,Havenkade
+7227,K1 Havenkade
+7228,K2 Havenkade
+7229,K3 Havenkade
+7230,K4 Havenkade
+7231,DWTA Havenkade
+7232,Verblijf
+7233,K1
+7234,K2
+7235,K8
+7236,K9
+7237,K2
+7238,K3
+7239,Düsseldorf - Mindener Straße 60
+7240,Schöffenhöfe - Waschkeller
+7241,Waschkeller
+7242,Uithoorn
+7243,Aeme-Stelle Passantenhaven
+7244,Verblijf
+7245,K1
+7246,DWTA 1
+7247,Arnhem - Amsterdamseweg 208
+7248,Miele Laundry Boutique
+7249,K2
+7250,K3
+7251,K4
+7252,K5
+7253,K6
+7254,K7
+7255,K8
+7256,K9
+7257,DWTA 2
+7258,DWTA 3
+7259,DWTA 4
+7260,DWTA 5
+7261,Box 201010
+7262,Box 200711
+7263,Box 201004
+7264,Box 201003
+7265,Box 201001
+7266,Box 201039
+7267,Box 201035
+7268,Box 201002
+7269,Box 201034
+7270,Box 201007
+7271,Box 201037
+7272,Box 201005
+7273,2020100012-11015 Wilhelminaplein
+7274,Box 201244
+7275,Box 201235
+7276,Box 201237
+7277,Box 201238
+7278,Box 201240
+7279,Box 201247
+7280,Box 201249
+7281,Box 201248
+7282,Box 201239
+7283,Box 201246
+7284,Box 201234
+7285,Box 201243
+7286,Box 201232
+7287,Box 201245
+7288,Box 201242
+7289,Box 201241
+7290,Box 203221
+7291,Oegstgeest
+7292,Markt
+7293,Lijtweg/marktplein
+7294,Boerhaveplein
+7295,Kempenaarstraat
+7296,Lijtweg/Rabobank
+7297,Lijtweg
+7298,Woenselse Markt
+7299,Lijtweg winkelcentrum
+7300,Kast 01
+7301,Kast 01A
+7302,Kast 02
+7303,Kast 03
+7304,Kast 04
+7305,Kast 05
+7306,Kast 06
+7307,Kast 07
+7308,Kast 07A
+7309,Kast 08
+7310,Kast 09
+7311,Kast 10
+7312,Kast 11
+7313,Kast 12
+7314,Kast 13
+7315,Kast 13A
+7316,Lijtweg/marktplein
+7317,Waschkeller
+7318,DWTA
+7319,Verblijf
+7320,Berlin - Trautenauer Str. 13
+7321,Weissewanne - Waschkeller
+7322,Venlo - Peperstraat 8
+7323,Box 201201
+7324,Kast 29260
+7325,Box 201202
+7326,Box 201203
+7327,Braunschweig
+7328,PTB
+7329,Ankerpark
+7330,Kast Ankerpark
+7331,Utrecht - Van Heuven Goedhartlaan 1
+7332,Greystar Hospital - Launderette
+7333,Utrecht - Van Heuven Goedhartlaan 1
+7334,Greystar Tower - Launderette
+7335,Box 201204
+7336,Emmerich am Rhein
+7337,Emmerich am Rhein
+7338,K59 Links
+7339,K59 Rechts
+7340,Box 201206
+7341,Box 201207
+7342,Box 201209
+7343,Box 201210
+7344,Box 201211
+7345,Box 201212
+7346,Box 201214
+7347,Box 201215
+7348,Verblijf
+7349,Verblijf
+7350,Box 201218
+7351,Box 201219
+7352,Box 201220
+7353,Box 201221
+7354,Box 201222
+7355,Box 201223
+7356,Box 201224
+7357,Vught
+7358,Oudega
+7359,Hooidammen - Headammen
+7360,Verblijf
+7361,K60 Links
+7362,K60 Rechts
+7363,K61 Links
+7364,K61 Rechts
+7365,Terschelling
+7366,Noord-Sleen
+7367,Camperplaats Wielens
+7368,Verblijf
+7369,DWTA en Stroom
+7370,Stroom 1
+7371,Stroom 2
+7372,Graz - Finkerngasse 4
+7373,Waschkeller
+7374,Voerde Friedrichsfeld
+7375,Voerde Friedrichsfeld
+7376,Kast 64 Links
+7377,Kast 64 Rechts
+7378,Kast 65 Links
+7379,Kast 65 Rechts
+7380,Washok
+7381,Roosendaal
+7382,Roosendaalse Vliet
+7383,Kast 28021
+7384,Kast 28037
+7385,Kast 28033
+7386,Box 201205
+7387,Box 201208
+7388,Box 201208
+7389,Box 201216
+7390,Box 201217
+7391,Box 201225
+7392,Kast 62 Rechts
+7393,Kast 63 Links
+7394,Kast 63 Rechts
+7395,Kast 62 Links
+7396,Uitdam Europarcs
+7397,Jachthaven Resort Poort van Amsterdam
+7398,Verblijf
+7399,Wien - Bendlgasse 10-12
+7400,CLEAN KOKOS
+7401,Oslo - Skovveien 6
+7402,Maastricht
+7403,Noorder Brug
+7404,Kast 1
+7405,Haven Terschelling
+7406,Kast S1-1
+7407,Kast S2
+7408,Kast S3-1
+7409,Kast S4
+7410,Kast S5-1
+7411,Steiger 1 Kast 6
+7412,Steiger 1 Kast 7
+7413,Kooijhaven
+7414,Altenrheine OW Schleuse
+7415,Altenrheine OW Schleuse
+7416,Kast 57 Links
+7417,Kast 57 Rechts
+7418,Kast 58 Links
+7419,Kast 58 Rechts
+7420,Kast K30 Links
+7421,Kast K30 Rechts
+7422,Kast K31 Links
+7423,Kast K31 Rechts
+7424,Huisje nr 12
+7425,Huisje nr 46
+7426,Huisje nr 54
+7427,Huisje nr 56
+7428,Nijmegen
+7429,WC Meijhorst
+7430,Kast 1
+7431,Kast 2
+7432,Watertappunt
+7433,Campers Caravans Resort Poort van Amsterdam
+7434,Verblijf
+7435,Tenten Resort Poort van Amsterdam
+7436,Verblijf
+7437,Edam
+7438,Edam Keetzijde
+7439,Zuil 25017
+7440,Zuil 25023
+7441,Water 25029
+7442,Woerden
+7443,Stadshaven Woerden
+7444,Zuil 25030
+7445,Zuil 25034
+7446,Water 25038
+7447,Verblijf
+7448,Water
+7449,Stroompunten van vaste ligplaatsen
+7450,Zagreb - Odranska 1a
+7451,Zagreb 1
+7452,Kast 25223
+7453,Kast 25229
+7454,Huisje nr 15
+7455,Rotterdam - Emmahuis
+7456,Havensteder - Miele Laundry Boutique
+7457,Almere Havenkom
+7458,Camperplaats Harderwijk
+7459,Zonneweide
+7460,Bergeshovede
+7461,Kast K43
+7462,Kast 55 Links
+7463,Kast 55 Rechts
+7464,Kast 54 Links
+7465,Kast 54 Rechts
+7466,Kast K44
+7467,Rovereto
+7468,Rovereto Sud - Autostrada del Brennero
+7469,Kast 1
+7470,Kast 2
+7471,Kast 3
+7472,Kast 4
+7473,Kast 5
+7474,Box 201720
+7476,Kast S3-2
+7477,Kast S5-2
+7478,Steiger 1 Kast 8
+7479,Steiger 1 Kast 9
+7480,Kast DS
+7481,Kast W1
+7482,Kast W2
+7483,Kast W3
+7484,Kast W4
+7485,Kast W5
+7486,Kast W1 LL Kade
+7487,Kast W2 LL Kade
+7488,Kast W6
+7489,Steiger 2 Kast 1
+7490,Steiger 2 Kast 2
+7491,Steiger 2 Kast 3
+7492,Steiger 2 Kast 4
+7493,Steiger 2 Kast 5
+7494,Laad en loskade Kast 1
+7495,Laad en loskade Kast 2
+7496,Laad en loskade Kast 3
+7497,Amsterdam - Markelerbergpad 5
+7498,Laundrette - OurDomain Amsterdam South East
+7499,_to be deleted
+7500,_to be deleted
+7501,Mo i Rana - Kaialundveien 24
+7502,Capelle aan den IJssel - Roer
+7503,Nautilus laundry room
+7504,Ulm - Gutenbergstraße 6
+7505,Waschkeller (F)
+7506,Ulm - Heidenheimer Straße 78
+7507,Location Update: Please re-enter machine number in settings -> account -> my preferred laundrette
+7508,Waschkeller
+7509,Ulm - Frauensteige 2
+7510,Waschkeller
+7511,Ulm - Syrlinstraße 8
+7512,Waschkeller
+7513,Ulm - Kelternweg 38
+7514,Waschkeller
+7515,Biberach - Kapuzinerstr. 11 
+7516,Waschkeller
+7518,Bielefeld - Großdornberger Str. 2
+7519,Rødekro - Søvænget 93
+7520,Domea Søvænget
+7521,Risskov - Sletterhagevej 23 - 25 - 27
+7522,nr. 30481
+7523,Lauwersoog Haven
+7524,NG Shipyard Lauwersoog
+7525,Kast 1
+7526,Kast 2
+7527,Kast 3
+7528,Kast 4
+7529,Kast 5
+7530,Rødekro - Vestergade 3
+7531,Domea Vestergade
+7532,Aachen - Brüggemannstrasse
+7533,Aachen Brüggemannstrasse
+7534,bielefeld test
+7535,Bielefeld test
+7536,Hamburg - Sedanstrasse
+7537,Waschkeller
+7538,Box 201736
+7539,Box 201740
+7540,Box 201741
+7541,Box 201744
+7542,Box 201746
+7543,Box 201748
+7544,Box 201749
+7545,Box 201750
+7546,Box 202201
+7547,Box 202207
+7548,Box 202209
+7549,Kast S1-2
+7550,Kast S3-3
+7551,Utrecht
+7552,Haven
+7553,Kast 1
+7554,Kast 2
+7555,Kast 3
+7556,Kast 4
+7557,Kast 5
+7558,Kast 6
+7559,Kast 7
+7560,Freiburg - Charlottenburger Str. 18
+7561,Campus II - Waschkeller
+7562,abonnements fee
+7563,_Demo - Marktstroom
+7564,Zonhoven Jansen
+7565,URU+ 19380015
+7566,Zwolle - SSH
+7567,MLB Wasserette
+7568,Amsterdam - Nieuwe Osdorpergracht
+7569,The Cohesion Don Bosco
+7570,Kast WSK 2
+7571,Kast WSK 4
+7572,Kast WSK 5
+7573,K3
+7574,K4
+7575,K5
+7576,K6 RH10000
+7577,K6 atlantic
+7578,K7
+7579,K10
+7580,K11
+7581,K13
+7582,Nijverheidskade
+7583,Trondheim - Olav Tryggvasons gate 5
+7585,AØF folketshus - vaskerom 5. og 6. etg.
+7587,K1
+7588,Trelleborg
+7589,Freight Safe security box
+7590,Box 202247
+7591,Box 202248
+7592,Box 202249
+7593,Box 202250
+7594,Box 202430
+7595,Box 202431
+7596,Box 202435
+7597,Box 202438
+7598,Box 202444
+7599,Box 202445
+7600,Box 202447
+7601,Box 202450
+7602,Box 202218
+7603,Box 212634 (was Box/URU 202229)
+7604,Box 202231
+7605,Box 202232
+7606,Box 202233
+7607,Box 202236
+7608,Box 202235
+7609,Box 202238
+7610,Box 202239
+7611,Box 202246
+7612,Box 202245
+7613,Box 202244
+7614,K12
+7615,K14
+7616,K15
+7617,Coventry - 9 Bishop St (C)
+7618,Weaver Place - Block C
+7619,Coventry - 9 Bishop St (B)
+7620,Weaver Place - Block B
+7621,Linz - Klauberweg 2-8
+7622,Waschküche
+7623,K2
+7624,K7 deel 2
+7625,Friedrichshafen - Fallenbrunnen 19
+7626,Waschraum UG
+7627,Paris - Demo Location
+7628,Stock
+7629,Haarlem - Vijfhuizerstraat
+7630,New Harlem
+7631,202936
+7632,202937
+7633,202939
+7634,202940
+7635,202941
+7636,202946
+7637,202949
+7638,202950
+7639,Miesbach - Oskar-von-Miller-Straße 14
+7640,Leo Apartments
+7641,Amsterdam - Laadvoorzieningen
+7642,Passantenhaven Maasmechelen
+7643,Old_Maasmechelen
+7644,Zuil 202920
+7645,Zuil 202921
+7646,Zuil 202924
+7647,water 28095
+7648,water 28097
+7649,Projects Walstroom
+7650,Haven Lauwersoog
+7651,Aachen - Am Guten Hirten 4
+7652,MILESTONE Aachen West (Altbau)
+7653,Kast W3 LL Kade
+7654,Kast W8
+7655,Kast W9
+7656,Kast W7
+7657,Kast 202927
+7658,Box 202414
+7659,Box 202905
+7660,Box 202903
+7661,Box 202916
+7662,Rotterdam - Admiraliteit
+7663,Admiraliteitskade
+7664,Box 202933
+7665,Kast 1 (URU 202242)
+7666,Box 202901
+7667,Kast 2 (URU 153132)
+7668,Box 202907
+7669,Kast 3 (URU 202243)
+7670,Box 202904
+7671,Box 202908
+7672,Box 202919
+7673,Box 202918
+7674,Box 202914
+7675,Maastricht - Wauwhaus
+7676,Miele Laundry Boutique
+7678,Box 202902
+7679,Box 202906
+7680,Box 202909
+7681,Box 202910
+7682,Box 202912
+7683,Box 202915
+7684,Box 202917
+7685,Box 203201
+7686,Box 203202
+7687,Box 203203
+7688,Box 203204
+7689,Box 203205
+7690,Kråkerøy - Bjølstadveien 8b
+7691,SiØ Vaskeri
+7692,Weil am Rhein - August-Bauer-Straße 3
+7693,Waschkeller Haus 2 - 1.UG
+7694,Vantaa - Demo Location
+7695,Milano - Via Ascanio Sforza 75
+7696,Lavanderia Eco-Living
+7697,Wien - Linke Wienzeile 210
+7698,Waschküche
+7699,virtueel voor periodieke vergoeding
+7701,Hamburg - Behringstrasse 150
+7703,Weigelia / Heuvelweg
+7704,Almelo
+7705,Gdańsk - Robotnicza 16
+7706,YOUNIQ Laundry
+7707,Camperplaats Almelo
+7708,Huisje nr 23
+7709,Huisje nr 50
+7710,Huisje nr 52
+7711,Huisje nr 53
+7712,Huisje nr 14
+7713,Huisje nr 67
+7714,Huisje nr 63
+7715,Huisje nr 24
+7716,Huisje nr 49
+7717,Huisje nr 51
+7718,Huisje onbekend 17 lijkt op 39
+7720,_Italy_Box Test
+7721,Roermond - Ursulacomplex
+7722,Jo Hansenstraat 2A - Miele Laundry Boutique
+7723,Rotterdam - Douane
+7724,Douane - Westzeedijk 381 - Stadswonen - Miele Laundry Boutique
+7725,Berlin - Storkower Straße 205A
+7726,Waschkeller
+7727,Box 203223
+7728,Box 203231
+7729,Box 203214
+7730,Box 203841
+7731,Box 201236
+7732,Box 203234
+7733,Box 203224
+7734,Box 203232
+7735,Box 203216
+7736,Hamburg - Tarpenbekstraße 62
+7737,Waschkeller
+7738,Box 203217
+7739,Box 203215
+7740,Box 203218
+7741,Box 202911
+7742,Box 203207
+7743,Box 203209
+7744,Box 203212
+7745,Box 203213
+7746,Box 203222
+7747,Box 203210
+7748,Box 203220
+7749,Box 202923
+7750,Box 203219
+7751,Box 203208
+7752,Box 202913
+7753,Berlin - Breite Straße 42a
+7754,Garden Studios - Waschkeller
+7755,Berlin - Unter den Eichen 96
+7756,Oak Studios - Waschkeller
+7757,Berlin - Clayallee 336
+7758,Clay Studios - Waschkeller
+7759,Bremen - Fahrenheitstrasse 21
+7760,Waschkeller
+7762,Haus Meidling - Waschküche
+7763,Konstanz - Rheingutstraße 40
+7764,Europahaus - Waschraum 1. OG
+7765,Nürnberg - Maxtormauer 50
+7766,Student Apartments - Waschraum
+7767,Nottingham - Boulevard Wharf
+7768,Laundry
+7769,DWTA W3
+7770,DWTA W4
+7771,DWTA W5
+7774,Berlin - Mühlenstraße 25
+7775,66Monkeys - Waschkeller
+7776,Clichy - 107 Rue Martre
+7777,Moov'Appart Hotel - LAVERIE 3e ETAGE
+7778,Oudewater (vervallen)
+7779,Markt Westzijde
+7780,Kast 1
+7781,Kast 2
+7782,Schwarzach - Baderstraße 10a
+7783,KSK Campus JK24 - Waschküche Mitarbeiterwohnungen
+7784,Location Update: Please re-enter machine number in settings -> account -> my preferred laundrette
+7785,KSK Campus J246 - Waschküche Studentenheim
+7786,Brno - Demo Location
+7787,Amsterdam - Rudolf Dieselstraat 7 (Blok 3)
+7788,MLB Ymere Eenhoorn
+7789,Halte Fluviale
+7790,Cabinet
+7791,Heteren - De Witgoedpartner Demo
+7792,Demo Showroom
+7793,Carnaxide - Demo Location
+7794,Ikast - Hagelskærvej 40
+7795,ISI Idrætshøjskole - Højskole
+7796,Box 203414
+7797,Box 203404
+7798,Box 203502
+7799,Box 203423
+7800,Box 203503
+7801,Box 203405
+7802,Box 203410
+7803,Box 203412
+7804,Box 203425
+7805,Box 203245
+7806,Box 203411
+7807,Box 203406
+7808,Box 203403
+7809,Box 203402
+7810,Box 203416
+7811,Box 203408
+7812,Box 203419
+7813,Box 203415
+7814,Box 203401
+7815,Box 203409
+7816,Box 203413
+7817,Eindhoven Sport
+7818,Box 203417
+7819,Cork - Magazine Road
+7820,ScholarLee - Laundry
+7821,Box 203424
+7822,Box 203407
+7823,Urban Living
+7824,Essen - Jägerstraße 25
+7825,Villefranche-sur-Saône
+7826,München - Schatzbogen 35
+7827,MASEVEN - Waschlounge
+7828,Berlin - Helsingforserstr. 15
+7829,Waschkeller
+7830,Berlin - Helsingforserstr. 15a
+7831,Waschkeller
+7832,_to be deleted
+7833,Merkantilbygg - 4 etg
+7834,Merkantilbygg - 3 etg
+7835,K15-2
+7836,K16
+7837,Dresden - Güntzstraße 28
+7838,Güntz Studios - Waschkeller
+7839,Kast 2
+7840,Bochum - Universitätsstraße 110f
+7841,7 Stones - Waschsalon
+7842,Box 203227
+7843,Box 203740
+7844,Box 203739
+7845,Box 203738
+7846,Box 203737
+7847,Box 203736
+7848,Box 203735
+7849,Box 203734
+7850,Box 203733
+7851,Box 203732
+7852,Box 203731
+7853,Box 203730
+7854,Box 203729
+7855,Box 203727
+7856,Box 203726
+7857,Box 203725
+7858,Box 203724
+7859,Box 203723
+7860,Box 203722
+7861,Box 203721
+7862,Box 203716
+7863,Box 203715
+7864,Box 203714
+7865,Box 203709
+7866,Box 203250
+7867,Box 203248
+7868,Box 203247
+7869,Box 203240
+7870,Box 203239
+7871,Konstanz - Schürmann-Horster Weg 6
+7872,Waschraum UG
+7875,Ludwigsburg  - Eduard-Spranger-Str. 7
+7876,Blueba Studios - Waschkeller
+7877,Ulm - Gutenbergstraße 6
+7878,Waschkeller (B)
+7879,Wien - Erdberger Lände 36
+7880,Waschküche
+7881,Almere - De Binderij 65
+7882,De Binderij -Miele Laundry Boutique
+7885,Ulm - Kelternweg 48
+7886,Waschkeller
+7887,MLB Ymere Eenhoorn
+7888,Haslum - Durudveien 14-22
+7889,Durudveien 14 A
+7892,Durudveien 16
+7895,Box 203206
+7896,Box 203211
+7897,Box 203701
+7898,Box 203702
+7899,Box 203703
+7900,Box 203704
+7901,Box 203706
+7902,Box 203707
+7903,Box 203710
+7904,Box 203711
+7905,Box 203713
+7906,Box 203717
+7907,Box 203718
+7908,Box 203719
+7909,Box 203720
+7910,Box 203728
+7911,Box 203750
+7912,Box 203805
+7913,Box 203806
+7914,Box 203811
+7915,Box 203812
+7916,Box 203813
+7917,Box 203814
+7918,Box 203825
+7919,Budapest - Tűzoltó utca 50-56
+7920,Dean’s College Hotel
+7921,Konstanz - Rheingutstraße 30
+7922,Paradies Waschraum 1. OG
+7925,Mollem - Demo Location
+7926,Durudveien 20 A
+7928,Geldrop - Mierlo
+7929,Heuvel
+7930,KAST E1
+7931,KAST E2
+7932,KAST E3
+7933,KAST E4
+7936,Going - Kaiserweg 1
+7937,Stanglwirt - Personalresidenz
+7938,Konstanz - Schürmann-Horster Weg 14
+7939,Waschraum UG
+7940,Huisje nr 03
+7941,Huisje nr 05
+7942,Huisje nr 09
+7943,Huisje nr 07
+7944,Huisje nr 10
+7945,Huisje nr 11
+7946,Huisje nr 13
+7947,Huisje nr 26
+7948,Huisje nr 39
+7949,Konstanz - Hindenburg-Str. 3
+7950,Am Seerhein Waschraum UG
+7951,Hamburg - Bollweg 26
+7952,Waschkeller Bollweg
+7953,Konstanz - Rheingutstraße 34
+7954,Jan Hus Haus - Waschraum UG
+7955,Leyweg
+7956,Kast 1 71651
+7957,Kast 2 71663
+7958,Kast 3 71675
+7959,Kast 4 71681
+7960,Kast 5 71693
+7961,Brno - Plevova 2540-7
+7962,Prádelna
+7963,Brno - Plevova 2539-9
+7964,Prádelna
+7965,Brno - Tyršova 2375-70
+7966,Prádelna
+7967,Carcavelos - Rua da Holanda 1
+7968,_DELETE
+7969,Carcavelos - Rua Quinta da Lobita 10
+7971,Porto - Rua Manuel Pacheco de Miranda 38
+7972,MILESTONE Porto Asprela
+7973,IJmuiden
+7974,Haringhaven Loggerstraat
+7975,Kast 1
+7976,Kast 2
+7977,Kruisstraat
+7978,Kast 1
+7979,Kast 2
+7980,Weingarten - Lazarettstraße 8
+7981,Konstanz - Jacob-Burckhardt- Str. 35
+7982,Lazarettstraße - Waschraum UG
+7983,Konstanz - Am Schmerzenmösle 24
+7984,Sonnenbühl Ost - Hochhaus - Waschraum UG
+7985,Jungerhalde - Waschraum
+7986,Konstanz - Sonnenbühlstr. 38
+7987,Waschraum UG
+7988,Milano - Borgo La Vetreria
+7989,Borgo la Vetreria
+7990,Cork - Mardyke
+7991,ScholarLee - Laundry
+7994,Salzburg - Robert-Preußler-Straße 28
+7995,Europa Kolleg - Waschkeller
+7996,Salzburg - Robert-Preußler-Straße 11
+7997,Franz v. Sales Kolleg - Waschkeller
+7998,Salzburg - Billrothstraße 10-18
+7999,Internationales Kolleg - Waschkeller (Haus A)
+8000,Internationales Kolleg - Waschkeller (Haus D)
+8001,Nürnberg - Avenarius/Rollner/Eintracht
+8002,Avenarius 46
+8003,Avenarius 48
+8004,Rollner 132
+8005,Rollner 134
+8006,Eintracht 43
+8007,kast 1 Swart
+8008,Clausthal Zellerfeld - Bohlweg 10
+8009,Box 202220
+8010,Box 202224
+8011,Box 202240
+8012,Box 203228
+8013,Box 203741
+8014,Box 203808
+8015,Box 203816
+8016,Box 203817
+8017,Box 203818
+8018,Box 203819
+8019,Box 203821
+8020,Box 203823
+8021,Box 202219
+8022,Box 202225
+8023,Box 202226
+8024,Box 203238
+8025,Box 203242
+8026,Box 203743
+8027,Box 203809
+8028,Box 203810
+8029,Box 203815
+8030,Box 203820
+8031,Box 203822
+8032,Box 203824
+8033,Konstanz - Gustav-Schwab Str. 3-13
+8034,Petershauser Bahnhof Waschraum UG
+8035,Konstanz - West 2
+8036,Waschraum
+8037,Den Haag - Staedion Huygenspark
+8038,Miele Laundry Boutique
+8039,Bad Wiessee - Sanktjohanserstr. 46
+8040,Teamhaus - Bussi Baby
+8041,Tromsø - Smørbukklia 3
+8042,SML 03
+8045,Wageningen - Plantsoen 40
+8046,Extended Stay Wageningen
+8047,Parking Ponthoeve Vianen
+8048,Verblijf
+8049,Leerdam
+8050,Jachthaven De Oude Horn Leerdam
+8051,Verblijf
+8052,Parking Glasmuseum Leerdam
+8053,Verblijf
+8054,Parking Lingedijk Leerdam
+8055,Verblijf
+8056,Hamburg - Simon-von-Utrecht-Str. 27
+8057,Gemeinschaftsraum
+8059,MILESTONE Nova I
+8061,MILESTONE Carcavelos Lombos
+8064,Aabybro - Højskolevej 7
+8065,Aabybro Efterskole - Elevvaskeri
+8066,_to be deleted
+8067,_to be deleted
+8068,Box 204601
+8069,Box 204602
+8070,Box 204603
+8071,Box 204604
+8072,Box 204605
+8073,Box 204606
+8074,Box 204607
+8075,Box 204608
+8076,Box 204609
+8077,Box 204610
+8078,Box 204611
+8079,Box 204612
+8080,Box 204613
+8081,Box 204614
+8082,Box 204615
+8083,Box 204616
+8084,Box 204617
+8085,Box 204618
+8086,Box 204619
+8087,Box 204620
+8088,Box 204621
+8089,Box 204622
+8090,Box 204623
+8091,Box 204624
+8092,Box 204625
+8093,Box 204626
+8094,Box 204627
+8095,Box 204629
+8096,Box 204630
+8097,Box 204628
+8098,Box 204631
+8099,Box 204632
+8100,Box 204633
+8101,Box 204634
+8102,Box 204635
+8103,Box 204636
+8104,Wemmel - Romeinsesteenweg 748
+8105,R748
+8106,Wemmel - Romeinsesteenweg 770
+8107,R770
+8108,Wemmel - Romeinsesteenweg 772
+8109,R772
+8110,Wemmel - E. Van Elewijckstraat 18
+8111,NW18
+8112,Den Haag - Carolina van Nassaustraat 163
+8113,Prinsenhof - Laundry
+8114,Zuil 204201
+8115,Zuil 204218
+8116,Huisje nr 21
+8117,Huisje nr 08
+8118,Kassel - Kölnische Straße 104
+8119,Studentenwohnheim - Waschraum EG
+8120,Lelystad - Wonen bij LARS
+8121,Miele Laundry Boutique
+8122,Kamerik
+8123,Hallehuis
+8124,Hallehuis
+8125,Box 205001
+8126,Box 205002
+8127,Box 205003
+8128,Box 205004
+8129,Box 205005
+8130,Box 205006
+8131,Box 205007
+8132,Box 205008
+8133,Box 205009
+8134,Box 205010
+8135,Box 205011
+8136,Box 205012
+8137,Box 205013
+8138,Box 205014
+8139,Box 205015
+8140,Box 205016
+8141,Box 205017
+8142,Box 205018
+8143,Box 205019
+8144,Box 205020
+8145,Box 205021
+8146,Box 205022
+8147,Box 205023
+8148,Box 205024
+8149,Box 205025
+8150,Box 205026
+8151,Box 205027
+8152,Box 205028
+8153,Box 205029
+8154,Box 205030
+8155,Box 205031
+8156,Box 205032
+8157,Box 205033
+8158,Box 205034
+8159,Box 205035
+8160,Box 205036
+8161,Borre - Raveien 201
+8162,SSN - Campus Bakkenteigen
+8163,Leeds - 1 Rutland Mount
+8164,Union Student Living - Laundry Room
+8167,_Borre - Sandeveien
+8168,_to be deleted
+8169,Den Haag - Laakweg 19
+8170,Go 070 - Miele Laundry Boutique
+8173,"Stuttgart - Schwabstraße 139, A u. B+C"
+8174,Schwabstraße 139 - BV220
+8175,Amsterdam - Bos en Lommerplantsoen 67
+8176,Studio Zuid - Miele Laundry Boutique
+8177,Breda - Donkvaart 11
+8178,Wasserette Donk
+8179,Göttingen - Karolinenweg 19
+8180,Waschküche
+8181,Göttingen - Annastraße 50
+8182,Waschküche
+8183,Ingolstadt - Griesbadgasse 14
+8184,Waschküche
+8185,Ingolstadt - Goethestraße 15
+8186,Waschküche
+8187,Ingolstadt - Viehmarktplatz 1
+8188,Waschküche
+8189,Location Update: Please re-enter machine number in settings -> account -> my preferred laundrette
+8190,Halle - Felsenstraße 19
+8191,Waschküche
+8192,Halle - Kurt-Mothes-Str. 8
+8193,Waschküche
+8194,Halle - Kurt-Mothes-Str. 6
+8195,Waschküche
+8196,Halle - W.-Langenbeck-Str. 5
+8197,Waschküche
+8198,Halle - Brandbergweg 23 (A)
+8199,Waschküche
+8200,Halle - Brandbergweg 23 (B)
+8201,Waschküche
+8202,Halle - Netzweg 1
+8203,Waschküche
+8204,Halle - Hoher Weg 6
+8205,Waschküche
+8206,Halle - Landrain 47-51
+8207,Waschküche
+8208,Halle - Harz 42
+8209,Waschküche
+8210,Merseburg - Platz der Bausoldaten 2
+8211,Waschküche
+8212,Merseburg - Platz der Bausoldaten 1
+8213,Waschküche
+8214,Tønsberg - Rambergveien 7
+8215,SSN - Kaldnes Brygge
+8216,Merseburg - Friedrich-Zollinger-Straße 1
+8217,Waschküche
+8218,Merseburg - Eberhard-Leibnitz-Straße 3
+8219,Waschküche
+8220,Merseburg - Eberhard-Leibnitz-Straße 1
+8221,Waschküche
+8222,Köthen - Bernburger Str. 52 B
+8223,Waschküche
+8224,Köthen - Am Hubertus 1-6
+8225,Waschküche
+8226,Köthen - Bernburger Str. 54
+8227,Waschküche
+8228,Köthen - Semmelweisstr. 4
+8229,Waschküche
+8230,Bernburg - Theodor-Roemer-Straße 3
+8231,Waschküche
+8232,Bernburg - Magdeburger Str. 25
+8233,Waschküche
+8234,Bernburg - Theodor-Roemer-Straße 5
+8235,Waschküche
+8236,Bernburg - Theodor-Roemer-Straße 7
+8237,Waschküche
+8238,Dessau - Brauereistr. 9e-h
+8239,Waschküche
+8240,Dessau - Hardenbergstraße 29
+8241,Waschküche
+8242,Halle - W.-Langenbeck-Str. 8
+8243,Waschküche
+8244,Loosduinen
+8245,Frankfurt am Main - DOS 52
+8246,Waschkeller
+8247,Borre - Raveien 189 B
+8248,SSN - Fagerlund
+8249,Borre - Sandeveien 9
+8250,SSN - Myra
+8251,Frankfurt am Main - DOS 52a
+8252,Waschkeller
+8253,Frankfurt am Main - DOS 54
+8254,Waschkeller
+8255,Frankfurt am Main - DOS 54b
+8256,Waschkeller
+8257,Frankfurt am Main - DOS 54c
+8258,Waschkeller
+8259,Frankfurt am Main - DOS 56
+8260,Waschkeller
+8261,Frankfurt am Main - DOS 56a
+8262,Waschkeller
+8263,Frankfurt am Main - DOS 58
+8264,Waschkeller
+8265,Frankfurt am Main - DOS 58a
+8266,Waschkeller
+8267,Frankfurt am Main - DOS 60
+8268,Waschkeller
+8269,Frankfurt am Main - DOS 60a
+8270,Waschkeller
+8271,Frankfurt am Main - DOS 62
+8272,Waschkeller
+8273,Frankfurt am Main - DOS 64
+8274,Waschkeller
+8275,Frankfurt am Main - DOS 64a
+8276,Waschkeller
+8277,Frankfurt am Main - DOS 64b
+8278,Waschkeller
+8279,Frankfurt am Main - Haus 53
+8280,Waschkeller
+8281,Frankfurt am Main - Haus 55
+8282,Waschkeller
+8283,Frankfurt am Main - Haus 54
+8284,Waschraum 6. OG
+8285,Frankfurt am Main - Haus 58
+8286,Waschkeller
+8287,Frankfurt am Main - Haus 59
+8288,Waschkeller
+8289,K39
+8290,K40
+8291,Vaste Ligplaatsen
+8292,Passanten Locatie Flat Havenhoofd
+8293,Passanten Locatie Horecagebied
+8294,Verblijf Flathoofd
+8295,Verblijf Horeca
+8296,Amsterdam - Rudolf Dieselstraat 7 (Blok 4)
+8297,Trossingen - Vogesenstr. 71
+8298,Waschküche
+8299,Zaandam
+8300,Düsseldorf - Arcadiastraße 18
+8301,Arcadia Höfe 18
+8302,Arcadia Höfe 26
+8303,Arcadia Höfe 19
+8304,Konstanz - Albertus-Magnus-Haus
+8305,Waschräume AMH
+8306,URU 204211
+8307,URU 204210
+8308,Watertappunten
+8309,Gütersloh - appWash
+8310,pay
+8311,Kast K42 Links
+8312,Kast K42 Rechts
+8313,Oudewater
+8314,Noord IJsselkade
+8315,Huisje nr 77
+8316,Huisje nr 64
+8317,Huisje nr 79
+8318,Huisje nr 62
+8319,Huisje nr 78
+8320,Huisje nr 58
+8321,Huisje nr 65
+8322,Huisje nr 25
+8323,Huisje nr 42
+8324,Huisje nr 80
+8325,Box 203745
+8326,Box 203746 (Uru still working?)
+8327,Box 203747
+8328,Box 204203
+8329,Box 204204
+8330,Box 204205
+8331,Box 204206
+8332,Box 204207
+8333,Box 204208
+8334,Box 204209
+8335,Box 204219
+8336,Box 204220
+8337,Box 204222
+8338,Box 204223
+8339,Box 204224
+8340,Box 204225
+8341,Box 204226
+8342,Box 204227
+8343,Box 204228
+8344,Box 204229
+8345,Box 204230
+8346,Box 204231
+8347,Box 204232
+8350,Rotterdam - Erfgoedhavens
+8351,Haringvliet
+8352,Box 20100024
+8353,Amsterdam - Spaklerweg 14
+8354,The Cohesion Lofts
+8355,Drammen - Øvre Storgate 50
+8356,SSN - Tutus
+8357,Kongsberg - Stasjonsbakken 3
+8358,SSN - Papillon
+8359,Kongsberg - Hasbergs vei 3
+8360,SSN - Silva
+8361,Box 204221
+8362,Copenhagen  - Amagerfælledvej 108 
+8363,ZOKU
+8364,Wien - Perspektivstraße 6
+8365,ZOKU
+8366,Box 203807
+8367,Box 210202
+8368,Box 210203
+8369,Box 210204
+8370,Box 210205
+8371,Box 210206
+8372,Box 210207
+8373,Box 210208
+8374,Box 210209
+8375,Box 210210
+8376,Box 210211
+8377,Box 210212
+8378,Box 210213
+8379,Box 210214
+8380,Box 210215
+8381,Box 210216
+8382,Box 210217
+8383,Box 210218
+8384,Box 210219
+8385,Box 210220
+8386,Box 210221
+8387,Box 210222
+8388,Box 210223
+8389,Box 210224
+8390,Kranj
+8391,Iskra Slovenia
+8392,Box 20430010
+8393,K50 Links
+8394,K50 Rechts
+8395,Drammen - Strømsgata 4
+8396,SSN - Domi
+8397,Præstø - Idrætshøjskolen Bosei
+8398,Kælder Valhal
+8400,Athens - Demo Location
+8401,Box 205037
+8402,Box 205038
+8403,Box 205039
+8404,Box 205040
+8405,Box 205046
+8406,Box 205102
+8407,Box 205103
+8408,Box 205104
+8409,Box 205105
+8410,Box 205115
+8411,Box 205120
+8412,Box 210225
+8413,Milano - Cretese
+8414,RooFinders Cretese
+8415,Bordeaux - 12/16 rue de Gironde
+8416,Whoo Bacalan - Laverie
+8417,K35 Links
+8418,K35 rechts
+8419,K36 Links
+8420,K36 Rechts
+8421,K37 Links
+8422,K37 Rechts
+8423,K38 Links
+8424,K38 Rechts
+8425,K49 Links
+8426,K49 Rechts
+8427,Capelle a/d IJssel - The Rhino
+8428,The Rhino
+8429,Box 205041
+8430,Box 205042
+8431,Box 205043
+8432,Box 205044
+8433,Box 210530 Old box of Moorstrasse 15 Hamburg
+8434,Box 205047
+8435,Box 205048
+8436,Box 205049
+8437,Box 205050
+8438,Box 205106
+8439,Box 205101
+8440,Box 205107
+8441,Box 205108
+8442,Box 205109
+8443,Box 205110
+8444,Box 205111
+8445,Box 205112
+8446,Box 205113
+8447,Box 205114
+8448,Box 205116
+8449,Box 205118
+8450,Box 205119
+8451,Box 205121
+8452,Box 205122
+8453,Telemark - Gullbringvegen 28
+8454,SSN - Campus Bø
+8455,Halle - Am Zollrain 5
+8456,Saale Studios - Waschkeller
+8457,Bochum - Laerholzstrasse 3
+8458,River Studios - Waschkeller
+8459,Kiel - Klein Ebbenkamp 1
+8460,Kyle Studios - Waschkeller
+8461,Stuttgart - Wolframstrasse 36
+8462,NIDO Stuttgart - Waschkeller
+8463,Sanitairgebouw
+8464,Hannover - Weddigenufer 2
+8465,Waschküche
+8466,Hannover - Weddigenufer 3
+8467,Waschküche
+8468,Brøndby - Idrætefterskole
+8472,Sluisgeld Havenkomsluis
+8473,Sluisgeld
+8474,Eindhoven - Hertogstraat 1.01 / 1.016
+8475,Schoonoord Miele Laundry Boutique
+8476,Nieuwegein
+8477,Passantenhaven Plettenburg
+8480,Jena - Ziegesarstraße 9-11
+8481,Waschküche
+8482,Huisje nr 72
+8483,Huisje nr 61
+8484,Huisje nr 59
+8485,Huisje nr 60
+8486,Vlotho - Seebruchstraße 33
+8487,Weserland-Klinik
+8488,Mittweida - Bahnhofstraße/Feldstraße
+8489,Waschküche
+8490,Zuil 25380
+8491,Zuil 25386
+8492,Zuil 25392
+8493,Zuil 25398
+8494,Zuil 25404
+8495,Zuil 25410
+8496,Zuil 25416
+8497,DWTA 25379
+8498,Meudon - Rue Mazkeret Batia
+8500,StudCity Meudon - Laverie
+8501,Delft
+8502,Zuidwal
+8503,Zuil 25337
+8504,Zuil 25340
+8505,Zuil 25343
+8506,Zuil 25346
+8507,Zuil 25349
+8508,Zuil 25352
+8509,Hønefoss - Bredalsveien 16A
+8510,SSN – Campus Ringerike
+8511,Groningen - Dierenriemstraat 100
+8512,Miele Laundry Boutique
+8513,Camperparking Veerstoep
+8514,Camperparking Govert van Wijnkade
+8515,stageld
+8516,stageld
+8517,Zutphen - Noorderhaven
+8518,Zuid Steiger
+8519,K1: 210706
+8520,K2: 210707
+8521,K3: 210722
+8522,K4: 210701
+8523,K5: 210704
+8524,K6: 210709
+8525,K7: 210720
+8526,K8: 210708
+8527,K9: 210738
+8528,K10: 210703
+8530,Montigny-le-Bretonneux - 1 Rue des Tritons
+8534,les estudines SQY - Laverie
+8538,Lübeck
+8539,RSR Steiger 1
+8540,RSR Steiger 2
+8541,Box 210501
+8542,Box 210502
+8543,Box 210503
+8544,Box 210504
+8545,Box 210505
+8546,Box 210506
+8547,Box 210507
+8548,Box 210508
+8549,Box 210509
+8550,Box 210510
+8551,Box 210511
+8552,Box 210512
+8553,Box 210513
+8554,Box 210514
+8555,Box 210515
+8556,Box 210516
+8557,Box 210517
+8558,Box 210518
+8559,Box 210519
+8560,Box 210520
+8561,Box 210521
+8562,Box 210522
+8563,Box 210523
+8564,Box 210524
+8565,Hamburg - Probsteier Str. 18 / Angelnstr. 13
+8566,Waschkeller
+8567,Hamburg - Böhmersweg 23
+8568,Waschkeller
+8569,Budapest - Rottenbiller utca 17
+8570,Mosoda
+8571,Wiesbaden - Wilhelmstraßer 52 a-d
+8572,Vier Jahreszeiten - Waschkeller
+8573,Edam (voor gemeente)
+8574,Edam Keetzijde
+8575,Abonnement voor haven
+8576,URU 20480002
+8577,Voorraad
+8578,URU 2020480017
+8579,Kast 22010-2
+8580,Kast 22010-1
+8581,EHV Haagdijk 31002
+8582,EHV Haagdijk 31001
+8583,defect URU 2020480048 22003
+8584,URU 2048001101
+8585,URU 2020480024
+8586,Kast EVE-075A
+8587,Mobiele unit 05 Orange
+8588,Kast EVE030
+8589,URU 2020480006
+8590,Kast 22004
+8591,Kast 22002
+8592,URU 2020480042
+8593,URU 2020480050
+8594,Koningsoord kast 01
+8595,URU 2020480016
+8596,URU 2020480041
+8597,Tongerloplein EVE-016
+8598,Kast Breestoep
+8599,URU 2020480032
+8600,Kast 22001-2
+8601,Kast 22001-1
+8602,URU 2020480039
+8603,Kast EVE-073
+8604,URU 2020480027
+8605,Demo Unit v2.0
+8606,KAST E2A
+8607,URU 2020480018
+8608,URU 2020480028
+8609,URU 2020480034
+8610,Kast EVE-076B
+8611,Kast 22003
+8612,Kast EVE-075B
+8613,Marktplein 01
+8614,Marktplein 02
+8615,URU 2020480026
+8616,URU 2020480045
+8617,Kast EVE-076A
+8618,Besterdplein 07
+8619,BOX 20480047
+8620,URU 2020480031
+8621,URU 2020480023
+8622,URU 2020480035
+8623,Passantenhavens Hooikade Zuidwal Westsingelgracht
+8624,WK1
+8625,WK2
+8628,De Meern - Touwslagerslaan 1-33
+8629,MLB Huize Nijevelt
+8632,Vaskeri
+8633,DWTA
+8634,Stroomboot
+8635,Haparandadam Amsterdam
+8636,Stroomkast
+8637,Wasserette
+8638,Bergeshovede Linkes Ufer
+8639,Linkes Ufer
+8640,Kast 51
+8641,Kast 52
+8644,Wien - Schnirchgasse 13
+8645,Linked Living Waschküche
+8646,Location Update: Please re-enter machine number in settings -> account -> my preferred laundrette
+8647,2020480004-11014 Wilhelminaplein
+8648,Kast SPE022
+8649,Marktplein 03
+8650,Marktplein 04
+8651,Drammen - Børsemakergata 2
+8652,SSN - Moov In
+8653,Frankfurt - Lyoner Str. 30
+8654,Ly 30
+8655,Verblijf boxen
+8656,Lijnbaansgracht
+8657,Zuil 211013
+8658,Wijk bij Duurstede
+8659,A Steiger - WSV Rijn en Lek
+8660,A Steiger
+8661,Verblijf kade
+8662,Involtum
+8663,Westsingelgracht
+8664,WK3
+8665,WK4
+8666,Kast 211010
+8667,Kast 211008 DWTA
+8668,Kast 211016
+8669,Kast 211011
+8670,Noorderhaven aanlegboxen
+8671,Boxen Noord Steiger
+8672,Düsseldorf - Mindener Straße 98
+8673,Schöffenhöfe
+8674,Düsseldorf - Mindener Straße 100
+8675,Schöffenhöfe
+8676,Boxen Zuid Steiger
+8677,Oudenburg
+8678,Stationsstraat
+8679,Kast 1
+8680,Liggeld
+8681,B Steiger
+8682,E Steiger
+8683,Wijhe
+8684,Zone Passentenhaven Loswal Wijhe
+8685,Zone Camperplekken GEEN stroom Loswal
+8686,Zone Camperplekken MET stroom Loswal
+8687,Verblijf
+8688,Verblijf
+8689,Verblijf
+8690,B Steiger - WSV Rijn en Lek
+8691,E Steiger - WSV Rijn en Lek
+8692,Breukelen
+8693,Kockengen
+8694,Zuil 71297
+8695,Zuil 71562
+8696,Huisje nr 27
+8697,Huisje nr 73
+8698,Huisje nr 74
+8699,Huisje nr 75
+8700,Huisje nr 34
+8701,Huisje nr 76
+8702,Box 210537
+8703,Box 210547
+8704,Box 210534
+8705,Box 210545
+8706,Box 210533
+8707,Box 210548
+8708,Box 205045
+8709,Box 210535
+8710,Box 210531
+8711,Box 210540
+8712,Box 210536
+8713,Box 210539
+8714,Box 210529
+8715,Box 210527
+8716,Box 210526
+8717,Box 210528
+8718,Box 210532
+8719,Box 210538
+8720,Box 210543
+8721,Box 210525
+8722,Box 210541
+8723,Box 210546
+8724,Box 210542
+8725,Box 210544
+8726,Casilli Enterprise
+8727,Kast 211002
+8728,Kast 211007
+8729,Konstanz - Jacob-Burghardt-Str. 4a
+8730,Sonnenbühl West 1 Haus - 4a
+8731,Prinsengracht
+8732,Nieuwe Keizersgracht
+8734,Zuil 25489
+8735,Zuil 25493
+8736,Zuil 25497
+8737,Zuil 25505
+8738,Zuil 25501
+8739,Zuil 25509
+8740,Zuil 25513
+8741,Zuil 25517
+8742,Arnhem - House of Arnhem
+8743,Miele Laundry Boutique
+8744,Zelf De-Icers Almere
+8745,K7 13 en 14
+8746,K1 8-12
+8747,K2 1-4
+8748,K13 5-7
+8749,K3 15-18
+8750,K5 19-21
+8751,Administration
+8752,Maribor - Elektra Balance
+8753,URU 2020430011
+8754,Huizen - Passantenhaven
+8755,Xfoue
+8756,Huizen Passantenhaven
+8757,Zuil 25558
+8758,Washok
+8759,DWTA 25555
+8760,DWTA 25556
+8761,DWTA 25557
+8762,Rotterdam - Cite
+8763,Miele Laundry Boutique
+8764,Obergurgl - Gurglerstraße 110
+8765,Campus - U2
+8766,Campus - U3
+8767,Amsterdam
+8768,Westerhoofd 1
+8769,WS00001
+8770,WS00002
+8771,WS00003
+8772,WS00004
+8773,Kast 25531
+8774,Kast 25539
+8775,Kast 25547
+8776,_to be deleted
+8777,Merkantilbygg
+8778,Fehmarn - Fehmarnsund 70
+8779,Großes Waschhaus
+8780,Globe
+8781,Kast 210942
+8782,Kast 210908
+8783,Markt
+8784,Kerkbrink weekmarkt
+8785,Loenen aan de Vecht
+8786,Rijksstraatweg Markt
+8787,Zuil 71718
+8788,Drie Stammenplein
+8789,Geldrop - Bogardeind 219
+8790,Miele Laundry Boutique - The Stay
+8791,Verblijf
+8792,Heidelberg - Im Neuenheimer Feld 370
+8793,Gästehaus Uni Heidelberg - Haus 3
+8794,Subscriptie Software
+8795,Huisje nr 29
+8796,Hønefoss - Nansenveien 14 E
+8797,Vaskemaskin
+8798,Washok
+8799,Rotterdam - Schutterstraat
+8800,Miele Laundry Boutique
+8801,Rotterdam - Maja
+8802,Miele Laundry Boutique
+8803,Huisje nr 55
+8804,Huisje nr 68
+8805,Huisje nr 66
+8806,Huisje nr 69
+8807,Huisje nr 70
+8808,Huisje nr 71
+8809,Huisje nr 02
+8810,Kast 59 Links
+8811,Kast 59 Rechts
+8812,Kast 60 Links
+8813,Kast 60 Rechts
+8814,Wien - Nordportalstraße 2
+8815,MILESTONE Prater
+8816,München - Isareckstraße 36
+8817,Waschküche
+8818,Parma - Via Lisbona
+8819,Interporto di Parma
+8820,_to be deleted
+8821,Schiedam - Stichting Welkom Schiedam
+8822,Miele Laundry Boutique
+8823,Wien - Leopold Ungar Platz 3
+8824,SMARTments - Waschkeller SMB
+8825,Leeds  - Tower House St
+8826,Altus House Tower - Laundry
+8827,Pierefitte sur Seine - Avenue Emile Zola
+8828,PARME ETUDES PIERREFITTE - LAVERIE
+8829,München - Karl-Schmid-Straße 22
+8830,Smartliving - Waschraum
+8831,Rostock - Erich-Schlesinger-Str. 37B
+8832,WIROtel Waschküche
+8833,Nola - Via XX Settembre
+8834,Düsseldorf - Arcadiastraße 28
+8835,Arcadia Höfe 28
+8836,Helsinki - Melkinlaituri 10
+8837,Tvättstuga
+8838,Neu-Ulm - Pearl-S.-Buck-Straße 3
+8839,Waschkeller
+8840,Rüdesheim am Rhein - Taunusstraße
+8841,Campus Freistil - Waschkeller
+8842,Dalfsen
+8843,Stationslocatie Dalfsen
+8844,Nieuwleusen
+8845,Middengebied Nieuwleusen
+8846,Verblijf
+8847,Verblijf
+8848,Tromsø  - Stakkevollvegen 11 B
+8849,The Box - Wash Lounge
+8850,Colleferro
+8851,St Gerardusplein
+8852,München - Herzogspitalstraße 7
+8853,Caritas Jugendwohnheim Herzogspitalstraße
+8854,Vianen - Miele demonstratie wasserette
+8855,MLB Demo kast
+8856,_to be deleted
+8857,Majorstuveien 26c
+8858,Oslo - Majorstuveien 26
+8859,Majorstuveien 26c
+8860,Huisje nr 31
+8861,Prinsengracht
+8862,"Zuider Amstelkanaal, Bernard Zweerskade"
+8863,"Zuider Amstelkanaal, Stadionkade t.h.v. Michelangelostraat"
+8864,"Singelgracht, Mauritskade"
+8865,Herengracht
+8866,Nieuwe Keizersgracht
+8867,Keizersgracht
+8868,Zeeburgerkade
+8869,Zeeburgerdijk
+8870,"Zuider Amstelkanaal, Amstelkade t.h.v. Reggestraat"
+8871,Sint-Oedenrode - Rijtvenweg 5
+8872,Genson 1 - Miele Laundry Boutique
+8873,Sint-Oedenrode - Rijtvenweg 8A
+8874,Genson 2 - Miele Laundry Boutique
+8875,_to be deleted
+8876,Short Stay Wageningen
+8877,_to be deleted
+8879,_to be deleted
+8881,Leuven - Diestsevest
+8882,Diestsevest
+8883,Kast 6 71721
+8884,Oslo - Falbes Gate 5
+8887,Oslo  - Refstadveien 50
+8889,Kwekerijpad
+8890,Utrecht - Bisschopssteeg 29
+8891,Johanna - Miele Laundry Boutique
+8892,Leidschendam Markt
+8893,Potsdam - Berliner Str. 150
+8894,"Azubi-Wohnheim - Z150, Erdgeschoss"
+8895,Rechtes Ufer
+8896,Dorenthe Wendebecken
+8897,Dorenthe Wendebecken
+8898,Bergkamen Runthe
+8899,Bergkamen Runthe
+8900,Dorenthe rechtes ufer
+8901,Dorenthe rechtes ufer
+8902,Munster
+8903,Dreieckshafen
+8904,Ruijterkade - Oost
+8905,Kast 552
+8906,Amsterdam - Jollenpad
+8907,Haven - Jollenpad
+8908,K2: 212042
+8909,K3: 212043
+8910,Schmedehausen
+8911,Hafenweg
+8912,Nieuwe Niedorp
+8913,De Rijd
+8914,Liggeld
+8915,Kast 8561
+8916,Kast 8562
+8917,Kast 8559
+8918,Kast 8560
+8919,Schleuse Munster OW
+8920,Wilhelmshafenufer
+8921,Kast 8547
+8922,Kast 8548
+8923,Kast 8549
+8924,Kast 8550
+8925,Kast 8551
+8926,Kast 8552
+8927,Zuil 8540
+8928,Zuil 8541
+8929,Zuil 8542
+8930,Zuil 8543
+8931,Zuil 8544
+8932,Zuil 8545
+8933,Zuil 8546
+8936,Berlin - Goethestraße 87
+8937,Townhouse - Waschküche
+8938,Düsseldorf - Arcadiastraße 40
+8939,Arcadia Höfe 40
+8940,Düsseldorf - Arcadiastraße 11
+8941,Arcadia Höfe 11
+8942,PIN automaat
+8943,Kort Liggeld
+8944,Horecaplein Heuvel
+8945,Karpendonk 33003
+8946,Longyearbyen - Vei 509 - Elvesletta 2
+8947,Vaskeri
+8948,Greifswald - Soldmannstr. 16
+8949,Waschküche
+8950,Greifswald - Ellernholzstr. 4
+8951,Waschküche
+8952,Greifswald - Soldmannstr. 16a
+8953,Waschküche
+8954,Greifswald - Soldmannstr. 17
+8955,Waschküche
+8956,Garmisch - Lagerhausstrasse 4a/b
+8957,Waschkeller
+8958,Box 153139
+8959,Box 153144
+8960,Dortmund - Hoher Wall 17
+8961,Wash-Lounge
+8962,Nola - San Vitaliano
+8963,Statione GNL - Via Pagliarelle
+8964,Heverlee - Groenstraat 127
+8965,Mr. Eco Wash
+8966,_to be deleted
+8967,Kuchl - Markt 136c
+8968,Haus Blau - Waschkeller
+8969,Haus Rot - Waschkeller
+8970,Haven
+8971,Kast 16
+8972,Kast 1
+8973,Kast 4
+8974,Kast 210730
+8975,Kast 13
+8976,Kast 18
+8977,Kast 10E
+8978,Kast 8
+8979,Kast 10
+8980,Kast 3
+8981,Kast 210924
+8982,Kast 20
+8983,Kast 15
+8984,Bielefeld - Babenhauser Straße 37
+8985,Waschküche
+8986,Kast 12
+8987,Kast 14
+8988,Kast 5
+8989,Kast 17
+8990,Düsseldorf - Arcadiastraße 19
+8991,Düsseldorf - Arcadiastraße 26
+8992,Ruijterkade west - middensteiger kast 543 544
+8993,WS00005
+8994,WS00006
+8995,SMARTments - Waschkeller SMS
+8996,WS00007
+8997,WS00008
+8998,WS00009
+8999,WS00010
+9000,Kast 10
+9001,WS00011
+9002,Westerdoksdijk 1
+9003,WS00014
+9004,Saint-Denis - 2 rue de la fortification
+9005,PARME ETUDES SAINT REMY - LAVERIE
+9006,Graz - Idlhofgasse 62
+9007,Waschküche
+9008,Molde - Britvegen 19
+9009,Campus Vaskeri
+9010,Molde - Mekvegen 15
+9011,Kvam Vaskeri
+9012,Oudewater
+9013,Vestby - Høgdaveien 7
+9014,_to be deleted
+9015,Vaskerom i 1. etg
+9016,Den Haag Leyweg (oud)
+9017,Den Haag Loosduinen (oud)
+9018,Den Haag Ypenburg - Vuursteen
+9019,Den Haag Lange Voorhout
+9020,Den Haag Stevinstraat
+9021,Salzburg - Faberstrasse 19
+9022,Gästehaus Mozart - Waschkeller
+9023,"Ivry-sur-Seine - 5, allée Allain Leprest"
+9024,Laverie YouFirst Campus - Paris Porte d’Ivry
+9025,"Champs sur Marne - 6, boulevard Copernic "
+9026,Laverie YouFirst Campus - Paris Cité Descartes
+9027,Nijmegen - Wolfskuilseweg 98
+9028,Wolfskuilseweg
+9029,WS00015
+9030,Sittard - Watersley 31
+9031,Sports & Talentpark - Miele Laundry Boutique
+9032,Halden - SIØ - B R A Veien 8
+9033,SiØ - B R A Veien 8
+9034,Oslo - Thereses gate 3c-f
+9035,Bygg C - Nr 1
+9036,Box 210920
+9037,Box 212001
+9038,Box 212002
+9039,Box 212003
+9040,Box 212004
+9041,Box 212005
+9042,Box 212007
+9043,Box 212033
+9044,Box 212034
+9045,Box 212035
+9046,Box 212038
+9047,Box 212039
+9048,Box 212041
+9049,Box 212044
+9050,Box 212046
+9051,Box 212047
+9052,Box 212048
+9053,Box 212049
+9054,Box 212050
+9055,Box 212107
+9056,Kast 4 (URU 203831)
+9057,Kast 5 (URU 203830)
+9058,Kast 6 (URU 92835)
+9059,Wilhelminaplein
+9060,Urban Sport
+9061,_to be deleted Granada
+9062,LAVANDERIA_JM_1
+9063,_to be deleted
+9064,Maasmechelen
+9065,Kerava - Jurvalantie 8
+9066,Pesutupa
+9067,Ljubljana ETIS - Demo Location
+9068,Celje - Ljubljanska Cesta 21
+9069,Pralnica
+9070,Aachen - Am Venskyhäuschen 40-42
+9071,Objekt 7015 - Waschküche 1
+9072,Granada - C/Profesor Clavera 8
+9073,Location Update: Please re-enter machine number in settings -> account -> my preferred laundrette
+9074,Box 212045
+9075,Box 212102
+9076,Box 212140
+9077,Box 212145
+9078,Box 212116
+9079,Box 212146
+9080,Box 212143
+9081,Box 212130
+9082,Box 212118
+9083,Box 212142
+9084,Box 212119
+9085,Box 212120
+9086,Harlingen
+9087,Nieuwe Vissershaven
+9088,K14 212105
+9089,Box 212117
+9090,Box 210915
+9091,Box 210918 (Box 3)
+9092,Box 212036
+9093,Box 212018
+9094,Box 212040
+9095,Box 212027
+9096,Box 212021 (Box 2)
+9097,Box 212319
+9098,Box 212017
+9099,Box 212020
+9100,Box 212023
+9101,Box 212006
+9102,Box 212022
+9103,Box 212024
+9104,Box 212025
+9105,Box 212026
+9106,Box 212028
+9107,Box 212032
+9108,Box 212031
+9109,Box 212037
+9110,München - Baierbrunner Str. 38
+9111,Rioca Munich Posto 3 - Waschküche
+9112,Wageningen - Churchillweg 2
+9113,Wasserette Churchillweg
+9115,Oosterdok Amsterdam
+9116,URU 20480052
+9117,Liggeld
+9118,Den Haag Leyweg
+9119,Den Haag Loosduinen
+9120,Leyweg
+9121,Loosduinen
+9122,Weert - Emmasingel 53
+9123,Loft 33 Miele Laundry Boutique
+9124,Stockholm - Heliosgatan 13
+9125,Unity Hammarby
+9126,Wismar - Philipp-Müller-Str. 25
+9127,Waschküche
+9128,Amsterdam - Het Kwartier (2)
+9129,Wasserette Vaandeldrager
+9130,Amsterdam - Het Kwartier (1)
+9131,Wasserette Winnaar
+9132,Location Update: Please re-enter machine number in settings -> account -> my preferred laundrette
+9133,Hamburg - Kiwittsmoor 28
+9134,Waschküche
+9135,Helsinki - Melkinlaituri 8
+9136,Tvättstuga
+9137,Aalst
+9138,Camperplaats Zwembadlaan 2
+9139,Kast 212138
+9140,Kast 212144
+9141,_to be deleted
+9142,Schwäbisch Gmünd
+9143,Nice - 455 Promenade des Anglais
+9144,les estudines Nice Saint Augustin - Laverie
+9145,Bagnolet - 37 avenue du Général de Gaulle 
+9146,les estudines Paris Bagnolet - Laverie
+9147,Bagnolet - 47 avenue du Général de Gaulle
+9148,les estudines Paris Bagnolet - Laverie
+9149,Limoges - 61 rue du Puy Las Rodas 
+9150,les estudines Limoges Las Rodas - Laverie
+9151,Bordeaux - 20 quai Armand Lalande 
+9152,les estudines Bordeaux - Laverie
+9153,_to be deleted
+9154,Heilbronn
+9155,Gelsenkirchen - KST 578 WH Wodanstraße
+9156,Waschkeller 7a
+9157,Waschkeller 7c
+9158,Waschkeller 7f
+9159,_to be deleted
+9160,_to be deleted
+9161,_to be deleted
+9162,Wageningen - Gerdesstraat 71
+9163,Laundry Work Spot
+9164,Hamar - Seminargata 35
+9165,SINN - Vaskeri
+9166,Hamar - Grønnegata 70
+9167,SINN - Vaskeri
+9168,Zwolle
+9169,Pr. Margriethaven
+9170,Kast 212818
+9171,Kast 212030
+9172,Kast 212012
+9173,Kast 212015
+9174,Kast 212801
+9175,Kast 212008
+9176,Kast 212817
+9177,Longyearbyen - Vei 509 - Elvesletta 1
+9178,Vaskeri
+9179,Wien - Schnirchgasse 11
+9180,Waschküche
+9181,"Elvesletta Boligpark, blokk 1"
+9182,"Elvesletta Boligpark, blokk 1"
+9183,Wien - Schnirchgasse 9
+9184,Waschküche
+9185,Berlin - Selma-Lagerlöf-Str. 10-16
+9186,Waschküche
+9187,Jyllinge - Møllehaven 8
+9188,Møllehaven
+9189,Best - MalleJan 2-60
+9190,MLB - Mijn Thuis
+9191,Eindhoven - Frankrijkstraat 101-235
+9192,MLB - Mijn Thuis
+9193,Erlangen - Wöhrstraße 13+14
+9194,Waschkeller
+9195,K28 212122
+9196,K22 212124
+9197,K16 212617
+9198,K17 212127
+9199,K18 212128
+9200,K19 212129
+9201,K20 212615
+9202,K21 212123
+9203,K23 212125
+9204,K24 212126
+9205,K25 212106
+9206,K26 212101
+9207,K27 212121
+9208,Lavanderia
+9209,Porto - Rua Dr. Júlio de Matos no 401
+9210,Studyou Porto Asprela Campus - Laundry room
+9212,Cork -  Dyke Parade
+9213,UCC Mardyke Hall - Laundry
+9214,Alcoi - c/ San Juan de Ribera 11
+9215,Lavanderia
+9216,Lelystad
+9217,Vilshofen - Schweiklberg 1
+9218,Waschküche
+9219,Bataviahaven
+9220,K29 212103
+9221,K30 212104
+9222,Zwolle - Katerdijk 3
+9223,Camperpark Hofvliet
+9224,Verblijf
+9225,Wien - Große Schiffgasse 12
+9226,home4students - Wash Lounge
+9227,XXX
+9229,Ferratec - Rudolfstetten
+9230,URU 21340001
+9231,URU 21340002
+9232,Stay zone
+9233,Schwäbisch Gmünd - Königturmstrasse 39
+9234,Heilbronn - Schmollerstraße
+9235,Tilburg
+9236,Hamburg - Schüttstrasse 1-5
+9237,Schüttstrasse
+9238,Hamburg - Moorstrasse 15
+9239,Moorstrasse 15 Hamburg
+9240,Den Bosch
+9241,Camperplaats Den Bosch
+9242,K1
+9243,Heyhoef
+9244,Westermarkt
+9245,Leijpark
+9246,Stappegoor
+9247,Besterdplein
+9248,Wagnerplein
+9249,Wilhelminapark
+9250,Tongerloplein
+9251,Ypelaerpark
+9252,Koningsoord Berkel-Enschot
+9253,Reeshofpark
+9254,Spoorlaan
+9255,Mobiele Unit 013-01
+9256,Mobiele Unit 013-02
+9257,Mobiele Unit 013-03
+9258,Mobiele Unit 013-04
+9259,K2
+9260,K3
+9261,K4
+9262,K5
+9263,K6
+9264,K7
+9265,K8
+9266,K9
+9267,K10
+9268,K15 212616
+9269,K01 212618
+9270,K02 212619
+9271,Breestoep
+9307,Tilburg Westermarkt EVE-004
+9308,Tilburg Westermarkt EVE-004A
+9309,Tilburg Westermarkt EVE-007
+9310,Tilburg Westermarkt EVE-NIEUW
+9311,Tilburg Westermarkt EVE-005
+9312,Tilburg Westermarkt EVE-005A
+9313,Tilburg Westermarkt EVE-007A
+9314,Tilburg Westermarkt EVE-006
+9315,Tilburg Westermarkt EVE-006A
+9316,Tilburg Westermarkt EVE-006B
+9317,Kast EVE-018
+9319,Rena - Fabrikkveien 4
+9320,Vaskeri (4)
+9321,Weert
+9322,Rena - Fabrikkveien 6
+9323,Vaskeri (6)
+9324,Rena - Fabrikkveien 8
+9325,Vaskeri (8)
+9326,Wien - Viehmarktgasse 4
+9327,Rioca Vienna Posto 2 - Waschküche
+9328,Stadspark
+9329,Weert Stadpark 01
+9330,Madrid - Calle Victor de la Serna 13
+9331,Lavanderia
+9332,Wolfsburg - Hochring 39	
+9333,Waschküche
+9334,Wolfsburg - Burgwall 9-17
+9335,Waschküche
+9336,"Móstoles -  C. Andrómeda, 41"
+9337,Lavanderia
+9338,Sevilla - C. Miguel Cid 25
+9339,Lavanderia
+9340,Berlin - Pohlstr. 82
+9341,Waschkeller
+9342,Stock Miele DE production 2019
+9343,Box 212821
+9344,Box 212822
+9345,Box 212824
+9346,Box 212828
+9347,Box 212837
+9348,Box 212840
+9349,Box 212845
+9350,Box 213501
+9351,Box 213502
+9352,Box 213503
+9353,Box 213504
+9354,Box 213505
+9355,Box 213506
+9356,Box 213507
+9357,Box 213508
+9358,Box 213509
+9359,Box 213510
+9360,Box 213511
+9361,Box 213512
+9362,Box 213513
+9363,Box 213514
+9364,Box 213515
+9365,Box 213516
+9366,Box 213517
+9367,Box 213518
+9368,Box 213519
+9369,Box 213520
+9370,Box 213521
+9371,Box 213522
+9372,Box 213523
+9373,Box 213524
+9374,Box 213525
+9375,Box 213526
+9376,Box 213527
+9377,Box 213528
+9378,Box 213529
+9379,Box 213536
+9380,Box 213537
+9381,Box 213538
+9382,Box 213539
+9383,Box 213540
+9384,Box 213541
+9385,Box 213542
+9386,Köln - Gummersbacher Straße 31 a
+9387,Location Update: Please re-enter machine number in settings -> account -> my preferred laundrette
+9388,Berlin - Friedrichstraße 150
+9389,Untergeschoß
+9390,Den Haag Hofplaats
+9391,Boerenmarkt
+9392,_to be deleted
+9393,_to be deleted
+9394,Bielefeld - Merianstraße 10
+9395,WaschKüche -  Campus Westend
+9396,Eindhoven (Walstroom)
+9397,Eindhoven - Heihoef
+9398,Eindhoven - VV Acht
+9399,Spardorf - Buckenhoferstraße 3
+9400,Personalunterkunft Spardorf
+9401,Bonn - Belderberg 21
+9402,Waschküche Studentenwohnheim Belderberg
+9403,Alta - Follumsvei 4-6
+9404,Follumsvei 4-6
+9405,Verblijf
+9406,Wien - Dresdner Str. 109
+9407,Rioca Posto 1
+9408,Thomastown - Co. Kilkenny
+9409,The Quay Car Park
+9410,Stay
+9411,Callan - CO. Kilkenny
+9412,The Abbey Meadow
+9413,Stay
+9414,Pedestal 210944
+9415,Pedestal 213535
+9416,LinkedLiving - Laundry
+9417,Luxembourg - route de Longwy 200
+9418,Laundry Longwy
+9419,Veldhoven - Thuis
+9420,Miele Laundry Boutique
+9421,DWTA1
+9422,DWTA3
+9423,Veemkade t.h.v. huisnummer 1104
+9424,WS00022
+9425,WS00017
+9426,WS00018
+9427,WS00019
+9428,WS00020
+9429,WS00033
+9430,EBF-seminar 2021 Denmark
+9431,Zuil 212833
+9432,Luxembourg - rue Charles Martel 60A
+9433,Laverie Chopin
+9434,EVE 16
+9435,Box 212846
+9436,Box 213431
+9437,Udenhout
+9439,Berkel-Enschot
+9440,Box 210912
+9442,_Oslo - Markveien 28
+9443,CLEAN KOKOS
+9444,Alfter - Villenstraße 6-8
+9445,Waschküche Studentenwohnheim Villestraße
+9446,Quadraturen - Tollbugata 13
+9447,Quadraturen
+9448,WS00016
+9449,-
+9450,WS00023
+9451,Danzigerkade t.h.v. huisnummer 68
+9452,WS00024
+9453,WS00025
+9454,WS00026
+9455,WS00027
+9456,WS00028
+9457,Vaals - MLB Koperstraat
+9458,Miele Laundry Boutique
+9461,Zürich - Mattengasse 17/19
+9462,Waschküche
+9463,WS00029
+9464,Sumatrakade t.h.v. Azartplein
+9465,WS00030
+9466,WS00031
+9467,WS00032
+9468,WS00021
+9469,WS00034
+9470,WS00035
+9471,Javakade t.h.v huisnummer 620
+9472,WS00036
+9473,Warszawa - Niepodległości 147
+9474,Szkoła Główna Handlowa - Sabinki
+9475,To be deleted
+9476,WC Haagdijk
+9477,Kan weg
+9478,EHV Haagdijk 31002
+9479,To be deleted _HAMAR - SINN
+9480,Laundry Room
+9481,Hamar - Fredrik Monsens gate 23
+9482,SINN - Vaskeri
+9483,Marktplein 04
+9484,Bernau - Am Mahlbusen 46 - 70
+9485,Waschkeller 1
+9486,Waschkeller 2
+9487,Ashford - Arrowhead Road
+9488,Laundry - Ashford International Truckstop
+9490,Budapest
+9491,Zuil 1
+9492,Halden - SIØ - B R A Veien 6
+9493,SiØ - B R A Veien 6
+9494,EHV Haagdijk 31001
+9495,URU 2020100011
+9496,Vaste vergoeding
+9497,"Belvaux - 4, rue Samuel Beckett"
+9498,Laverie
+9499,WS00037
+9500,Surinamekade t.h.v KNSM Laan 679
+9501,WS00038
+9502,WS00039
+9503,Minervahavenweg 1
+9504,WS00040
+9505,WS00041
+9506,Wagnerplein kast 04-2
+9507,Wagnerplein kast 01
+9508,Kast 51002-1
+9509,Kast 51002-2
+9510,Kast 51012
+9511,Kast 51003-2
+9512,Kast 51003-1
+9513,Wagnerplein kast 04-1
+9514,Wagnerplein kast 05-2
+9515,Wagnerplein kast 05-1
+9516,WS00042
+9517,URU 2021330013
+9518,Wagnerplein kast 07
+9519,Kast 51001-1
+9520,Wagnerplein kast 04-3
+9521,URU 2021270009
+9522,URU 2020100007 defect Geldrop
+9523,URU 2021270012
+9524,URU 2021270002
+9525,URU 2021270019
+9526,Tournoysveld
+9527,URU 2021270010
+9528,URU 2021270007
+9529,URU 2021270003
+9530,Kast 01
+9531,URU 2021270008
+9532,URU 2021270006
+9533,Wagnerplein kast 03-2
+9534,Wagnerplein kast 01A
+9535,URU 2021330001
+9536,Wagnerplein kast 06
+9537,URU 2021330009
+9538,Kast 51001-2
+9539,Kast 51004
+9540,Wagnerplein kast 02-1
+9541,Wagnerplein kast 02-3
+9542,Wagnerplein kast 03-1
+9543,Wagnerplein kast 02-2
+9544,Kast 51005-1
+9545,Kast 02 Powerlock 400A
+9546,Kast 03
+9547,Molenvliet
+9548,Kast 01 Powerlock 400A
+9549,Prinsenbeek 1-3
+9550,Kast 02
+9551,URU 2021270023
+9552,URU 2120480051
+9553,URU 2021270011
+9554,WS00043
+9555,Haparandadam 1
+9556,WS00044
+9557,WS00045
+9558,WS00046
+9559,WS00047
+9560,WS00054
+9563,Elspro - Hilden
+9564,URU+ 2021400006
+9565,_Demo - ParkAndPower
+9566,_Demo - NomadPower
+9567,Zuil 2
+9568,URU+ 2021400006
+9569,_to be deleted
+9570,Laverie
+9571,Lauwersoog NG Shipyards
+9572,Saen Demo
+9573,Graz - Starhemberggasse 2
+9574,Waschküche
+9575,SiØ- Bjølstadveien 8N
+9576,SiØ- Bjølstadveien 8N
+9577,K13 212623
+9579,Nyborg - Campushaven 33
+9580,Vaskeri Campushaven
+9581,Lelystad - Wonen bij Lilly
+9582,Miele Laundry Boutique
+9583,_To be deleted
+9584,Pralnia
+9585,Warszawa - ul. Madalińskiego 31/33
+9586,Szkoła Główna Handlowa - Grosik
+9587,K09 212627
+9588,_to be deleted
+9589,_to be deleted
+9590,K11 212621
+9591,WS00053
+9592,WS00052
+9593,Oude Houthaven - kade 3
+9594,Buiksloterweg 1
+9595,WS00055
+9596,WS00056
+9597,IJplein t.h.v huisnummer 109
+9598,WS00057
+9599,WS00058
+9600,Westhavenweg
+9601,WS00059
+9602,WS00060
+9603,Nieuwe Hemweg
+9604,WS00063
+9605,Pontsteiger
+9606,WS00065
+9607,WS00066
+9608,WS00067
+9609,WS00068
+9610,WS00069
+9611,API Test
+9612,Amsterdam - Rudolf Dieselstraat 7 (blok 8)
+9613,Miele Laundry Boutique
+9614,K03 212628
+9615,K04 212629
+9616,K05 212630
+9617,K06 212624
+9618,K07 212625
+9619,K08 212626
+9620,K10 212620
+9621,K12 212622
+9622,Quai Rambaud service fee
+9623,service fee
+9624,Thessaloniki - Valaoritou 10
+9625,Hamlet 2b - Dirty laundry
+9626,Objekt 7015 - Waschküche 2
+9627,Markt Schwaben - Enzensbergerstr. 8
+9628,Waschkeller
+9629,WS00071
+9630,WS00070
+9631,WS00072
+9632,Zuil 24270
+9633,Zuil 24274
+9634,Montpellier
+9635,Oslo - Markveien 28
+9636,_to be deleted
+9637,Genk
+9638,Camperplaats Kattevennen
+9639,Zuil 212823
+9640,Zuil 212814
+9641,Zuil 212108
+9642,Zuil 212815
+9643,Horten - Borreveien 46
+9644,Borreveien 46
+9645,Villefranche-sur-Saône (service fee)
+9646,Halte Fluviale service fee
+9647,Service fee
+9648,Graz - Mariatroster Str. 9-11
+9649,Waschküche
+9650,Stock Miele DE production 2021
+9651,Box 214238
+9652,Box 214239
+9653,Box 214240
+9654,Box 214241
+9655,Box 214242
+9656,Box 214243
+9657,Box 214244
+9658,Box 214245
+9659,Box 214246
+9660,Box 214247
+9661,Box 214248
+9662,Box 214249
+9663,Box 214250
+9664,Box 202013
+9665,Box 210903
+9666,Box 212809
+9667,Box 212810
+9668,Box 212811
+9669,Box 212812
+9670,Box 212831
+9671,Box 212832
+9672,Box 212834
+9673,Box 212835
+9674,Box 212836
+9675,Box 212842
+9676,Box 212847 (Broken Box from Rioca Neu-Ulm Posto 5)
+9677,Box 212848
+9678,Box 212849
+9679,Box 214201
+9680,Box 214203
+9681,Box 214202
+9682,Box 214204
+9683,Box 214205
+9684,Box 214206
+9685,Box 214207
+9686,Box 214208
+9687,Box 214209
+9688,Box 214210
+9689,Box 214211
+9690,Box 214212
+9691,Box 214213
+9692,Box 214214
+9693,Box 214215
+9694,Box 214216
+9695,Box 214217
+9696,Box 214218
+9697,Box 214219
+9698,Box 214220
+9699,Box 214221
+9700,Box 214222
+9701,Box 214223
+9702,Box 214224
+9703,Box 214225
+9704,Box 214226
+9705,Box 214227
+9706,Box 214228
+9707,Box 214229
+9708,Box 214230
+9709,Box 214231
+9710,Box 214232
+9711,Box 214233
+9712,Box 214234
+9713,Box 214235
+9714,Box 214236
+9715,Box 214237
+9716,Brno - Dornych 519/47e - Domeq II+III
+9717,Prádelna
+9718,Hamburg - Berner Heerweg 183a/185
+9719,Waschkeller 183a
+9720,Waschkeller 185
+9721,Stuttgart  - Ernsthaldenstraße 43-49
+9722,Waschküche
+9723,Aachen - Haarener Gracht 7/7a/7b
+9724,Waschküche
+9725,Göttingen  - Erich Schmidt Weg 2
+9726,Waschküche
+9727,Göttingen  - Goßlerstraße 77
+9728,Waschkeller
+9729,Langenhagen  - Konrad-Adenauer-Straße 28-36
+9730,Waschküche
+9731,Hamburg  - Von-Sauer-Straße 2A
+9732,Waschküche
+9733,Wien - Am Grünen Prater 11
+9734,MILESTONE Campus
+9735,Kast 212806 A steiger opgang
+9736,Kuringen - Kuringen 12App
+9737,KUR Wash&Dry
+9738,Hamburg -Triftstrasse
+9739,Waschkeller
+9740,Wijchen - Vlaskam 26
+9741,Laundr - Young People Living
+9742,Graz - Bahnhofgürtel 55
+9743,MILESTONE Lend
+9744,Salzburg - Röcklbrunnstraße 20
+9745,_to be deleted
+9746,Immenstadt - im Stillen 43
+9747,Villa Nagelfluh - 0.14
+9748,Kitzbühel - Jochberger Straße 12
+9749,Personalunterkunft Jägerwirt - Waschküche
+9750,Garmisch - Lagerhausstrasse 10 e/f
+9751,Waschküche
+9752,Bad Doberan-Heiligendamm - Kühlungsborner Str. 19E
+9753,HD Boarding House Haus 2
+9754,Waterfront - Oude Vissershaven
+9755,Göttingen - Am Gartetalbahnhof 4-8
+9756,Waschküche
+9757,Paris - 3 allée Yvette Guilbert
+9758,les estudines Paris Batignolles - Laverie
+9759,Bagneux - 1 impasse Jeanne d'Arc
+9760,les estudines Paris Bagneux - Laverie
+9761,Courbevoie - 11 allée des Tilleuls
+9762,les estudines Grande Arche - Laverie
+9764,Courbevoie - 49 Rue des Etudiants 
+9765,Studcity La Colline de l'Arche - Laverie
+9766,Lommedalen - Skolegata 10
+9767,Laundry room
+9768,Kast 3 (ombouwen)
+9769,Woerden - Hogewoerd 3
+9770,Laundr - GroenWest
+9771,Bad Säckingen - Nagaistr. 7
+9772,Schülerwohnheim Waschraum
+9773,_to be deleted
+9774,_to be deleted
+9775,Heidenheim - Schneitheimer Strasse 63
+9776,Heidenheim - Schneitheimer Strasse 63
+9777,Amsterdam - Rudolf Dieselstraat 7 (blok 7)
+9778,Miele Laundry Boutique Ymere
+9779,WSV Vlaardingen
+9780,Oosthavenkade Vlaardingen
+9781,Liggeld
+9782,Zone
+9783,Graskade liggeld
+9784,Oldemarkt
+9785,Het Butent
+9786,Verblijf
+9787,Huisje nr 48
+9788,Freiburg - Moltkestraße 9
+9789,Schuble Moltke
+9790,Førde - Tervatunet 1
+9791,Saman - Tervatunet
+9792,_to be deleted
+9794,_to be deleted
+9797,Den Bosch - betaalautomaat
+9798,Betaalautomaat
+9799,schakelzuil
+9801,Darmstadt - Haardtring 15
+9802,Tournoysveld
+9803,Molenvliet
+9804,Harmelen
+9805,Kloosterweg
+9806,Rotterdam - Our Domain
+9807,Miele Laundry Boutique
+9808,Vianen camperplaats
+9809,Kassel - Ihringshäuser Str. 8
+9810,Waschküche
+9811,Kassel - Ihringshäuser Str. 10a
+9812,Waschküche
+9813,Kast 73006
+9814,Besterdplein 04
+9815,Kast 61002-2
+9816,Kast 51005-2
+9817,Kast 61002-1
+9818,Besterdplein 03B
+9819,Kast 51006-1
+9820,Kast 51006-2
+9821,Kast 73001 DEFECT MODEM
+9822,Besterdplein 03A
+9823,Kast 73003-2
+9824,Kast 61001-2
+9825,Kast 73003-1
+9826,Besterdplein 02A
+9827,Kast 61001-1
+9828,Kast 73002
+9829,Besterdplein 01
+9830,Besterdplein 02B
+9831,Besterdplein 04B
+9832,Besterdplein 05
+9833,Besterdplein 06
+9834,Kast 54001-2
+9835,Besterdplein 04A
+9836,Besterdplein 07A
+9837,Kast 54001-1
+9838,Heidelberg - Bunsenstr. 12
+9839,Bunsen Wash
+9840,Mannheim - Tattersallstr. 20-24
+9841,City-Wash
+9842,Hengelo
+9843,Hengelose Slangenbeek
+9844,Hengelo Es
+9845,Locations
+9846,Example location
+9847,Águeda Centro Service Area
+9848,Sangalhos Service Area
+9849,Arouca Service Area
+9850,Aveiro Central Station
+9851,Castelo de Paiva Motorhome Park
+9852,Beduido Service Area
+9853,Estarreja Service Area
+9854,Ribeira da Aldeia - Pardilhó Park
+9855,Sölden - Gehördestrasse 8
+9856,Happywash Mitarbeiterhaus
+9857,Marina Planet - Ravenna
+9858,URU+ 2021400001
+9859,Maastricht - Grote Gracht 85
+9860,Bergen - Gyldenprisveien 19
+9861,Sammen - Gyldenprisveien
+9862,Bergen - Hatleveien 5C
+9863,Sammen - Hatleberg C
+9864,Borre - Sandeveien 7
+9865,SSN - Smia
+9866,Wien - Bloch-Bauer-Promenade 12
+9867,Waschküche
+9868,Wien - Bloch-Bauer-Promenade 8
+9869,Waschküche
+9870,_Lille - 214 Pont de Flandres
+9871,_to be deleted
+9872,Porto - Rua da Galeria de Paris 114
+9873,The Gallery Residence - Lavandaria
+9874,Porto - R. do Barão de Nova Sintra 434
+9875,The Barons Residence - Lavandaria
+9876,Lille - 214 Pont de Flandres
+9877,les estudines Pasteur - Laverie
+9878,Ludinghausen Gutschenkweg
+9879,Ludinghausen Seppenrader Brucke
+9880,Gutschenkweg
+9881,Kast 10 links
+9882,Kast 10 rechts
+9883,Kast 11 Links
+9884,Kast 11 rechts
+9885,Kast 12 links
+9887,Kast 12 rechts
+9888,Kast 13 rechts
+9889,Woensel XL
+9890,Kast 13 links
+9891,Kast 14
+9892,Kast 15
+9893,Seppenradar
+9894,Kast 16 links
+9895,Kast 16 rechts
+9896,Kast 17 links
+9897,Kast 17 rechts
+9898,Kast 18 links
+9899,Kast 18 rechts
+9900,Kast 19
+9901,Kast 20
+9902,Ingolstadt - Westliche Ringstraße 5
+9903,Waschküche
+9904,Ulm - Hochsträß 2
+9905,Waschküche - Haus 2
+9906,Waschküche - Haus 4
+9907,Ulm - Hochsträß 4
+9908,Waschküche - Haus 4
+9909,Parque de Autocaravanas São Salvador
+9911,Intermarché Gafanha da Nazaré
+9912,Oliveira de Azeméis Service Area
+9913,Intermarché de Esmoriz
+9914,Praia da Vagueira Motorhome Park
+9915,Quinta da Cerca Motorhome Park
+9916,Intermarché Super de Castro Verde
+9917,Minas S. Domingos Service Area
+9918,Intermarché Moura
+9919,Intermarché de Odemira
+9920,CampingCar Park
+9921,Parque do Rio (Cabeceiras de Basto)
+9922,Esposende Service Area
+9923,Largo das Hortas Service Area
+9924,Intermarche Caldas das Taipas
+9925,Venezia - Cannaregio 2372
+9926,Lavanderia
+9928,Gütersloh - Thesingsallee 21 - Demo location
+9929,Póvoa de Lanhoso Service Area
+9930,Alfândega da Fé Service Area
+9931,Bragança Service Area
+9932,Izeda Service Area
+9933,Freixo de Espada à Cinta
+9934,Macedo de Cavaleiros Service Area
+9935,Palaçoulo Service Area
+9936,Torre de Moncorvo Service Area
+9937,Bergen - Årstadveien 25
+9938,Sammen - Alrek
+9939,Bergen - Damsgårdsveien 18
+9940,Sammen - Damsgårdsveien
+9941,Bergen - Fridalsveien 22
+9942,Sammen - Fridalen
+9943,Bergen - Møllendalsveien 52
+9944,Sammen - Grønneviksøren
+9945,La Rochelle - 27/29 Rue Enrico Fermi
+9946,les estudines Les Minimes - Laverie
+9947,Parque Biológico de Vinhais
+9948,Vinhais Service Area
+9949,Belmonte - Parque de Santiago Service Area
+9950,Quinta da Bica (ECO Lodge Camping)
+9951,Intermarché Castelo Branco
+9952,RV Park Unhais da Serra
+9953,Intermarché de Idanha-a-Nova
+9954,Termas de Monfortinho
+9955,Oleiros Service Area
+9956,Gabiel Metsulaan
+9957,Benquerença Service Area
+9958,Dummy vaste kosten per maand
+9965,Cergy - 31 rue de l’Aven
+9966,les estudines Saint-Christoph - Laverie
+9967,Maandvergoeding
+9968,St Trudoplein
+9969,Stock Miele DE production 2022
+9970,Box 214439
+9971,Box 214444
+9972,Box 214435
+9973,Box 214404
+9974,Box 214429
+9975,Box 214401
+9976,Box 214434
+9977,Box 214431
+9978,Box 214413
+9979,Box 214440
+9980,Box 214410
+9981,Box 214428
+9982,Box 214437
+9983,Box 214427
+9984,Box 214426
+9985,Box 214430
+9986,Box 214416
+9987,Box 214425
+9988,Box 214421
+9989,Box 214422
+9990,Box 214424
+9991,Box 214423
+9992,Box 214441
+9993,Box 220304
+9994,Box 220404
+9995,Box 220405
+9996,Box 220415
+9997,Box 220408
+9998,Box 220401
+9999,Box 220411
+10000,Box 220402
+10001,Box 220407
+10002,Box 220406
+10003,Box 220319
+10004,Box 220403
+10005,Box 220413
+10006,Box 220419
+10007,Box 220421
+10008,Box 220422
+10009,Box 220432
+10010,Box 220428
+10011,Box 220429
+10012,Box 220426
+10013,Box 220427
+10014,Box 220430
+10015,Box 220425
+10016,Box 220417
+10017,Box 220424
+10018,Box 220423
+10019,Box 220420
+10020,Box 220418
+10021,Box 220448
+10022,Box 220446
+10023,Box 220445
+10024,Box 220447
+10025,Box 220443 (URU 221605)
+10026,Box 220449
+10027,Box 220442
+10028,Box 220444
+10029,Box 220440
+10030,Bergen - Hatleberg 5A
+10031,Sammen - Hatleberg A
+10032,Delft - Pierre Van Hauwelaan 2-252
+10033,MLB One Space
+10034,Bergen - Hatleberg 5E
+10035,Sammen - Hatleberg E
+10036,Bergen - Hatleberg 5F
+10037,Sammen - Hatleberg F
+10038,Bergen - Øyjordsveien 11
+10039,Sammen - Øyjordsveien
+10040,Oxford - Turl Street
+10041,Cheng Building - Laundry
+10042,Sertã Service Area
+10043,Vila de Rei Service Area
+10044,Fratel service area
+10045,Vila Velha de Rodão
+10046,Barril de Alva Service Area
+10049,Condeixa Service Area
+10050,Berlin - Franklinstraße 25
+10051,Waschküche - acora Berlin Living the City
+10052,Bergen - Strandgaten 199
+10053,Vaskeri
+10054,Bergen - Strandgaten 203
+10055,Vaskeri
+10056,WS00076
+10057,WS00074
+10058,WS00075 USA
+10059,WS00073
+10060,WS00077
+10061,Bergen - Løbergsveien 85
+10062,Sammen - Løbergsveien
+10063,Bergen - Sverresgate 28
+10064,Sammen - Sverresgate 28
+10065,Box 220416
+10066,Box 220433
+10067,Box 220450
+10068,Box 220414
+10069,Box 220436
+10070,Box 220437
+10071,Box 220439
+10072,Box 220438
+10073,Box 220434
+10074,Box 220435
+10075,Box 220441
+10076,Box 220410
+10077,Costa de Lavos Service Area
+10078,Góis Service Area
+10079,Parking Lousã (Portugal Travelling)
+10080,Assen Havenkade
+10081,Intermarché Mira
+10082,Camperplaats Havenkade
+10083,Verblijf
+10084,Miranda do Corvo Service Area
+10085,Camping Car Serra da Estrela
+10086,Pampilhosa da Serra Service Area
+10087,Lorvão Service Area
+10088,Penacova Service Area
+10089,Soure Service Area
+10090,Intermarché Tábua
+10091,Bergen  - Fantoftvegen 14
+10092,Sammen - Fantoft R
+10093,Laksevåg  - Nylundsveien 50
+10094,Sammen - Frydenbø
+10095,Kassel - Wolfhager Str. 39 (Haus 5)
+10096,Studieren am Schillertor - Waschküche
+10097,Rotterdam - Schaatsbaan 85
+10098,Miele Laundry Boutique
+10101,Köln - Äußere Kanalstraße 86
+10102,Waschküche - My E
+10103,Velizy - 10 Rue Paul Dautier
+10104,Studcity Velizy - Laverie
+10105,Vila Nova de Poiares Area de Servico
+10106,Arraiolos - Restaurante Parque dos Leitões
+10107,Intermarché de Estremoz
+10108,Évora - Avenida Sanches de Miranda Service Area
+10109,Intermarché Évora
+10110,Vissershaven Halkade
+10111,Aldeia da Luz Service Area
+10112,Portel Service Area
+10113,Kastelenplein
+10114,Redondo Service Area
+10115,URU+ 2021400002 (BROKEN)
+10116,Les Salons de l'Embryenne
+10117,Camping St Louis
+10118,Les Salons de l'Embryenne
+10119,Ferme de l'Horloge
+10120,Camping Municipal de la Lys
+10121,Camping Chateau Gandspette
+10122,Ferme du Louvet
+10123,Aire de Camping-Car Watten
+10124,Camping Les Pommiers des 3 Pays
+10125,Parking des 3 etangs
+10126,Camping Municipal Beausejour
+10127,Camping Le Bois Groult
+10128,Aire de Camping-Car du Haut Pont
+10129,Camping La Chaumiere
+10130,Aire de Camping-Car Rue d'Asfeld
+10131,Camping Les Erables
+10132,Camping Le Grande Gravelot
+10133,Camping l'Escale
+10134,Parking Hubert Latham
+10135,Camping Municipal Les Ajoncs
+10136,Aire de Camping-Car Les Ajoncs
+10137,Camping Des Noires Mottes
+10138,Camping Cap Blanc Nez
+10139,Camping La Bien Assise
+10140,Aire de Camping-Car Boulogne-sur-Mer
+10141,Camping Du Fort Lapin
+10142,Camping l'Eglantier
+10143,Aire de Camping-Car Rue d'Asfeld
+10144,Reguengos de Monsaraz (Bombeiros) Service Area
+10145,Motorhome Service Area Telheiro
+10146,Alcáçovas Service Area
+10147,Quinta do Grilo
+10148,Vila Viçosa (Bombeiros) Service Area
+10149,Résidence Saxe Gambetta
+10150,les estudines Saxe Gambetta - Laverie
+10151,Box 221001
+10152,Harelbeke
+10153,Camperplaats Harelbeke
+10154,Zuil 1
+10155,Zuil 2
+10156,DWTA
+10157,Lyon - 34 grande rue de la guillotière 
+10159,Parking des Islandais
+10160,Camping Municipal de la Plage
+10161,Camping Les Tamaris
+10162,Camping Les Oyats
+10163,Camping Des Dunes
+10164,Camping Municipal La Source
+10165,Camping La Licorne
+10166,Parking Museum
+10167,Camping Le Domaine du Bloemstraete
+10168,Camping La Petite Foret
+10169,Camping La Verte Colline
+10170,Parking Le Vert Marais
+10171,Aire de Camping-Car Arras
+10174,Domaine de La Pommeraie
+10175,Aire d'Accueil des Champs de Memoire du Bas-Pays
+10176,Aire de Camping-Car Avion
+10177,Aire du Parc d'Olhain
+10178,Camping Les Ramiers
+10179,Camping Le Petit Clos
+10180,La Paille Haute
+10181,Camping et etangs de la Scierie
+10182,Aire de Camping-Car Bollaert Delelis
+10183,Douai
+10184,Municipal Parc de Plein Air de La Sensee
+10185,Camping Les Alouettes et l'Image
+10186,Camping Municipal le Vert Feuillage
+10187,Camping De La Sensee
+10188,Parking Solre Le Chateau
+10189,Aire de Service Camping Car des Portes de la Thierache
+10190,Aire de Camping-Car Grenay
+10191,Reims - 6 Rue de Courcelles
+10192,les estudines Reims Drouet D Erlon - Laverie
+10193,Lesaffre Escargots
+10194,Ferme de la Grande Retz
+10195,Aire de Camping-Car Le Lac de Conde
+10196,Aire de Camping-Car Saint-Valery-sur-Somme
+10197,Camping La Fontaine Des Clercs
+10198,Camping Du Chateau & de l'Oseraie
+10199,Aire de Camping-Car Caudry
+10200,Camping Du Chateau
+10201,Aire Municipale Long
+10202,Camping Au Bord de l'Authie
+10203,Camping Municipal Les 3 Clochers
+10204,Aire Municipale Banteux
+10205,Ferme Le Chant des Oiseaux
+10206,Neu-Ulm - Von-Hünefeld-Straße
+10207,Rioca Neu-Ulm Posto 5 - Waschküche
+10208,Stuttgart - Salzwiesenstraße 7
+10209,Rioca Stuttgart Posto 4 - Waschküche
+10210,Algarve Motorhome Park Falésia
+10211,Quinta da Palmeira Service Area
+10212,Rüsselsheim - Gabelberger Platz 2
+10213,Campus Living - Waschküche
+10214,Intermarché Ferreiras - Albufeira
+10215,Motorhome Park Açoteias
+10216,Parque da Galé Motorhome Park
+10217,SulPark-Albufeira Caravans
+10218,Alcoutim Service Area
+10219,Pereiro - Alcoutim Service Area
+10220,Almada d'Ouro Club Service Area
+10221,Castro Marim Service Area
+10222,Haugesund - Vardatun
+10223,Sammen - Vardatun I
+10224,Estoi Service Area
+10225,Faro Campervan Park
+10226,Ameixial Service Area
+10227,"Recinto da Feira, Fonte Santa Service Area"
+10228,Alferce Service Area
+10229,Camping Vale da Carrasqueira
+10230,Box 220643
+10231,Área de Repouso de Autocaravanas da Fornalha
+10232,Intermarché Olhão
+10233,Parque para Autocaravanas Canto do Sol
+10234,Vale dos Guenos Motorhome Park
+10235,Motorhome ecopark São Brás de Alportel
+10236,Algarve Camping Car Park
+10237,Algarve Motorhome Park Silves
+10238,Camperstop Messines
+10239,Messines Service Area
+10240,Mikki Place to Stay
+10241,Heusden Camperplaats
+10242,Camperplaats Heusden
+10243,K1
+10244,K2
+10245,K3
+10246,K4
+10247,K5
+10248,Box 220644
+10249,Box 220642
+10250,Box 220641
+10251,Box 220309
+10252,Box 220302
+10253,Box 220335
+10254,Box 220312
+10255,Box 220634
+10256,Box 220650
+10257,Box 220632
+10258,Box 220336
+10259,Box 220350
+10260,Box 220339
+10261,Box 220338
+10262,Box 220328
+10263,Box 220329
+10264,Box 220347
+10265,Box 220343
+10266,Box 220349
+10267,Box 220340
+10268,Box 220348
+10269,Box 220346
+10270,Box 220633
+10271,Box 220327
+10272,Box 220342
+10273,Box 220646
+10274,Box 220341
+10275,Box 220345
+10276,Box 220344
+10277,Box 220645
+10278,Box 220647
+10279,Box 220648
+10280,Box 220337
+10281,Box 220303
+10282,Box 220308
+10283,Sumatrakade t.h.v.huisnummer 111
+10284,Sumatrakade t.h.v. huisnummer 377
+10285,Sumatrakade t.h.v. huisnummer 803
+10286,Sumatrakade t.h.v. huisnummer 1247
+10287,Sumatrakade t.h.v.huisnummer 1539
+10288,Germersheim - An der Hochschule 2
+10289,Waschküche - Haus 3
+10290,Tarwelaan
+10291,Parque do Castelo
+10292,Rancho Belchior Service Area
+10293,S. Marcos da Serra Service Area
+10294,Parque do Rio Motorhome Park & Service Area
+10295,Quinta Da Eira Antiga Service Area
+10296,Algarve Motorhome Park Tavira
+10297,Figueira Caravan Park
+10298,Intermarché Sagres
+10299,Vento Norte Service Area
+10300,Manta Rota Motorhome Park
+10301,Kast 2A
+10302,Besterdplein 08
+10303,Kast 1A
+10304,Kast 2
+10305,URU 2022050024
+10306,URU 2022050025
+10307,Kast 3
+10308,Kast 2A
+10309,Kast 1
+10310,Besterdplein 09
+10311,Besterdplein 09A
+10312,Besterdplein 10
+10313,Kast 1A
+10314,Kast 1
+10315,Kast 2
+10316,Besterdplein 10A
+10317,Besterdplein 08A
+10318,URU 2022050023
+10319,Bomeneiland
+10320,URU 2022050021
+10321,Karpendonk 33002
+10322,URU 2022050016 (Powerlock)
+10323,URU 2022050017 (Powerlock)
+10324,Vila Real de Santo António Motorhome Park
+10325,URU 2022050019 (Powerlock)
+10326,URU 2022050020 (Powerlock)
+10327,Mozartlaan
+10328,Hasselaar
+10329,Maison de la Baie Somme
+10330,Camping a la fermer le Chalet
+10331,Aire Municipale Montreuil
+10332,Camping Les Aubépines
+10333,Aire de Camping-Car Quend
+10334,Le Val de Canche
+10335,Aire de Camping-Car Stella Plage
+10336,Camping De La Mer
+10337,Bodø - Hokkåsveien 31/33/35
+10338,Studentinord - Høglimyra vaskeri
+10339,Camping Les Trois Sablieres
+10340,Camping Le Champ Neuf
+10341,Aire de Camping-Car Dominois
+10342,Parking Avenue Joseph Lesur
+10343,Camping Du Bec De Perroquet
+10344,Camping Le Tarteron
+10345,Aire de Camping-Car Park Merlimont Plage
+10346,Camping Flower Les Vertes Feuilles
+10347,Camping Des Deux Plages
+10348,Camping Le Petit Saint Jean
+10349,Camping De La Maye
+10350,Aire Municipale Le Crotoy
+10351,Camping De L'Etang
+10352,Aire de Camping-Car Mireille
+10353,La Ferme des Aulnes
+10354,Camping De La Motelette
+10355,Camping Des Trois Tilleuls
+10356,Camping Le Royon
+10357,Parking Le Hourdel
+10358,Parking La Basse Nord
+10359,Aire Municipale Berck
+10360,Camping Le Pré Fleuri
+10361,Camping La Warenne
+10362,Aire Municipale Le Touquet
+10363,Camping La Pinède
+10364,Aire de Camping-Car Park Le Tarteron
+10365,Camping Belle Dune
+10366,Camping L'Orée du Bois
+10367,Camping Municipal Le Bois de Pecheurs
+10368,Camping Les Mouettes
+10369,Camping Les Goelands
+10370,Aire de Camping-Car Le Treport
+10371,Aire de Camping-Car Park d'Incheville
+10372,Aire de Camping-Car Park de Flocques
+10373,Aire Municipale Mesnières-en-Bray
+10374,Aire Municipale Bourseville
+10375,Camping Municipal du Parc du Chateau
+10376,Parking Cayeux-sur-Mer
+10377,Camping Des Deux Rivieres
+10378,Aire de Camping-Car Mers-les-Bains
+10379,Flower Camping Le Rompval
+10380,Camping le Chateau des Tilleuls
+10381,Camping Municipal Les Boucaniers
+10382,Camping La Vieille Eglise
+10383,Aire de Camping-Car d'Eaucourt-sur-Somme
+10384,La Cavée d'Airaines
+10385,Camping Municipal d'Aumale
+10386,Aire de Camping-Car Les Galets de la Molliere
+10387,Camping Le Val Boise
+10388,La Ferme de la Baie
+10389,Camping Parc International du Golf
+10390,Domaine de Sery
+10391,Parking Nouvion
+10392,Camping Aux Cygnes D'Opale
+10393,Aire de Camping-Car d'Ailly sur Noye
+10394,Bergen - Kniksenplass 4
+10395,Sammen - Brann Stadion
+10396,Armazéns Zázá
+10397,Celorico da Beira Service Area
+10398,Gouveia - Central de Camionagem Service Area
+10399,Malcata Service Area
+10400,Sabugal Service Area
+10401,Sortelha Service Area
+10402,Regato Motorhome Park
+10403,Vila Nova de Foz Côa Service Area
+10404,Alcobaça Service Area
+10405,Intermarché Pataias
+10406,Batalha Service Area
+10407,São Mamede Service Area
+10408,Bombarral Service Area
+10409,Intermarché Caldas da Raínha
+10410,Bergen - Hans Tanksgate 18
+10411,Sammen - Hans Tanksgate 18
+10413,RAD 3 2138002722
+10414,Salzburg - Röcklbrunnstraße 20
+10415,Leonardo - Waschkeller
+10416,Trondheim - Moholt Almenning 10
+10417,SiT - Moholt Almenning
+10418,_to be deleted
+10419,_to be deleted
+10420,Nanterre - 50 rue des Vignes
+10421,les estudines Paris Nanterre - Laverie
+10422,Orleans - 11 Place du 6 juin 1944
+10423,les estudines Jeanne d'Arc - Laverie
+10424,VK-4
+10425,Washington
+10426,Reston
+10427,Washington
+10428,Aire Du Saint Quentinois
+10429,Aire Municipale Le Cateau-Cambrésis
+10430,Camping Verte Rive
+10431,Aire de Camping-Car Sainte Claire
+10432,Camping Sainte Claire
+10433,Aire de Camping-Car d'Incheville
+10434,Aire de Camping-Car de Flocques
+10435,Aire Municipale Conty
+10436,Aire de Camping-Car de Forges-les-Eaux
+10437,Camping à la Ferme de La Neuve Rue
+10438,Camping Le Velodrome
+10439,Camping De Sorel
+10440,Maandbedrag
+10441,Parque Caravanas Helder Venceslau
+10442,Parque de Autocaravanas Foz do Arelho
+10443,Castanheira de Pera Service Area
+10444,Figueiró dos Vinhos Service Area
+10445,Praia da Falca Service Area
+10446,Casa Azzurra Motorhome Park
+10447,Óbidos Motorhome Area
+10448,Peniche Motorhome Park
+10449,Intermarché de Peniche
+10450,Praia da Consolação
+10451,Area Sosta Camper Pombal
+10452,Mira de Aire Motorhome Park
+10453,Porto de Mós Service Area
+10454,Mariager - Frydensbergvej 23
+10455,Frydensbergs elevvaskeri
+10456,São Bento Service Area
+10457,Alenquer Service Area
+10458,Hasseler Es (STH)
+10459,Hengelose Es (STH)
+10460,Hengelose Slangenbeek  (STH)
+10461,Mozartlaan  (STH)
+10462,Onbekend
+10463,Nice - 4 Rue des Barbets
+10464,les estudines Nice Baie Des Anges - Laverie
+10465,Camping De La Vallée de l’Avre
+10466,Camping La Minière
+10467,Camping Des Cygnes
+10468,Camping Municipal de Poissonniers
+10469,Parking Ailly-sur-Somme
+10470,Aire de Camping-Car de Formerie
+10471,Camping Les Mesanges
+10472,Camping Municipal Cany-Barville
+10473,La Source
+10474,Domaine du Marais
+10475,Aire de Camping-Car du Havre Point
+10476,Restaurant Les 3 Etangs
+10477,Parking Songeons
+10478,Camping L'Aiguille Creuse
+10479,Aire de Camping-Car du Billot
+10480,Camping Aire Naturelle Legrix
+10481,Camping Municipal Veulettes sur Mer
+10482,Aire de Camping-Car A La Ferme
+10483,Aire de Camping-Car Beuvron-en-Auge
+10484,Camping La Briquerie
+10485,Aire Municipale Hérouvillette
+10486,Montville
+10487,Aire de Camping-Car Clères
+10488,Parking Harcourt
+10489,Camping Abijune
+10490,Ferme de la Mare
+10491,La Ferme des Bruyères Carre
+10492,Camping Le Rivage
+10493,Aire de Camping-Car Arelaune-en-Seine
+10494,Aire Municipale Auffay
+10495,Aire de Camping-Car Broglie
+10496,Camping Des Trois Rois
+10497,Aire La Palmeraie
+10498,Cap Fagnet
+10499,Aire de Camping-Car Le Lieu Chéri
+10500,Parking Les Jardins de Claude Monet
+10501,Aire de Courtonne-la-Meurdrac
+10502,Aire de Camping-Car Espace du Beau Soleil
+10503,Aire Municipale Cambremer
+10504,Castel Camping Le Brévedent
+10505,Écretteville-lès-Baons
+10506,Camping Oasis
+10507,Aire de Camping-Car Saint-Valery-en-Caux
+10508,Aire de Camping-Car Cormeilles
+10509,Aire Municipale Villers-sur-Mer
+10510,Aire de Camping-Car Dives-sur-Mer
+10511,Parking Des Falaises
+10512,Intermarché do Carregado
+10513,Intermarche Arruda Dos Vinhos
+10514,Fábrica Braço de Prata Service Area
+10515,Reguengo Grande Service Area
+10516,Intermarché Lourinhã
+10517,Lourinhã Service Area
+10518,Sobral de Monte Agraço Service Area
+10519,Parque Intermodal Service Area
+10520,Intermarché de Ericeira
+10521,Nørresundby - Lindholmsvej 77 b
+10522,Ejerforeningen Nordbo - Vaskerum
+10523,Mil Regos Ericeira Motorhome Park
+10524,Odrinhas Parque
+10525,Box 220638
+10526,URU 2022070024
+10527,Box 220622
+10528,Box 220621
+10529,Box 220637
+10530,Box 220617
+10531,Box 220619
+10532,Box 220620
+10533,Box 220635
+10534,Box 220636
+10535,Box 220639
+10536,Box 220831
+10537,Box 220832
+10538,Box 220823
+10539,Box 220824
+10540,Box 220826
+10541,Box 220828
+10542,Box 220827
+10543,Box 220830
+10544,Box 220829
+10545,Box 220849
+10546,Box 220850
+10547,Box 220805
+10548,Box 220806
+10549,Box 220807
+10550,Box 220808
+10551,Box 220810
+10552,Box 220809
+10553,Box 220811
+10554,Box 220812
+10555,Box 220814
+10556,Box 220813
+10557,Box 220815
+10558,Box 220816
+10559,Box 220818
+10560,Box 220817
+10561,Box 220820
+10562,Box 220819
+10563,Box 220821
+10564,Box 220836
+10565,Box 220835
+10566,Box 220833
+10567,Box 220841
+10568,Box 220834
+10569,Box 220839
+10570,Box 220837
+10571,Box 220802
+10572,Box 220838
+10573,Box 220801
+10574,Box 220803
+10575,Box 220804
+10576,Box 220840
+10577,Box 220842
+10578,Box 220844
+10579,Box 220843
+10580,Box 220845
+10581,Box 220846
+10582,Box 220847
+10583,Box 220431
+10584,Box 220409
+10585,Lembruch - Götkers Hof 30
+10586,Waschküche - Campingplatz Tiemanns Hof
+10587,Somaglia - Strada Provinciale 234
+10588,LIDL - Lavanderia
+10589,Haugesund - Papegøyeveien 3
+10590,Sammen - Vardatun II
+10593,Dormagen - Knechtstedener Straße 100
+10594,Dormaparte - Waschkeller
+10596,Steenwijk
+10597,Verblijf
+10598,Klein Zundert
+10599,Molenstraat
+10600,URU 2022070006
+10601,URU 2022070020
+10602,URU 2022070021
+10603,URU 2022070023
+10604,URU 2022070016
+10605,URU 2022070015
+10606,SPE-015
+10607,URU 2022070014
+10608,URU 2022070019
+10609,Wagnerplein kast 03-3
+10610,URU 2022070017
+10611,URU 2022070013
+10612,URU 2022070018
+10613,URU 2022070022
+10614,URU 2022070025
+10615,Beurskast OPS
+10616,URU 2022070011
+10617,URU 2022070012
+10618,URU 2022070009
+10619,URU 2022070010
+10620,Kast 73001
+10621,URU 2022070008
+10622,Göttingen - Kreuzbergring 56
+10623,Kolosseum Waschkeller
+10624,s-Hertogenbosch - Orthenseweg
+10625,Zayaz - Wasserette Orthenpoort
+10626,Trondheim - Lars Onsagers vei 10
+10627,SiT- Nedre Berg Studentby
+10628,Santa Susana Service Area
+10629,A-dos-Cunhados Service Area
+10630,Torres Vedras - Parque Verde Service Area
+10631,Foz do Sizandro Service Area
+10632,Outeiro da Cabeça Service Area
+10633,Turcifal Service Area
+10634,Arronches - Bairro do Telheiro Service Area
+10635,Barragem de Póvoa e Meadas Service Area
+10636,Intermarché de Elvas
+10637,Terrugem Service Area
+10638,Gavião Service Area
+10639,Marvão Service Area
+10640,Ponte de Sor Service Area
+10641,Rio Tinto Service Area
+10642,Quinta dos Agros
+10643,Lordelo - Paredes Service Area
+10644,Guilhufe - Penafiel Service Area
+10645,Intermarché Termas de São Vicente
+10646,Auchan Santo Tirso
+10647,Haugesund - Sørhauggata 100
+10648,Sammen - Sørhauggata
+10649,Aachen - Süsterfeldstraße 99
+10650,MILESTONE Aachen West (Neubau)
+10651,Rotterdam - Stadhuisplein 30
+10652,MILESTONE Chapter Lucia
+10653,Köln - Brüsselerstraße 26
+10654,Waschküche
+10655,Gouda
+10656,Bloemendaal
+10657,Wergea
+10658,Plein Wergea
+10659,Goverwelle
+10660,Coronado Service Area
+10661,Intermarché de Valongo
+10662,Parque Biológico de Gaia
+10663,Abrantes - Aquapolis Service Area
+10664,Intermarché Abrantes
+10665,Intermarché Benavente
+10666,Constância Service Area
+10667,Coruche Service Area
+10668,Parque Verde do Bonito
+10669,Ferreira do Zêzere Service Area
+10670,Intermarché Golegã
+10671,Mação Service Area
+10672,Karlsruhe - Willy-Andreas-Allee 5
+10673,Augustin Bea Haus - Waschküche
+10674,Intermarché Marinhais
+10675,Karlsruhe - Willy-Andreas-Allee 3
+10676,Reinhold Schneider Haus - Waschküche
+10677,Salvaterra de Magos Service Area
+10678,Tomar Service Area
+10679,Barquinha-Parque Service Area
+10680,Comporta Service Area
+10681,Intermarché de Alcácer do Sal
+10682,electro speciaalzaak Nijenbanning
+10683,Kast 210907
+10684,Kast 210928
+10685,Kast 214412
+10686,Kast 214407
+10687,Kast 214409
+10688,Kast 214411
+10689,Berlin - Pionierstraße 20
+10690,Waschküche - Wohnheim Polizeianwärter
+10691,Frankfurt - Ben-Gurion-Ring 50
+10692,Waschküche - Varinia
+10693,Sogndal - Stedjeåsen
+10694,Saman - Stedje
+10695,Sogndal - Elvatunet
+10696,Saman - Elvatunet
+10697,Sogndal - Dalavegen 8
+10698,Saman - Studentheimen
+10699,Sogndal - Elvatunet 1
+10700,Saman - Elvatunet 1
+10701,Sogndal - Møllevegen 6-14
+10702,Saman - Møllevegen 6-14
+10703,Sogndal - Møllevegen 16-24
+10704,Saman - Møllevegen 16-24
+10705,Sogndal - Møllevegen 26-34
+10706,Saman - Møllevegen 26-34
+10707,Bergen - Fantoftvegen 14C
+10708,Sammen - Fantoft C
+10709,La Ferme des Hêtres
+10710,Camping Forest VIew
+10711,Wohnmobilstellplatz Dreiländersee
+10712,Wohnmobilstellplatz am Emssee
+10713,Parking Chandai
+10714,Aire de Camping-Car Mortagne au Perche
+10715,Aire Municipale Villeneuve-en-Perseigne
+10716,Wohnmobilstellplatz Bad-Lipspringe
+10717,Camping Le Pressoir
+10718,Wohnmobilstellplätze Billerbeck
+10719,Aire de Camping-Car Courville
+10720,Place de l'Etang
+10721,Aire Municipale Verneuil d'Avre et d'Iton
+10722,Ecretteville-les-Baons
+10723,Wohnmobilstellplatz Coesfeld
+10724,Aire Municipale Nonancourt
+10725,Camping Municipal Le Clos Normand
+10726,Wohnmobilstellplatz Emmerich
+10727,Rue De Launay
+10728,WoMoPark Bocholt
+10729,Camping Camp Intercommumal De La Prairie
+10730,Wohnmobilstellplatz Rhede
+10731,Aire Municipale Rugles
+10732,Wohnmobilstellplatz der Gemeinde Groß Reken
+10733,Wohnmobilstellplatz am Haus Waldfrieden
+10734,Wohnmobilstellplatz Nordkirchen
+10735,Verblijf
+10736,Münster - Bremerplatz 50-56 (Nordturm)
+10737,Waschküche
+10738,Münster - Bremerplatz 50-56 (Mittelturm)
+10739,Waschküche
+10740,Surinamekade t.h.v KNSM Laan 831
+10741,Veemkade t.h.v. huisnummer 1064
+10742,Veemkade t.h.v. huisnummer 1019
+10743,Veemkade t.h.v. huisnummer 366
+10744,Veemkade t.h.v. huisnummer 320
+10745,Veemkade t.h.v. huisnummer 1202
+10746,Veemkade t.h.v. huisnummer 1105
+10747,Aire Municipale Nogent-le-Roi
+10748,Parking Base de Loisirs de Léry
+10749,Ferme Pierre Bence
+10750,Veemkade t.h.v. huisnummer 900
+10751,Aire Municipale Campigny
+10752,Camping Le Clos Saint-Nicolas
+10753,Javakade Hotel Jakarta - Kast 562 WS00043
+10754,Aire Municipale Bretoncelles
+10755,Javakade t.h.v huisnummer 462
+10756,Baulie
+10757,Oude Houthaven - kade 1
+10758,Oude Houthaven - kade 2
+10759,Ijplein t.h.v tunnel
+10760,Camping Municipal du Parc
+10761,Aire de Camping-Car La Caserne de Pompiers
+10762,Parking Square Bobée
+10763,Aire Municipale Jumièges
+10764,Aire Municipale Pont-de-l'Arche
+10765,La Pavinière
+10766,Aire Municipale Brezolles
+10767,Ferme De La Godinière
+10768,Camping La Vallée
+10769,Camping Des Petits Prés
+10770,Parking du Bac
+10771,Parking Saint-Germain-de
+10772,Camping Risle Seine les Etangs
+10773,Camping Municipal de l'Aulnaie
+10774,Aire de Camping-Car Monaco Parc
+10775,Ecurie Mathias
+10776,Rue Mainberte
+10777,Camping de la Port
+10778,Camping De La Forêt
+10779,Aire Municipale Vimoutiers
+10780,Service Porte de Plaisance
+10781,Zoetermeer
+10782,Osmose Tappunt Newtonstraat
+10783,Tappunt
+10784,Coimbra - Rua Pedro Nunes 1
+10785,Residência 3 Quinta da Nora
+10786,Coimbra - Rua Pedro Nunes 2
+10787,Residência 2 Quinta da Nora
+10788,Coimbra - Rua Pedro Nunes 3
+10789,Residência 1 Quinta da Nora
+10790,Coimbra - Rua Pedro Nunes 4
+10791,Residência 5 Quinta da Nora
+10792,Coimbra - Rua da Misericórdia
+10793,Residência em Bencanta
+10794,Wohnmobilplatz an den Sole-Thermen
+10795,Viborg - EF Falkevej 76 - 84
+10796,EF Falkevej 76 - 84
+10797,WohnMobilPark Xanten
+10798,Wohnmobil Stellplatz Römerwardt
+10799,Haard-Camping
+10800,Wohnmobilstellplatz Niederrhein
+10801,Wohnmobilstellplatz Sauerlandhalle
+10802,Wohnmobil-Stellplatz in Hirschberg
+10803,Wohnmobilstellplatz Waldfeucht
+10804,Campingpark Haddorfer See
+10805,Enkhuizen
+10806,Oosterhaven
+10807,Campingpark Heidewald
+10808,Aire Municipale Le Vaudreuil
+10809,Camping Les Berges de l'Iton
+10810,Campingplatz Kranencamp
+10811,Wohnmobilstellplatz Uedem
+10812,Camping- und Freizeitplatz Brachter Wald
+10813,Reisemobilstellplatz „Ebentalstraße“
+10814,Reisemobilstellplatz „Am Freibad“
+10815,Wohnmobilhafen Schravelsche Heide
+10816,Reisemobilpark Kempen am AquaSol
+10817,Reisemobilstellplatz – Heinsberg am Lago
+10818,Reisemobilhafen Den Heyberg
+10819,Wohnmobilstellplatz Kerken
+10820,Reisemobilstellplatz “An der Motte”
+10821,Reisemobilstellplatz Hückelhoven
+10822,Reisemobilstellplatz am Fitnessbad „Wasserstraelen“
+10823,Campingplatz Graskamp
+10824,Karpendonkse plas
+10825,Kast 1
+10826,Kast 2a
+10827,Kast 2b
+10828,Kast 3
+10829,Kast 4
+10830,Kast 5
+10831,Temp Location for installations
+10832,Weesp
+10833,Hoogstraat
+10834,Kast 1
+10835,Kast 2
+10836,Kast 3 DWTA
+10837,Minervahavenweg 2
+10838,Kast 220314
+10839,Kast 220313
+10840,Zuil 1
+10841,Zuil 2
+10842,_temp location for installations
+10843,Waschküche Haus 20
+10844,Waschküche
+10845,Aschaffenburg -  Lange Str. 1
+10846,Camping Lelefeld
+10847,Wohnmobilstellplatz Niers-Perle-Oedt
+10848,Reisemobilstellplatz Friedensplatz
+10849,Reisemobilstellplatz Ransberg
+10850,Campingplatz Kranenburg
+10851,Reisemobilpark Kalkar
+10852,Wohnmobilstellplatz „Am Parkbad“
+10853,Reisemobilstellplatz „Am Holländer See“
+10854,"Reisemobilstellplatz, Achter de Stadt"
+10855,Trondheim - Klæbuvegen 52
+10856,SiT - Teknobyen
+10857,Trondheim - Klæbuveien 124
+10858,SiT - Lerkendal
+10859,Derendingen - Garnwerk
+10860,Garnwerk
+10861,Utrecht - Kanaalzichthof 561
+10862,Place2BU - Miele Laundry Boutique
+10863,Waschküche Haus 22
+10864,Mariager - Gl. Hobrovej 10
+10865,Vaskeri
+10866,"Marseille - 6, rue Louis Leprince Ringuet"
+10867,les estudines de Provence - Laverie
+10868,_to be deleted
+10869,_to be deleted
+10870,Trondheim - Odd Brochmans veg 1
+10871,SiT - Berg Studentby
+10872,Nørresundby - Lindholmsvej 110
+10873,Vask 1
+10874,Vask 2
+10875,Vask 3
+10876,Tørre 4
+10877,Tørre 5
+10878,Esrein 2 (STH)
+10879,Gjøvik - Merkantilvegen 49
+10880,SiT - Kallerud studenthjem
+10881,Hamburg - Küchgarten 19
+10882,Küchgarten
+10883,Porto - Rua Maria Adelaide Freitas Gonçalves 11
+10884,Lavandaria
+10885,Bad Soden - Kronberger Str. 32
+10886,Waschküche Personalwohnheim
+10887,Caen - 15 rue Jean Baptise Colbert
+10888,les estudines Cote de Nacre - Laverie
+10889,Graz - Marburgerstraße 10
+10890,Waschküche
+10891,Trondheim - Arne Bergsgårds vei 6
+10892,Sit - Steinan Studentby
+10893,Gjøvik - Ludvik Skattums gate 30
+10894,Sit - Nordbyen Studenthjem
+10895,Gjøvik - Kalkveien 11
+10896,Sit- Sørbyen Studenthjem
+10897,Temp 2
+10898,Waschküche
+10899,Temp 4
+10900,Vlissingen
+10901,Dokhaven
+10902,Riviercruisekast
+10903,Gjøvik - Ibsens gate 13
+10904,Sit - Sentrum studenthjem hus 13
+10905,Gjøvik - Ibsens gate 15
+10906,Sentrum studenthjem hus 15
+10907,Trondheim - Singsakerbakken 2C
+10908,Sit - Nedre Singsakerslette
+10909,Trondheim - Klostergata 29
+10910,Sit - Bloksberg Studentboliger
+10911,Trondheim - Sverres gate 8
+10912,Sit - Sverres gate
+10913,Trondheim - Magnus den Godes gate 2
+10914,Sit- Magnus den Godes gate
+10915,Rottevalle de Leijen
+10916,_to be deleted
+10918,_to be deleted
+10920,Stad aan 't Haringvliet
+10921,Ninove
+10922,Denderkaai
+10923,Kast 1
+10924,Kast 2
+10925,Richborough - Ramsgate Road
+10926,EMBASSY TRUCK PARK
+10927,Stad aan 't Haringvliet
+10928,Berlin - Koloniestraße 11-12
+10929,Haus 1
+10930,_to be deleted
+10931,_to be deleted
+10932,_to be deleted
+10933,_to be deleted
+10934,Haus 2
+10935,Haus 3
+10936,Passanten Jachthaven Atlantica
+10937,Zuil 221009
+10938,Zuil 221024
+10939,Zuil 221026
+10940,Zuil 221031
+10941,Zuil 221040
+10942,Zuil 221023
+10943,Zuil 221025
+10944,Zuil 221022
+10945,Zuil 221032
+10946,DWTA
+10947,LAVANDERIA
+10948,Stilicone 15
+10949,Oslo - Tverrbakken 4
+10950,Sameiet Tverrbakken 4
+10951,Vaskemaskin 3
+10952,Vaskemaskin 4
+10953,Sameiet
+10954,Camperplaats Levantri
+10955,Bodega 2020
+10956,Wohnmobilpark Hexenland-Sevelen
+10957,Camperstop Alegria
+10958,Campingplatz Tostedt in Niedersachsen
+10959,Campingplatz Opalsee
+10960,Camping-Park Lüneburger Heide
+10961,Área Cámper Mazarrón
+10962,Südsee-Camp
+10963,Südsee-Camp
+10964,Lyngby - Trongårdsvej 46
+10965,Vaskeri
+10966,Campingplatz Mühlenteich
+10967,Finca Las Canadas
+10968,Campingpark Hüttensee
+10969,Wohnmobil-Stellplatz Steinhuder Meer
+10970,Campingplatz Drakenburg
+10971,Albignasego
+10972,Hotel Fabio
+10973,Liggeld
+10974,Appiano s.s.d.V.
+10975,Test
+10976,Casa Rosada
+10977,Area de Autocaravanas Suances
+10978,La Signatura
+10979,SenS Sleep Los Llanos de Perín
+10980,Box 221033
+10981,Camperpark EuroPeCa
+10982,Campamento Turístico Brandoñas
+10983,Atalaia Camper Park
+10984,Pozzuolo del Friuli - Via della tomba Antica 32
+10985,Lavanderia BLM
+10986,Little Texas
+10987,Box 221042
+10988,Box 221043
+10989,Box 221046
+10990,Box 221039
+10991,Box 221045
+10992,Box 221041
+10993,Box 221044
+10994,Box 221015
+10995,Box 221035
+10996,Box 221034
+10997,Box 220603
+10998,Box 221006
+10999,Box 221048
+11000,Box 221036
+11001,Box 221037
+11002,Box 221038
+11003,Box 221401
+11004,Box 221402
+11005,Box 221047
+11006,Box 221049
+11007,Box 221050 (URU 221405)
+11008,Box 221029
+11009,Berlin - Kreutzigerstraße 14
+11010,Washing Lounge KRE
+11011,Sylt - Wilhelmstraße 2
+11012,Waschkeller
+11013,_to be deleted
+11014,_to be deleted
+11015,BIBIONE - CONDOMINIO SESTANTE
+11016,LAVANDERIA TURISMAR
+11017,Leeuwarden
+11018,Markt
+11019,stageld
+11020,11007 THV Casino
+11021,MiluCar Camper Area
+11022,Nürnberg - Zerzabelshoferstraße 31
+11023,Waschküche - WEG Zerzabelshoferstraße
+11024,Nürnberg - Schloßstraße 51
+11025,Waschküche
+11026,Camperpark/minicamping Oasis
+11027,Caravans and Motorhomes Area Benagéber
+11028,Área Natur Playamuchavista
+11029,Area 7
+11030,Berlin - Methfesselstrasse 43
+11031,Waschküche
+11032,Ålesund - Vågaveien 29
+11033,Sit - Sørnesvågen
+11034,Ålesund - Gåseidvika 20
+11035,Sit-Gåseidmarka
+11036,Ålesund - Nørvegjerdet 2
+11037,Sit - Fogdegården
+11038,Bunschoten-Spakenburg
+11039,Bunschoten Oostdijk 1
+11040,Zuil 221404
+11041,Rennes - 23 rue de Châtillon
+11042,les estudines Bretagne - Laverie
+11043,Parking La Puebla de Cazalla
+11044,Pentling - An der Steinernen Bank 10A
+11045,Waschküche
+11046,Villa Marechal
+11047,Pentling - An der Steinernen Bank 10C
+11048,Waschküche
+11049,Regensburg - Landshuterstr. 105 a-d
+11050,Waschküche
+11051,Regensburg - Prinz Rupprecht Str. 8
+11052,Waschküche
+11053,Regensburg - Prinz Rupprecht Str. 10
+11054,Regensburg - Prinz Rupprecht Str. 12
+11055,Waschküche
+11056,Waschküche
+11057,Regensburg - Prinz Rupprecht Str. 14
+11058,Waschküche
+11059,Regensburg - Prinz Rupprecht Str. 16
+11060,Waschküche
+11061,Regensburg - Prinz Rupprecht Str. 18
+11062,Waschküche
+11063,Regensburg - Prinz Rupprecht Str. 20/ 29
+11064,Waschküche
+11065,Regensburg - Straubinger Str. 18
+11066,Uni Candis - Waschküche
+11067,"Regensburg - Kumpfmühler Str. 9, 11"
+11068,UniCentro 2 - Waschküche
+11069,Regensburg - Blumenstraße 14
+11070,Uniflora - Waschküche
+11071,Regensburg - Blumenstraße 14a
+11072,Uniflora - Waschküche
+11073,Regensburg - Universitätsstraße 114
+11074,Waschküche
+11075,"Regensburg -  Neuprüll 1, 3, 5"
+11076,Waschküche
+11077,Regensburg - Guerickestraße 3
+11078,Waschküche
+11079,Regensburg - Fritz-Fend-Str. 1+3
+11080,UNI Centro - Waschküche
+11081,Regensburg - Guerickestr. 3a
+11082,Waschküche
+11083,Regensburg - Galgenbergstr. 29
+11084,Waschküche
+11085,"Regensburg - Georg-Aichinger Str. 6, 8, 10, 12, "
+11086,Candis Punkto - Waschküche
+11087,Regensburg - Clara-Schumann-Str. 1/ Ladehofstr. 13-21
+11088,Waschküche
+11089,Regensburg - Fritz-Fend-Straße 9
+11090,Unicastello -Waschküche
+11091,Regensburg - Galgenberg Str. 12/12a
+11092,Unisono - Waschküche
+11093,"Regensburg - Universitätsstraße 3, 3a, 3b"
+11094,UniPark - Waschküche
+11095,Regensburg - Friedenstraße 12b
+11096,UniPark - Waschküche
+11097,München - Kantstr. 23d
+11098,Waschküche
+11099,München - Ricarda-Huch-Str. 1
+11100,Studio M - Waschküche
+11101,München - Knorrstr. 2
+11102,Studio M - Waschküche
+11103,München - Knorrstr. 29
+11104,Waschküche
+11105,München - Landsberger Str. 272
+11106,Studio M2 - Waschküche
+11107,München - Landsberger Str. 441
+11108,Unity - Waschküche
+11109,Berlin - Wexstr. 13-15
+11110,Waschküche
+11111,"Berlin - Alex-Wedding-Straße 3, Wadzeckstraße 4"
+11112,Studio B1 - Waschküche
+11113,Berlin - Königin-Luise-Str. 5
+11114,Waschküche
+11115,Berlin - Alfredstr. 9
+11116,Waschküche
+11117,"Berlin - Gerichtsstraße 65-68, Haus 1"
+11118,Studio B2 - Waschküche
+11119,"Berlin - Gerichtsstraße 65-68, Haus 2"
+11120,Studio B2 - Waschküche
+11121,"Berlin - Gerichtsstraße 65-68, Haus 3"
+11122,Studio B2 -Waschküche
+11123,Box 221409
+11124,Potsdam - Reiherweg 4
+11125,Waschküche
+11126,Box 220326
+11127,Box 221005
+11128,Box 221420
+11129,Box 221418
+11130,Box 221004
+11131,Box 220324
+11132,Box 221007
+11133,Box 221407
+11134,Box 221408
+11135,Box 220322
+11136,Box 221405 (URU 221050)
+11137,Box 221410
+11138,Box 220333
+11139,Box 220825
+11140,Box 201709
+11141,Box 221414
+11142,Box 221419
+11143,Box 221417
+11144,Box 221416
+11145,Box 221415
+11146,Box 221413
+11147,Box 221412
+11148,Box 221411
+11149,Hasselt
+11150,Prinsengracht (t.h.v. Rosmolenstraat)
+11151,Zuil 221403
+11152,_to be deleted
+11153,_to be deleted
+11154,Assisi - Via Campiglione
+11155,Laundry room - Village Assisi
+11156,Erlangen  - Gebbertstraße 125
+11157,Waschküche - AIRlangen Boardinghaus
+11158,El Nogal
+11159,Camperpark Vista Montaña
+11160,Nieuwegein
+11161,Fort Jutphaas
+11162,Prague - Senovážné náměstí 3
+11163,The Julius Prague
+11164,Camping-car área Playa Arneles
+11165,Camping La Estepa
+11166,Casa Las 2 Salchichas
+11167,Area Camper Parking Lagani
+11168,Stageld
+11169,Grimstad - Jon Lilletuns vei 15-23
+11170,SiA Jon Lilletuns vei 15-23
+11171,Box 221601
+11172,Box 221602
+11173,Box 221603
+11174,Box 221604
+11175,Box 221605 (URU 220443)
+11176,Box 221606
+11177,Box 221607
+11178,Box 221608
+11179,Box 221609
+11180,Box 221610
+11181,Box 221611
+11182,Box 221612
+11183,Poitiers  - 14 boulevard du Pont Achard 
+11184,les estudines Residence Lamartine Poitiers - Laverie
+11185,Passantenhaven Steenwijkerdiep
+11186,Kassel  - Mönchebergstraße 6
+11187,Waschküche
+11188,Helsinki
+11189,MarineMan
+11190,Box 24288
+11191,_test
+11192,_test
+11193,Box 25792
+11194,Chateau Bertinerie
+11195,Aire de Camping-Car La Saintgerminoise
+11196,Camping Charmant
+11197,Box 221614
+11198,Camping Qugydo Ranch
+11199,Chateau Arnaud de Jacquemeau
+11200,Chateau La Peyraude
+11201,Camping Le Domaine de Bernezac
+11202,Château Gros Moulin
+11203,Chateau Marqui de Vauban
+11204,Camping Siecq
+11205,Chateau du Haut Pezaud
+11206,Camping Yelloh! Saint Emilion
+11207,Box 221616
+11208,Box 221617
+11209,Box 221618
+11210,Box 221619
+11211,Box 221620
+11212,Box 221621
+11213,Box 221622
+11214,Box 221623
+11215,Box 221624
+11216,Box 221625
+11217,Box 221626
+11218,Box 221627
+11219,Box 221628
+11220,Box 221629
+11221,Box 221630
+11222,Box 221631
+11223,Box 221632
+11224,Box 221634
+11225,Box 221635
+11226,Box 221637
+11227,Box 221638
+11228,Box 221639
+11229,Box 221641
+11230,Camping Chez Gendron
+11231,Aire Municipale Saint-Genis-de-Saintonge
+11232,Box 221718
+11233,Box 221729
+11234,Box 221730
+11235,Box 221733
+11236,Box 221734
+11237,Box 221735
+11238,Box 221736
+11239,Box 221737
+11240,Box 221738
+11241,Box 221739
+11242,Box 221740
+11243,Box 221742
+11244,Camping Brantome Peyrelevade
+11245,Camping Laouba
+11246,Erlangen - Luitpoldstr. 14
+11247,Zeitwohnhaus Building-B - Wash-Point
+11248,Sevilla - C. Elche & C. Ali Al-Gomari
+11249,Lavandería
+11250,Area Camper Peschiera
+11251,Area Sosta Camper - ¨L´Airone¨
+11252,Area Camper ¨La Posta¨
+11253,Area Sosta Claudcar
+11254,Sosta Camper Trinacria
+11255,Punta Piccola Park
+11256,Paradise Park
+11257,Area Camper Chia
+11258,Parking ¨Nel Verde¨
+11259,Area Sosta Camper Getsemani
+11260,Area Sosta Mutina
+11261,Area Camper Il Guadetto
+11262,LGP Roma
+11263,Area Camper Fiemme
+11264,Sosta Camper Gulliver
+11265,Area Sosta Camper - Villa Pisani
+11266,Area Camper Venezia Porta Ovest
+11267,Graz - Eggenberger Allee 10
+11268,Waschküche
+11269,Box 221614
+11270,Seijsener
+11271,Demozuil 221731
+11272,Aire de Camping-Car Le Pontil
+11273,Camping Marco de Bignac
+11274,Camping Municipal La Giroflée
+11275,Camping Le Puits de l'Auture
+11276,Aire de Camping-Car Fontet
+11277,Aire des 3 Coccinelles
+11278,Aire de Camping-Car Mirambeau
+11279,Camping Ostréa
+11280,Was/droger
+11281,Box 221701
+11282,Box 221702
+11283,Box 221703
+11284,Box 221704
+11285,Box 221705
+11286,Box 221706
+11287,Box 221707
+11288,Box 221708
+11289,Box 221709
+11290,Box 221710
+11291,Box 221711
+11292,Box 221712
+11293,Box 221713
+11294,Box 221714
+11295,Box 221715
+11296,Box 221716
+11297,Box 221717
+11298,Box 221719
+11299,Box 221720
+11300,Box 221722
+11301,Box 221723
+11302,Box 221724
+11303,Box 221725
+11304,Box 221726
+11305,Grand Hotel Astoria
+11306,Lavanderia Astoria
+11307,"Maynooth - SVD House, Moyglare Road, Maynooth, Co. Kildare"
+11308,SAM Laundry
+11309,Anderlecht - City Dox C2
+11310,Laverie City Dox C2
+11311,Camperplaats Steenwijkerdiep
+11312,Verblijf
+11313,Box 221728
+11314,Box 221741
+11315,Box 221743
+11316,Box 221744
+11317,Box 221745
+11318,Box 221748
+11319,Box 221749
+11320,Box 221801
+11321,Box 221802
+11322,Box 221803
+11323,Box 221804
+11324,Box 221805
+11325,Box 221806
+11326,Box 221807
+11327,Box 221809
+11328,Box 221810
+11329,Box 221811
+11330,Box 221812
+11331,Box 221813
+11332,Box 221814
+11333,Box 221817
+11334,Box 221835
+11335,Box 221836
+11336,Box 221837
+11337,Box 221838
+11338,Box 221839
+11339,Box 221840
+11340,Box 221841
+11341,Box 221843
+11342,Box 221844
+11343,Box 221848
+11344,Box 221849
+11345,Box 221850
+11346,Box 221642
+11347,Box 221721
+11348,Box 221727
+11349,Meersburg -  Am Weiher 1
+11350,Waschküche - Am Weiher 1
+11351,Wasserette Ocarina II
+11352,Wasserette Ocarinalaan II
+11353,_to be deleted
+11354,_to be deleted
+11355,Lavanderia Ca della Paglia
+11356,Brno - Dornych 519/47e - Domeq I
+11357,Prádelna
+11358,Hellevoetsluis
+11359,Camperplaats Zuidfront
+11360,Stageld
+11361,Danzingerkade t.h.v. 68-52
+11362,-
+11363,Danzingerkade hoofdsteiger 1
+11364,Danzingerkade hoofdsteiger 2
+11365,Danzingerkade zijsteiger 1
+11366,Danzingerkade zijsteiger 2
+11367,Oasi Park Bosco Mesola
+11368,Danzigerkade t.h.v. huisnummer 52
+11369,Humlebæk - Teglgårdsvej
+11370,Teglgårdsvej
+11371,Tarvisio - Hotel il Cervo
+11372,Lavanderia Hotel il Cervo
+11373,Hotel Saisera
+11374,Lavanderia Saisera
+11375,Box 221808
+11376,Box 221815
+11377,Box 221816
+11378,Box 221818
+11379,Box 221819
+11380,Box 221820
+11381,Box 221821
+11382,Box 221822
+11383,Box 221823
+11384,Box 221824
+11385,Box 221825
+11386,Box 221826
+11387,Box 221827
+11388,Box 221828
+11389,Box 221829
+11390,Box 221830
+11391,Box 221831
+11392,Box 221832
+11393,Box 221833
+11394,Box 221834
+11395,Box 221842
+11396,Box 221845
+11397,Box 221846
+11398,Box 221847
+11399,Rosny-Sous-Bois - 4 rue de la mare Huguet 
+11400,les Estudines Paris Rosny - Laverie
+11401,Zuil 210750
+11402,Beurs Houten
+11403,Landau - Thomas-Nast-Straße 61
+11404,Studenten
+11405,Freiburg - Ellen-Gottlieb-Straße 2
+11406,Waschküche
+11407,Test 1
+11408,Test2
+11409,Acht
+11410,stageld
+11411,Sluis
+11412,"St Ouen - 39/49, rue Emile CORDON"
+11413,les estudines du Landy - Laverie
+11414,"Villetaneuse - 21, rue Marguerite YOURCENAR"
+11415,les estudines André Désilles - Laverie
+11416,R03
+11417,R04
+11418,Worms - Bebelstraße 22
+11419,Waschküche - Bebelstraße 22
+11420,"Evry - 8, Boulevard François Mitterrand"
+11421,les estudines La Cathédrale - Laverie
+11422,"Evry - 61, boulevard de l'Yerres"
+11423,les estudines Le Parc - Laverie
+11424,Petit Quevilly - 2 rue Helene Boucher 
+11425,les estudines Saint Julien - Laverie
+11426,Piushaven
+11427,Zuil 222027
+11428,Zuil 222043
+11429,Zuil 222024
+11430,Zuil 222023
+11431,Zuil 222022
+11432,Zuil 222003
+11433,Zuil 220623
+11434,Zuil 221644
+11435,Zuil 221648
+11436,Zuil 222021
+11437,Zuil 222042
+11438,Zuil 222028
+11439,Zuil 222026
+11440,Zuil 222025
+11441,Zuil 222032
+11442,Zuil 220306
+11443,Piushaven
+11444,Domaine des Lauribert
+11445,Aire Le Cheylard
+11446,Camping Municipal Le Colombier
+11447,Camping La Source
+11448,Camping La Vieille Ferme
+11449,Camping La Chaup
+11450,Camping Le Brasilia
+11451,Camping De La Falaise
+11452,Camping Coursavy
+11453,Aire de Camping-Car Le Scorpion
+11454,Le Parc Pour Les Escargots
+11455,Aire Municipale Montsalvy
+11456,Aire de Camping-Car des Vernhes
+11457,Camping Mon Plaisir
+11458,Domaine de Lucena
+11459,Camping Le Bocage
+11460,Camping Le Grand Calme
+11461,Camperplaats Schotte Kapellekensbaan
+11462,stageld
+11463,Box 222126
+11464,Box 222127
+11465,Box 222128
+11466,Box 222132
+11467,Box 222133
+11468,Box 222134
+11469,Box 222135
+11470,Box 222136
+11471,Box 222137
+11472,Tilburg
+11473,Box 222138
+11474,Box 222139
+11475,Piushaven
+11476,Box 222140
+11477,Box 222141
+11478,Box 222142
+11479,Box 222143
+11480,Box 222144
+11481,Box 222145
+11482,Box 222146
+11483,Box 222147
+11484,Box 222148
+11485,Box 222149
+11486,Box 222150
+11487,Box 222130
+11488,Box 222131
+11489,Verwarmingen
+11490,Kasten
+11491,Kast 222046
+11492,Kast 222041
+11493,Kast 222048
+11494,Kast 222045
+11495,Kast 222049
+11496,Rennes - 316 Rue de Fougeres
+11497,les estudines Longs Champs - Laverie
+11498,Aachen - Bismarckstraße 147 (EG)
+11499,Waschküche
+11500,Santarém - Apartado 279
+11501,Complexo Andaluz
+11502,Santarém - Rua dos Casais da Alagoa
+11503,Residência estudantes de S. Pedro
+11504,Berlin - Karl-Ziegler-Straße 5
+11505,Waschküche
+11506,Fulda - Leipziger Str. 139 - 141
+11507,Waschküche
+11508,Jørpeland - Preikestolen Camping
+11509,Preikestolen Camping
+11510,Jena - Ziegesarstraße 13-15
+11511,Waschküche
+11512,Pavia  - Ca della Paglia
+11513,_to be delted
+11514,Copenhagen - Njalsgade 151
+11515,Nido Bryggen – Laundry
+11516,Aire de Camping-Car Sainte-Eulalie De Cernon
+11517,Camping Les Bastets
+11518,Camping Le Castelet
+11519,Aire de Camping-Car Puy St Martin
+11520,Camping Le Font du Merle
+11521,Molenstraat
+11522,Klein Zundertseweg
+11523,Hamar - Fredrik Monsens gate 21
+11524,SINN - Vaskeri
+11525,Bergen - Solheimslien 68
+11526,Sammen - Solheimslien
+11527,Camperplaats Atlantica
+11528,Stroom op de wal Atlantica
+11529,Verblijf
+11530,Liggeld
+11531,Kast 542
+11532,Campus Irena 5
+11533,Laverie extension (153)
+11534,Laverie principal (151)
+11535,Dublin
+11536,Charlotte Quay
+11537,Box 221650
+11538,Box 222224
+11539,Box 222223
+11540,Box 222222
+11541,Box 222221
+11542,Box 222225
+11543,Box 222040
+11544,Box 222035
+11545,Box 222047
+11546,Box 222033
+11547,Box 222050
+11548,Box 222036
+11549,Box 222034
+11550,Box 222018
+11551,Box 222017
+11552,Box 222020
+11553,Box 222019
+11554,Box 222201
+11555,Box 222202
+11556,Box 222203
+11557,Box 222204
+11558,Box 222205
+11559,Box 222206
+11560,Box 222207
+11561,Box 222208
+11562,Zaragoza - Via Universitas 26
+11563,Lavandería Zaragoza
+11564,Ivry Sur Seine - 6 rue des Joutes
+11565,les estudines Quai D’Ivry - Laverie
+11566,Levallois-Perret - 1 Rue Jules Verne
+11567,les estudines Paris-Levallois
+11568,Massy - 5 avenue Emile Baudot
+11569,les estudines Massy Palaiseau 
+11570,Kast 543
+11571,Kast 555
+11572,Kast 551
+11573,Box 222016
+11574,Box 222015
+11575,Box 222014
+11576,Box 222029
+11577,Box 221645
+11578,Box 222008
+11579,Box 222007
+11580,Box 222006
+11581,Box 222005
+11582,Box 222004
+11583,Box 222001
+11584,Box 222002
+11585,Amsterdam - Laadvoorzieningen
+11586,Hamburg - Georg-Wilhelm-Str. 246
+11587,Waschküche
+11588,Waschküche Haus 14
+11589,Waschküche Haus 18
+11590,Bielefeld - Merianstraße 1
+11591,Waschküche - Dozentenhaus B2
+11592,Wien - Kolpinhaus Alsergrund
+11593,Waschküche -  1.OG
+11594,Waschküche -  UG
+11595,Regensburg - Ladehofstraße 35
+11596,Waschküche - Dörnberg Campus
+11597,Dortmund - Wittekindstraße 36-38
+11598,"Waschküche - be.home ""groß"""
+11599,"Waschküche - be.home ""klein"""
+11600,Mannheim - Anna-Sammet-Straße 2
+11601,Waschküche
+11602,Göttingen - Gartenstraße 25
+11603,Waschküche - ETG Gartenstraße
+11604,Leipzig - Berliner Straße 7a
+11605,Waschküche - Hausnummer A
+11606,Leipzig - Berliner Straße 7b
+11607,Waschküche - Hausnummer B
+11608,Innsbruck - Luigenstraße / Pfaffensteig
+11609,Waschküche - Luigenstraße
+11610,Westerdoksdijk 2
+11611,Buiksloterweg 2
+11612,Westhavenweg 2 (right)
+11613,Westhavenweg 1 (left)
+11615,Haparandadam 3
+11616,Haparandadam 4
+11617,Haparandadam 2
+11618,Minervahavenweg 3
+11619,Pontsteiger 2
+11620,Pontsteiger 3
+11621,Pontsteiger 4
+11622,Pontsteiger 5
+11623,Pontsteiger 6
+11624,Pontsteiger 7
+11625,Pontsteiger 8
+11626,Pontsteiger 1
+11627,Ruijterkade west - noordsteiger kast 541 542
+11628,Saint-Rambert-d'Albon
+11629,Vinci Autoroutes - Aire de Saint Rambert d'Albon Est
+11630,Box 222244
+11631,Box 222242
+11632,La Varenne Saint Hilaire - 1 passage Henri Dunant
+11633,les Estudines Paris Saint Maur II - Laverie
+11634,Ruijterkade west - zuidsteiger kast 545
+11635,Kast 541
+11636,Kast 544
+11637,Kast 545
+11638,Kast 553
+11639,Kast 556
+11640,Westerdoksdijk 4
+11641,Kast 561
+11642,Kast 531
+11643,Kast 562
+11644,Estoril - Av. Condes de Barcelona 808
+11645,SmartStudios - Lavanderia
+11646,Alpine Residence for Students   ARS-14
+11647,ARS-14
+11648,Bordeaux - 183 Cours de L’Yser
+11649,les estudines YSER
+11650,Porto - Rua da Asprela 29
+11651,Lavanderia
+11652,Ulm - Steinhövelstraße 9b
+11653,Waschküche - 9b
+11654,Etten-Leur stationsplein
+11655,Rock laundry
+11656,Sittard - Watersley
+11657,Watersley Het Klooster - Miele Laundry Boutique
+11658,Box 222101
+11659,Box 222102
+11660,Box 222104
+11661,Box 222105
+11662,Box 222106
+11663,Box 222107
+11664,Box 222108
+11665,Box 222109
+11666,Box 222110
+11667,Box 222111
+11668,Box 222112
+11669,Box 222129
+11670,Box 222209
+11671,Box 222210
+11672,Box 222211
+11673,Box 222212
+11674,Box 222213
+11675,Box 222214
+11676,Box 222215
+11677,Box 222216
+11678,Box 222217
+11679,Box 222218
+11680,Box 222219
+11681,Box 222220
+11682,Venlo (temp)
+11683,Truckstop Venlo
+11684,Pedestal 22260001
+11685,Pedestal 22260002
+11686,Pedestal 22260003
+11687,Pedestal 22260004
+11688,Pedestal 22260005
+11689,Pedestal 22260006
+11690,Amsterdam - Klaprozenweg 31-33
+11691,Goudvink Ymere- Miele Laundry Boutique
+11692,Kast 556 (delete)
+11693,Ålesund - Fogd Greves Veg 7
+11694,Sit - Sundebygget
+11695,arta terme - grand hotel gortani
+11696,hotel gortani
+11697,Ede - Grotestraat 111
+11698,Welkom - Miele Laundry Boutique
+11699,Box 222401
+11700,Box 222402
+11701,Box 222403
+11702,Box 222404
+11703,Box 222405
+11704,Box 222406
+11705,Box 222407
+11706,Box 222408
+11707,Box 222409
+11708,Box 222410
+11709,Box 222411
+11710,Box 222412
+11711,Box 222413
+11712,Box 222414
+11713,Box 222415
+11714,Box 222416
+11715,Box 222417
+11716,Box 222418
+11717,Box 222419
+11718,Box 222420
+11719,Box 222421
+11720,Box 222422
+11721,Box 222423
+11722,Box 222424
+11723,Box 222736
+11724,Box 222737
+11725,Box 222741
+11726,Box 222742
+11727,Box 222743
+11728,Box 222744
+11729,Box 222745
+11730,Box 222746
+11731,Box 222747
+11732,Box 222748
+11733,Box 222749
+11734,Box 222750
+11735,K1
+11736,K2
+11737,K3
+11738,K9
+11739,K10
+11740,K11
+11741,K16
+11742,K17
+11743,K18
+11744,Westerdoksdijk 3
+11745,Westerhoofd 2
+11746,Westerhoofd 3
+11747,Westerhoofd 4
+11748,Westerhoofd 5
+11749,Jachthaven Terneuzen
+11750,Sevilla - Ramon Carande 6
+11751,Lavandería
+11752,Hamburg - Schomburgstr. 109/111
+11753,Schomburgstr. 109/111
+11754,Box 222701
+11755,Box 222703
+11756,Box 222704
+11757,Box 222705
+11758,Box 222706
+11759,Box 222707
+11760,Box 222709
+11761,Box 222710
+11762,Box 222711
+11763,Box 222712
+11764,Box 222721
+11765,Box 222723
+11766,Box 222724
+11767,Box 222725
+11768,Box 222728
+11769,Box 222729
+11770,Box 222730
+11771,Box 222731
+11772,Box 222733
+11773,Box 222734
+11774,Box 222735
+11775,Box 222738
+11776,Box 222739
+11777,Box 222740
+11778,Box 222702
+11779,Box 222708
+11780,Box 222713
+11781,Box 222714
+11782,Box 222715
+11783,Box 222716
+11784,Box 222717
+11785,Box 222718
+11786,Box 222719
+11787,Box 222722
+11788,Box 222726
+11789,Box 222732
+11790,Linz - Semmelweißstraße 36-38
+11791,Waschküche - Squadro
+11792,Verblijfszone Piushaven
+11793,Heidelberg -  Bunsenstr. 15
+11794,Bunsen Wash
+11795,Erlangen - Erlangen - Hauptstraße 63
+11796,Waschkeller
+11797,Tilburg - Professor Verbernelaan 33
+11798,Study Studiopark Tilburg - Miele Laundry Boutique
+11799,Lisboa - Sacadura Cabral 40
+11800,Campo Pequeno - Lavandaria
+11801,Botanique 
+11802,Botanique Begane grond
+11803,Botanique Verdieping
+11804,Botanique verdieping
+11805,Waschküche 
+11806,Waschkeller Neu
+11807,Bielefeld - Merianstraße 3
+11808,Waschküche - Dozentenhaus B4
+11809,Toulouse - 7 impasse du Ramier des Catalans
+11810,les estudines Brienne - Laverie
+11811,Cork - Kinlay House
+11812,Laundry Room
+11813,ONE microliving
+11814,appwash-Raum
+11815,Box 222116
+11816,Box 222119
+11817,Box 222120
+11818,Box 222121
+11819,Box 222122
+11820,Box 222123
+11821,Box 222124
+11822,Box 222125
+11823,Box 222425
+11824,Box 222426
+11825,Box 222427
+11826,Box 222428
+11827,Box 222429
+11828,Box 222430
+11829,Box 222431
+11830,Box 222432
+11831,Box 222433
+11832,Box 222434
+11833,Box 222435
+11834,Box 222436
+11835,Box 222437
+11836,Box 222438
+11837,Box 222439
+11838,Box 222440
+11839,Kast 222727
+11840,Aschaffenburg - Lange Str. 1
+11841,ONE microliving
+11842,Helsinki - Välimerenkatu 22
+11843,UNITY Helsinki
+11844,Düsseldorf - Kavallerie Str. 10
+11845,GKS-Waschkeller
+11846,Stockholm - Strandvägen 7A
+11847,Unity Kista Campus
+11848,Bergen - Studentbyen Nattland 76
+11849,Sammen - Studentbyen Nattland
+11850,box 222114
+11851,box 222115
+11852,Levanger - Byborg B
+11853,Studentinord - Byborg B Vaskeri
+11854,Levanger - Byborg A
+11855,Studentinord - Byborg A Vaskeri
+11856,Box 222117
+11857,Box 222118
+11858,Box 222441
+11859,Box 222442
+11860,Box 222443
+11861,Box 222444
+11862,Box 222445
+11863,Box 222446
+11864,Box 222447
+11865,Box 222448
+11866,Box 222449
+11867,Box 222450
+11868,Levanger - Moafjæra 2
+11869,Studentinord - Moa vaskeri
+11870,_to be deleted
+11871,_to be deleted
+11872,Kista - Köpenhamnsgatan 26
+11873,Unity Jylland
+11874,Box 223225
+11875,Box 223226
+11876,Box 223227
+11877,Box 223228
+11878,Box 223229
+11879,Box 223230
+11880,Box 223231
+11881,Box 223232
+11882,Box 223233
+11883,Box 223236
+11884,Box 223237
+11885,Box 223238
+11886,Box 223239
+11887,Box 223240
+11888,Box 223241
+11889,Box 223242
+11890,Box 223243
+11891,Box 223244
+11892,Box 223245
+11893,Box 223246
+11894,Box 223247
+11895,Box 223248
+11896,Box 223249
+11897,Box 223250
+11898,Oxford  - Cowley Road 163
+11899,Laundry room
+11900,Tanker
+11901,Marivold Camping
+11902,MIELE
+11903,26215 Wiefelstede
+11904,Haus 1 / Waschküche 1
+11905,Haus 4 / Waschküche Haus 4
+11906,Haus 1 / Waschküche 2
+11907,Haus 2 / Waschküche Haus 2
+11908,Haus 3 / Waschküche Haus 3
+11909,_to be deleted
+11910,Pramux - Moormerland
+11911,URU 2021340003
