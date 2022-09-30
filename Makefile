@@ -1,4 +1,4 @@
-prog :=appwash
+prog := appwash
 
 install:
 	cp target/release/appwash-cli /usr/local/bin/$(prog)

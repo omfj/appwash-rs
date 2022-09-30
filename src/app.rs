@@ -1,7 +1,7 @@
 use clap::{crate_authors, crate_description, crate_name, crate_version, Arg, Command};
 
 pub fn create_app() -> Command<'static> {
-    let app = Command::new("appwash-cli")
+    Command::new("appwash-cli")
         .name(crate_name!())
         .version(crate_version!())
         .author(crate_authors!())
@@ -85,7 +85,5 @@ pub fn create_app() -> Command<'static> {
         )
         .subcommand(Command::new("location").about("Get information about your location"))
         .subcommand(Command::new("list").about("Lists available machines"))
-        .subcommand(Command::new("history").about("Lists your activity and history"));
-
-    app
+        .subcommand(Command::new("history").about("Lists your activity and history"))
 }

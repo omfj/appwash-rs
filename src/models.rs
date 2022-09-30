@@ -70,10 +70,10 @@ pub struct PricingInfo {
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Response<T> {
-    pub errorCode: u32,
+    pub errorCode: usize,
     pub errorDescription: String,
-    pub token_expire_ts: u32,
-    pub serverTime: u32,
+    pub token_expire_ts: usize,
+    pub serverTime: usize,
     pub data: T,
 }
 
