@@ -1,7 +1,10 @@
 use std::error::Error;
 
+use crate::user::UserConfig;
+
 mod api;
 mod app;
+mod user;
 
 fn main() {
     let result = run();
@@ -17,7 +20,15 @@ fn main() {
 }
 
 fn run() -> Result<(), Box<dyn Error>> {
-    let matches = app::create_app().get_matches();
+    // Load or create config
+    match UserConfig::load() {
+        Ok(_) => (),
+        Err(_) => UserConfig::create_default_config(),
+    }
+
+    // Create CLAP app
+    let app = app::create_app();
+    let matches = app.get_matches();
 
     Ok(())
 }

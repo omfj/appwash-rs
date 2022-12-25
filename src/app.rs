@@ -1,33 +1,16 @@
-use clap::{crate_authors, crate_description, crate_name, crate_version, Arg, Command};
+use clap::{
+    crate_authors, crate_description, crate_name, crate_version, Arg, ColorChoice, Command,
+};
 
-pub fn create_app() -> Command<'static> {
+pub fn create_app() -> Command {
     Command::new("appwash-cli")
         .name(crate_name!())
         .version(crate_version!())
         .author(crate_authors!())
         .about(crate_description!())
+        .color(ColorChoice::Always)
         .subcommand_required(true)
         .arg_required_else_help(true)
-        .subcommand(
-            Command::new("login")
-                .about("Create account")
-                .arg(
-                    Arg::new("email")
-                        .short('e')
-                        .long("email")
-                        .takes_value(true)
-                        .required(true)
-                        .help("Your AppWash email"),
-                )
-                .arg(
-                    Arg::new("password")
-                        .short('p')
-                        .long("password")
-                        .takes_value(true)
-                        .required(true)
-                        .help("Your AppWash password"),
-                ),
-        )
         .subcommand(
             Command::new("reserve")
                 .about("Reserves a machine")
@@ -56,32 +39,35 @@ pub fn create_app() -> Command<'static> {
                     Arg::new("secrets")
                         .short('s')
                         .long("secrets")
-                        .takes_value(false)
                         .help("Prints you password and token"),
                 ),
         )
         .subcommand(
-            Command::new("change")
+            Command::new("update")
                 .subcommand(
                     Command::new("email")
-                        .about("Changes your email")
+                        .about("Updates your config email")
                         .arg(Arg::new("email").required(true).help("Your new email")),
                 )
                 .subcommand(
-                    Command::new("password").about("Changes your password").arg(
-                        Arg::new("password")
-                            .required(true)
-                            .help("Your new password"),
-                    ),
+                    Command::new("password")
+                        .about("Updates your config password")
+                        .arg(
+                            Arg::new("password")
+                                .required(true)
+                                .help("Your new password"),
+                        ),
                 )
                 .subcommand(
-                    Command::new("location").about("Changes your location").arg(
-                        Arg::new("location")
-                            .required(true)
-                            .help("Your new location"),
-                    ),
+                    Command::new("location")
+                        .about("Updates your config location")
+                        .arg(
+                            Arg::new("location")
+                                .required(true)
+                                .help("Your new location"),
+                        ),
                 )
-                .about("Change specified field in your config"),
+                .about("Updates the specified field in your config"),
         )
         .subcommand(Command::new("location").about("Get information about your location"))
         .subcommand(Command::new("list").about("Lists available machines"))
