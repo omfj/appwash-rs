@@ -1,91 +1,37 @@
-use clap::{crate_authors, crate_description, crate_name, crate_version, Arg, Command};
+use clap::{arg, command, ArgAction, ColorChoice, Command};
 
-pub fn create_app() -> Command<'static> {
-    let app = Command::new("appwash-cli")
-        .name(crate_name!())
-        .version(crate_version!())
-        .author(crate_authors!())
-        .about(crate_description!())
+pub fn get_app() -> Command {
+    command!()
+        .color(ColorChoice::Always)
         .subcommand_required(true)
         .arg_required_else_help(true)
         .subcommand(
-            Command::new("login")
-                .about("Create account")
-                .arg(
-                    Arg::new("email")
-                        .short('e')
-                        .long("email")
-                        .takes_value(true)
-                        .required(true)
-                        .help("Your AppWash email"),
-                )
-                .arg(
-                    Arg::new("password")
-                        .short('p')
-                        .long("password")
-                        .takes_value(true)
-                        .required(true)
-                        .help("Your AppWash password"),
-                ),
+            Command::new("reserve").about("Reserves a machine").arg(
+                arg!(<id> "The ID of the machine you want to stop")
+                    .value_parser(clap::value_parser!(usize)),
+            ),
         )
         .subcommand(
-            Command::new("reserve")
-                .about("Reserves a machine")
-                .arg_required_else_help(true)
-                .arg(
-                    Arg::new("id")
-                        .required(true)
-                        .help("ID of the machine you want to reserve"),
-                ),
-        )
-        .subcommand(
-            Command::new("stop")
-                .about("Stops a machine")
-                .arg_required_else_help(true)
-                .arg(
-                    Arg::new("id")
-                        .required(true)
-                        .help("ID of the machine you want to stop"),
-                ),
+            Command::new("stop").about("Stops a machine").arg(
+                arg!(<id> "The ID of the machine you want to stop")
+                    .value_parser(clap::value_parser!(usize)),
+            ),
         )
         .subcommand(Command::new("balance").about("Prints users balance"))
         .subcommand(
-            Command::new("whoami")
+            Command::new("me")
                 .about("Prints information about the user")
-                .arg(
-                    Arg::new("secrets")
-                        .short('s')
-                        .long("secrets")
-                        .takes_value(false)
-                        .help("Prints you password and token"),
-                ),
+                .arg(arg!(-s --secrets "Show password and token").action(ArgAction::SetTrue)),
         )
         .subcommand(
-            Command::new("change")
-                .subcommand(
-                    Command::new("email")
-                        .about("Changes your email")
-                        .arg(Arg::new("email").required(true).help("Your new email")),
-                )
-                .subcommand(
-                    Command::new("password").about("Changes your password").arg(
-                        Arg::new("password")
-                            .required(true)
-                            .help("Your new password"),
-                    ),
-                )
-                .subcommand(
-                    Command::new("location").about("Changes your location").arg(
-                        Arg::new("location")
-                            .required(true)
-                            .help("Your new location"),
-                    ),
-                )
-                .about("Change specified field in your config"),
+            Command::new("list")
+                .about("Lists available machines")
+                .args([
+                    arg!(-a --available "List available machines").action(ArgAction::SetTrue),
+                    arg!(-o --occupied "List occupied machines").action(ArgAction::SetTrue),
+                    arg!(-s --stoppable "List stoppable machines").action(ArgAction::SetTrue),
+                ]),
         )
         .subcommand(Command::new("location").about("Get information about your location"))
-        .subcommand(Command::new("list").about("Lists available machines"))
-        .subcommand(Command::new("history").about("Lists your activity and history"));
-
-    app
+        .subcommand(Command::new("history").about("Lists your activity and history"))
 }

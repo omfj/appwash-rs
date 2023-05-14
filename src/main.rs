@@ -1,13 +1,18 @@
-use crate::lib::{api, config, format};
-use colored::Colorize;
-use std::error::Error;
+use http::AppwashClient;
+use user::Token;
+use views::Views;
+
+use crate::{models::MachineState, user::UserConfig};
 
 mod app;
-mod lib;
+mod http;
+mod models;
 mod user;
+mod views;
 
 fn main() {
     let result = run();
+
     match result {
         Ok(()) => {
             std::process::exit(0);
@@ -18,196 +23,85 @@ fn main() {
     }
 }
 
-fn run() -> Result<(), Box<dyn Error>> {
-    let matches = app::create_app().get_matches();
-    let mut user = user::User::new();
+fn run() -> Result<(), String> {
+    let app = app::get_app();
+    let matches = app.get_matches();
+    let user = UserConfig::load().expect("Failed to load user config");
+    let mut client = AppwashClient::new(user).expect("Failed to create the appwash client");
+    let resp = client.login().expect("Failed to log in...");
 
-    // Load config or create a new one
-    if config::config_file_exists() {
-        match config::load_config() {
-            Ok((email, password, location, token)) => {
-                user = user::User {
-                    email,
-                    password,
-                    token,
-                    location,
-                };
-            }
-            Err(_) => {
-                println!("Failed to load config.")
-            }
-        }
-    } else {
-        match config::config_file_create("<EMAIL>", "<PASSWORD>") {
-            Ok(()) => println!("Created config file in .config."),
-            Err(_) => eprintln!("Failed to create config file."),
-        }
+    client.user.token = Token::new(resp.login.token, resp.token_expire_ts);
+
+    if let Some(m) = matches.subcommand_matches("reserve") {
+        let id = m.get_one::<usize>("id").expect("Could not get machine id");
+
+        return Err("Not implemented yet")?;
     }
 
-    // What do for the different commands
+    if let Some(m) = matches.subcommand_matches("stop") {
+        let id = m.get_one::<usize>("id").unwrap();
 
-    // Command: login
-    if let Some(ref matches) = matches.subcommand_matches("login") {
-        if matches.is_present("email") && matches.is_present("password") {
-            config::config_file_create(
-                matches.value_of("email").to_owned().unwrap(),
-                matches.value_of("password").to_owned().unwrap(),
-            )
-            .unwrap();
-        } else {
-            println!("Failed to update config file. Make sure you provided username and password");
-        }
+        return Err("Not implemented yet")?;
     }
 
-    // Command: list
-    if let Some(_) = matches.subcommand_matches("list") {
-        match api::get_machines(&user.token, &user.location) {
-            Ok(machines) => match format::machines(machines, &user.location, &user.token) {
-                Ok(()) => (),
-                Err(_) => println!("Failed to list machines."),
-            },
-            Err(e) => println!("An error occured trying to get the machines. Error: {}", e),
-        }
-    }
-
-    // Command: balance
     if let Some(_) = matches.subcommand_matches("balance") {
-        match api::get_balance(&user.token) {
-            Ok((b, c)) => println!("💰Your balance is: {} {}", format!("{}", b).green(), c),
-            Err(_) => println!("An error occured trying to get your balance."),
-        }
+        let balance = client.get_balance().expect("Failed to get balance");
+
+        println!("Balance: {}", balance);
+
+        return Ok(());
     }
 
-    // Command: stop
-    if let Some(ref matches) = matches.subcommand_matches("stop") {
-        let machine_id = matches.value_of("id").unwrap().parse().unwrap();
+    if let Some(m) = matches.subcommand_matches("me") {
+        let with_secrets = m.get_flag("secrets");
 
-        match api::stop_machine(&user.token, &machine_id) {
-            Ok(resp) => {
-                let status_code = resp.errorCode;
-                if status_code == 0 {
-                    println!("{}", format!("Machine {} stopped.", machine_id).green());
+        Views::render_profile(client.user, with_secrets);
+
+        return Ok(());
+    }
+
+    if let Some(m) = matches.subcommand_matches("list") {
+        let available = m.get_flag("available");
+        let occupied = m.get_flag("occupied");
+        let stoppable = m.get_flag("stoppable");
+
+        let machines = client.get_machines().expect("Failed to get machines");
+
+        let machines = machines
+            .data
+            .into_iter()
+            .filter(|machine| {
+                if available {
+                    machine.state == MachineState::Available
+                } else if occupied {
+                    machine.state == MachineState::Occupied
+                } else if stoppable {
+                    machine.state == MachineState::Stoppable
                 } else {
-                    println!(
-                        "Failed to stop machine {}. Returned code: {}",
-                        format!("{}", machine_id).yellow(),
-                        status_code,
-                    );
-                    println!("Description: {}", resp.errorDescription);
-                    println!(
-                        "{}",
-                        format!("Are you sure that machine is stoppable?").red()
-                    );
+                    true
                 }
-            }
-            Err(_) => println!(
-                "Failed to reserve machine {}.",
-                format!("{}", machine_id).yellow()
-            ),
-        }
+            })
+            .collect::<Vec<_>>();
+
+        Views::render_machines(machines);
+
+        return Ok(());
     }
 
-    // Command: reserve
-    if let Some(ref matches) = matches.subcommand_matches("reserve") {
-        let machine_id = matches.value_of("id").unwrap().parse().unwrap();
-
-        match api::reserve_machine(&user.token, &machine_id) {
-            Ok(resp) => {
-                let status_code = resp.errorCode;
-                if status_code == 0 {
-                    println!("{}", format!("Machine {} reserved.", machine_id).green());
-                } else {
-                    println!(
-                        "Failed to reserve machine {}. Returned code: {}",
-                        format!("{}", machine_id).yellow(),
-                        status_code,
-                    );
-                    println!("Description: {}", resp.errorDescription);
-                    println!(
-                        "{}",
-                        format!("Are you sure that machine is reservable?").red()
-                    );
-                }
-            }
-            Err(_) => println!(
-                "Failed to reserve machine {}.",
-                format!("{}", machine_id).yellow()
-            ),
-        }
-    }
-
-    // Command: history
-    if let Some(_) = matches.subcommand_matches("history") {
-        match api::get_history(&user.token) {
-            Ok(m) => match format::history(m) {
-                Ok(()) => (),
-                Err(_) => println!("{}", format!("Failed to list history.").red()),
-            },
-            Err(_) => println!("{}", format!("Failed to get history.").red()),
-        }
-    }
-
-    // Command: whoami
-    if let Some(ref matches) = matches.subcommand_matches("whoami") {
-        println!(
-            "😃You are logged in as: {}",
-            format!("{}", &user.email).green()
-        );
-        println!(
-            "📍Your location is: {}",
-            format!("{}", &user.location).green()
-        );
-        if !matches.is_present("secrets") {
-            println!(
-                "Run with {} to see your password and token.",
-                format!("{}", "--secrets").yellow()
-            );
-        }
-        if matches.is_present("secrets") {
-            println!("🔐Password: {}", format!("{}", &user.password).green());
-            println!("🔐Token: {}", format!("{}", &user.token).green());
-        }
-    }
-
-    // Command: location
     if let Some(_) = matches.subcommand_matches("location") {
-        match api::get_location_info(&user.token, &user.location) {
-            Ok(info) => match format::location_info(info.data) {
-                Ok(()) => (),
-                Err(_) => println!("{}", format!("Failed to list location info.").red()),
-            },
-            Err(_) => println!("{}", format!("Failed to get location info.").red()),
-        }
+        let location = client.get_location_info().expect("Failed to get location");
+
+        println!("Location: {:#?}", location);
+
+        return Ok(());
     }
 
-    // Command: change
-    if let Some(ref matches) = matches.subcommand_matches("change") {
-        // Subcommand: email
-        if let Some(ref matches) = matches.subcommand_matches("email") {
-            let new_email = matches.value_of("email").unwrap();
-            match config::change_config("EMAIL", new_email) {
-                Ok(()) => println!("{}", format!("Email changed").green()),
-                Err(_) => println!("{}", format!("Failed to change email.").red()),
-            }
-        }
+    if let Some(_) = matches.subcommand_matches("history") {
+        let history = client.get_history().expect("Failed to get history");
 
-        // Subcommand: password
-        if let Some(ref matches) = matches.subcommand_matches("password") {
-            let new_password = matches.value_of("password").unwrap();
-            match config::change_config("PASSWORD", new_password) {
-                Ok(()) => println!("{}", format!("Password changed").green()),
-                Err(_) => println!("{}", format!("Failed to change password.").red()),
-            }
-        }
+        println!("History: {:#?}", history);
 
-        // Subcommand: location
-        if let Some(ref matches) = matches.subcommand_matches("location") {
-            let new_location = matches.value_of("location").unwrap();
-            match config::change_config("LOCATION", new_location) {
-                Ok(()) => println!("{}", format!("Location changed.").green()),
-                Err(_) => println!("{}", format!("Failed to change location.").red()),
-            }
-        }
+        return Ok(());
     }
 
     Ok(())

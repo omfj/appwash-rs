@@ -1,5 +1,8 @@
 # CLI for AppWash written in Rust
 
+> **Warning**
+> I AM NOT AFFILIATED WITH MIELE OR APPWASH IN ANY WAY. USE THIS SOFTWARE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR ANY DAMAGE OR LOSS CAUSED BY THIS SOFTWARE.
+
 CLI for the website [appwash.com](https://appwash.com/). Uses the same API.
 
 This projects is going to be the same as [appwash-cli](https://github.com/omfj/appwash-cli), but written in Rust.
@@ -20,29 +23,25 @@ make all
 Now the binary should be installed to your system. You can type `appwash` into your terminal emulator and the output should look similar to this:
 
 ```bash
-➜ appwash
-appwash-cli 1.0.0
-Ole Magnus Johnsen <hei@omfj.no>
+$ appwash
+
 A command-line interface for Miele appWash
 
-USAGE:
-    appwash <SUBCOMMAND>
+Usage: appwash <COMMAND>
 
-OPTIONS:
-    -h, --help       Print help information
-    -V, --version    Print version information
+Commands:
+  reserve   Reserves a machine
+  stop      Stops a machine
+  balance   Prints users balance
+  me        Prints information about the user
+  list      Lists available machines
+  location  Get information about your location
+  history   Lists your activity and history
+  help      Print this message or the help of the given subcommand(s)
 
-SUBCOMMANDS:
-    balance     Prints users balance
-    help        Print this message or the help of the given subcommand(s)
-    history     Lists your activity and history
-    list        Lists available machines
-    location    Get information about your location
-    login       Create account
-    reserve     Reserves a machine
-    stop        Stops a machine
-    whoami      Prints information about the user
-
+Options:
+  -h, --help     Print help information
+  -V, --version  Print version information
 ```
 
 ## Remove/Uninstall
@@ -51,8 +50,8 @@ To remove the binary from your system run `make clean` when inside of the folder
 
 ## TODO
 
--   Better error handling
--   Manage timezones better
--   Store token between command usage
+- Better error handling
+- Manage timezones better
+- Store token between command usage
 
 Rust is hard, please give me feedback.
