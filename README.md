@@ -23,29 +23,25 @@ make all
 Now the binary should be installed to your system. You can type `appwash` into your terminal emulator and the output should look similar to this:
 
 ```bash
-➜ appwash
-appwash-cli 1.0.0
-Ole Magnus Johnsen <hei@omfj.no>
+$ appwash
+
 A command-line interface for Miele appWash
 
-USAGE:
-    appwash <SUBCOMMAND>
+Usage: appwash <COMMAND>
 
-OPTIONS:
-    -h, --help       Print help information
-    -V, --version    Print version information
+Commands:
+  reserve   Reserves a machine
+  stop      Stops a machine
+  balance   Prints users balance
+  me        Prints information about the user
+  list      Lists available machines
+  location  Get information about your location
+  history   Lists your activity and history
+  help      Print this message or the help of the given subcommand(s)
 
-SUBCOMMANDS:
-    balance     Prints users balance
-    help        Print this message or the help of the given subcommand(s)
-    history     Lists your activity and history
-    list        Lists available machines
-    location    Get information about your location
-    login       Create account
-    reserve     Reserves a machine
-    stop        Stops a machine
-    whoami      Prints information about the user
-
+Options:
+  -h, --help     Print help information
+  -V, --version  Print version information
 ```
 
 ## Remove/Uninstall
