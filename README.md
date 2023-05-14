@@ -1,5 +1,8 @@
 # CLI for AppWash written in Rust
 
+> **Warning**
+> I AM NOT AFFILIATED WITH MIELE OR APPWASH IN ANY WAY. USE THIS SOFTWARE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR ANY DAMAGE OR LOSS CAUSED BY THIS SOFTWARE.
+
 CLI for the website [appwash.com](https://appwash.com/). Uses the same API.
 
 This projects is going to be the same as [appwash-cli](https://github.com/omfj/appwash-cli), but written in Rust.
@@ -51,8 +54,8 @@ To remove the binary from your system run `make clean` when inside of the folder
 
 ## TODO
 
--   Better error handling
--   Manage timezones better
--   Store token between command usage
+- Better error handling
+- Manage timezones better
+- Store token between command usage
 
 Rust is hard, please give me feedback.
