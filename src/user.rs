@@ -6,7 +6,7 @@ use std::{
 
 use serde::{Deserialize, Serialize};
 
-const DIR_NAME: &str = "appwash-beta";
+const DIR_NAME: &str = "appwash";
 const CONFIG_FILE: &str = "config.toml";
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
