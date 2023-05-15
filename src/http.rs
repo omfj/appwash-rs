@@ -67,9 +67,13 @@ impl AppwashClient {
             BASE_URL, self.user.account.location
         );
 
+        let mut headers = HeaderMap::new();
+        headers.insert("token", self.user.token.secret.parse()?);
+
         let response = self
             .client
             .get(url)
+            .headers(headers)
             .send()?
             .json::<Response<LocationInfo>>()?;
 
@@ -79,9 +83,13 @@ impl AppwashClient {
     pub fn get_history(&self) -> Result<Response<Vec<History>>, Box<dyn Error>> {
         let url = format!("{}/account/getprepaidmutations", BASE_URL);
 
+        let mut headers = HeaderMap::new();
+        headers.insert("token", self.user.token.secret.parse()?);
+
         let response = self
             .client
             .get(url)
+            .headers(headers)
             .send()?
             .json::<Response<Vec<History>>>()?;
 
@@ -129,7 +137,7 @@ impl AppwashClient {
         Ok(response)
     }
 
-    pub fn stop_machine(&self, machine_id: u32) -> Result<ReserveStopResponse, Box<dyn Error>> {
+    pub fn stop_machine(&self, machine_id: &usize) -> Result<ReserveStopResponse, Box<dyn Error>> {
         let url = format!("{}/connector/{}/stop", BASE_URL, machine_id);
 
         let mut headers = HeaderMap::new();
@@ -156,7 +164,10 @@ impl AppwashClient {
         Ok(response)
     }
 
-    pub fn reserve_machine(&self, machine_id: &u32) -> Result<ReserveStopResponse, Box<dyn Error>> {
+    pub fn reserve_machine(
+        &self,
+        machine_id: &usize,
+    ) -> Result<ReserveStopResponse, Box<dyn Error>> {
         let url = format!("{}/connector/{}/start", BASE_URL, machine_id);
 
         let mut headers = HeaderMap::new();

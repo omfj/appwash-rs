@@ -35,13 +35,21 @@ fn run() -> Result<(), String> {
     if let Some(m) = matches.subcommand_matches("reserve") {
         let id = m.get_one::<usize>("id").expect("Could not get machine id");
 
-        return Err("Not implemented yet")?;
+        client.reserve_machine(id).expect("Failed to stop machine");
+
+        println!("Reserved machine {}", id);
+
+        return Ok(());
     }
 
     if let Some(m) = matches.subcommand_matches("stop") {
         let id = m.get_one::<usize>("id").unwrap();
 
-        return Err("Not implemented yet")?;
+        client.stop_machine(id).expect("Failed to stop machine");
+
+        println!("Stopped machine {}", id);
+
+        return Ok(());
     }
 
     if let Some(_) = matches.subcommand_matches("balance") {
