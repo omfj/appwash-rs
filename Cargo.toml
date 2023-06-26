@@ -14,7 +14,7 @@ xdg = "2.4.1"
 toml = "0.7.3"
 ring = "0.16.20"
 colored = "2.0.0"
-chrono = "0.4.19"
+chrono = "0.4.26"
 
 [dependencies.clap]
 version = "4.0.29"
