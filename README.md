@@ -1,5 +1,7 @@
 # CLI for AppWash written in Rust
 
+Archived since I no longer live at a place with Miele appWash
+
 > **Warning**
 > I AM NOT AFFILIATED WITH MIELE OR APPWASH IN ANY WAY. USE THIS SOFTWARE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR ANY DAMAGE OR LOSS CAUSED BY THIS SOFTWARE.
 
